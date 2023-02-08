@@ -2,13 +2,13 @@
     تسجيل حساب جديد
 @endsection
 @include('layouts.head')
-
 <body id="home">
 
 
 <div>
-    <form action="{{route('workout')}}" method="post" enctype="multipart/form-data">
+    <form action="{{route('workout',$id)}}" method="post" enctype="multipart/form-data">
         @csrf
+        <input type="hidden" value="{{ $id }}" name="id_of_user">
         <label for="gender">Gender:</label>
         <select name="gender" >
             <option value="male">male</option>
@@ -47,7 +47,7 @@
         <br>
 
         <div id="bfmetric">
-            <input type="text" name="bodyfat" class="form-control" id="bodyfat-metric" style="width:46px;display:inline-block;" maxlength="2" placeholder="15">
+            <input type="text" name="bodyfat" class="form-control"  style="width:46px;display:inline-block;" maxlength="2" placeholder="15">
             <span id="bodyfatpercentage-metric" data-original-title="" title="" aria-describedby="popover193025">%</span>
             <a class="btn-btn-success" href="">to calculate </a>
         </div>

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\User\UserController;
+use App\Http\Controllers\Nitrition\NitritionController;
 use App\Http\Controllers\Workout\WorkoutController;
 use Illuminate\Support\Facades\Route;
 
@@ -27,6 +28,11 @@ Route::group(['prefix'=>'user',],function (){
 
 
 Route::group(['prefix'=>'workout',],function (){
-    Route::get('/register',[WorkoutController::class,'workout_register_show'])->name('workout_register');
+    Route::get('/register/{id}',[WorkoutController::class,'workout_register_show'])->name('workout_register');
     Route::post('/register/data',[WorkoutController::class,'insert_workout_data'])->name('workout');
+});
+
+Route::group(['prefix'=>'nutrition',],function (){
+    Route::get('/breakfast',[NitritionController::class,'breakfast_show'])->name('breakfast');
+    Route::post('/breakfast',[NitritionController::class,'insert_breakfast_data'])->name('breakfast_post');
 });

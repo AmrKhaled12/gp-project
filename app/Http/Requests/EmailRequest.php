@@ -18,16 +18,17 @@ class EmailRequest extends FormRequest
 
     /**
      * Get the validation rules that apply to the request.
-     *
+     *,'regex:/^[a-zA-Z]+$','regex:/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$','regex:/^[a-zA-Z0-9]'
      * @return array<string, mixed>
      */
     public function rules()
     {
         return [
-            'name'=>['required','max:255','regex:/^[a-zA-Z]+$'],
+            'name'=>['required','max:255'],
             'phone'=>['required','min:11','numeric'],
-            'email'=>['required','max:255','unique:users','regex:/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$'],
-            'password'=>['required','min:8','max:16','regex:/^[a-zA-Z0-9]'],
+            'email'=>['required','max:255','unique:users'],
+            'password'=>['required','min:8','max:16','confirmed'],
+            'age'=>['required'],
         ];
     }
     public function messages()
@@ -36,12 +37,14 @@ class EmailRequest extends FormRequest
             'name.required'=>'يرجي ادخال اسم المستخدم ',
             'name.max:255' =>'من فضلك ادخل الاسم الصحيح',
             'phone.required'=>'يرجي ادخال رقم الهاتف',
+            'age.required'=>'يرجي ادخال العمر',
             'phone.numeric'=>'يجب ان يحتوي رقم الهاتف علي ارقام فقط',
             'phone.min:11' =>'يرجي ادخال رقم الهاتف الصحيح',
             'email.required'=>'يرجي ادخال الايميل الخاص بك',
             'email.max:255' =>'من فضلك ادخل الايميل بشكل صحيح',
             'email.unique:users'=>'هذا الايميل خاطئ',
             'password.required'=>'من فضلك ادخل كلمة السر',
+            'password.confirmed'=>'من فضلك تأكد من كلمة السر',
             'password.min:8'=>'يجب الا تقل كلمة السر عن 8 احرف',
             'phone.max:16' =>'يجب الا تزيد كلمة السر عن 16 حرف',
 
