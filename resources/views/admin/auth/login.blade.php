@@ -10,15 +10,16 @@
         <div class="card-body login-card-body">
             <p class="login-box-msg">Sign in to start your session</p>
 
-            <form action="" method="post">
+            <form action="{{route('login')}}" method="post">
                 @csrf
                 <div class="input-group mb-3">
-                    <input type="text" name="username" class="form-control" placeholder="username">
+                    <input type="text" name="email" class="form-control" placeholder="email">
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-envelope"></span>
                         </div>
                     </div>
+
 
                 </div>
                 <div class="input-group mb-3">
@@ -28,6 +29,7 @@
                             <span class="fas fa-lock"></span>
                         </div>
                     </div>
+
 
 
                 </div>

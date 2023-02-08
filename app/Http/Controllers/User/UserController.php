@@ -21,7 +21,7 @@ class UserController extends Controller
         User::create([
             'name' => $req->input('name'),
             'email' => $req->input('email'),
-            'password' => $req->input('password'),
+            'password' => bcrypt($req->input('password')),
             'phone' => $req->input('phone'),
             'age' => $req->input('age')
         ]);

@@ -20,22 +20,22 @@ class WorkoutController extends Controller
 
     public function insert_workout_data(Request $req)
     {
+       $id= $req->input('id_of_user');
         if ($req->input('gender') == 'male') {
             $gender = 1;
         } else {
             $gender = 0;
         }
         WorkoutData::create([
-            'height' => $req->input('height'),
+            'height' => $req->height,
             'weight' => $req->input('weight'),
             'gender' => $gender,
-            'activity rate	' => $req->input('activity'),
-            'exercise level' => $req->input('exercise level'),
-            'body fat' => $req->input('bodyfat'),
-            'user_id' => $req->input('id_of_user')
-
+            'activity_rate' => $req->input('activity'),
+            'exercise_level' => $req->input('exercise_level'),
+            'body_fat' => $req->input('bodyfat'),
+            'user_id' => $id
         ]);
-        return response('done');
+        return redirect()->route('nut_register',compact('id'));
 
     }
 }

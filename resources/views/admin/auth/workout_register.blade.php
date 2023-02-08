@@ -29,7 +29,7 @@
         <br>
 
         <label for="activity">activity rate:</label>
-        <select name="activity " class="form-control" style="width:200px;">
+        <select name="activity" class="form-control" style="width:200px;">
             <option value="1.2" selected="">Sedentary (office job)</option>
             <option value="1.375">Light Exercise (1-2 days/week)</option>
             <option value="1.55">Moderate Exercise (3-5 days/week)</option>
@@ -39,7 +39,7 @@
         <br>
 
         <label for="exercise level">exercise level:</label>
-        <select name="exercise level" class="form-control" style="width:200px;">
+        <select name="exercise_level" class="form-control" style="width:200px;">
             <option  selected="">Beginner</option>
             <option>advanced (more than 6 months)</option>
 

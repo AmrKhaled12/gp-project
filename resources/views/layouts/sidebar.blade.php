@@ -14,7 +14,7 @@
                 <img src="{{asset('assets/admin/dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="{{route('admin.dashboard')}}" class="d-block">{{auth()->user()->name}}</a>
+                <a href="" class="d-block"></a>
             </div>
         </div>
 
@@ -25,10 +25,40 @@
                      with font-awesome or any other icon font library -->
 
                 <li class="nav-item">
-                    <a href="{{route('admin.panel_setting')}}" class="nav-link">
+                    <a href="" class="nav-link">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
-                            Genral Setting
+                             nutrition plan
+
+                        </p>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <!-- Add icons to the links using the .nav-icon class
+                     with font-awesome or any other icon font library -->
+
+                <li class="nav-item">
+                    <a href="" class="nav-link">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>
+                            Your Status
+
+                        </p>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <!-- Add icons to the links using the .nav-icon class
+                     with font-awesome or any other icon font library -->
+
+                <li class="nav-item">
+                    <a href="" class="nav-link">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>
+                             workout plan
 
                         </p>
                     </a>

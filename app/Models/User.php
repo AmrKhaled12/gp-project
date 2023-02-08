@@ -18,6 +18,8 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $table='users';
+
+
     protected $fillable = [
         'name',
         'email',
@@ -28,6 +30,11 @@ class User extends Authenticatable
     ];
     public function workout_data(){
         return $this->hasOne(WorkoutData::class,'user_id');
+    }
+
+
+    public function nutrition(){
+        return $this->hasOne(Nutrition::class,'user_id');
     }
 
     /**

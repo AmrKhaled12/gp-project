@@ -13,17 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('workout_data', function (Blueprint $table) {
-            $table->integerIncrements('id');
-            $table->double('height');
-            $table->double('weight');
-            $table->boolean('gender');
-            $table->string('activity_rate');
-            $table->string('exercise_level');
-            $table->double('body_fat');
+        Schema::create('nutrition', function (Blueprint $table) {
+            $table->id();
+            $table->string('nutrition_system');
+            $table->string('goal');
+            $table->string('allergy');
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
-
         });
     }
 
@@ -34,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('workout_data');
+        Schema::dropIfExists('nutrition');
     }
 };
