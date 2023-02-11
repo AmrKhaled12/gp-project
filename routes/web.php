@@ -1,10 +1,11 @@
 <?php
 
-use App\Http\Controllers\Dashboard\DashboardController;
-use App\Http\Controllers\User\UserController;
-use App\Http\Controllers\Nitrition\NitritionController;
-use App\Http\Controllers\Workout\WorkoutController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\User\UserController;
+use App\Http\Controllers\Workout\WorkoutController;
+use App\Http\Controllers\HomePage\HomePageController;
+use App\Http\Controllers\Dashboard\DashboardController;
+use App\Http\Controllers\Nitrition\NitritionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +18,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('admin.auth.login');
-})->name('start');
+// Route::get('/', function () {
+//     return view('admin.auth.login');
+// })->name('get_login');
+
+
+Route::get('/',[HomePageController::class,'get_login'])->name('get_login');
+Route::post('/',[HomePageController::class,'post_login'])->name('post_login');
+Route::get('/logout',[HomePageController::class,'logout'])->name('logout');
 
 Route::group(['prefix'=>'user',],function (){
    Route::get('/register',[UserController::class,'email_register_show'])->name('email_register');
@@ -40,8 +46,6 @@ Route::group(['prefix'=>'nutrition',],function (){
 
 
 Route::group(['prefix'=>'dashboard',],function (){
-    Route::post('/login',[DashboardController::class,'login'])->name('login');
     Route::get('/main',[DashboardController::class,'show_dashboard'])->name('dashboard');
-    Route::get('/logout',[DashboardController::class,'logout'])->name('logout');
-
 });
+

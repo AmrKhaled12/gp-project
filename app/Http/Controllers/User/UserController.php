@@ -14,14 +14,14 @@ class UserController extends Controller
     {
         return view('admin.auth.email_register');
     }
-
+    // bcrypt($req->input('password'))
     public function insert_email_data(EmailRequest $req)
     {
 
         User::create([
             'name' => $req->input('name'),
             'email' => $req->input('email'),
-            'password' => bcrypt($req->input('password')),
+            'password' =>$req->password,
             'phone' => $req->input('phone'),
             'age' => $req->input('age')
         ]);

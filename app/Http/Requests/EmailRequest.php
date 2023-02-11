@@ -26,7 +26,7 @@ class EmailRequest extends FormRequest
         return [
             'name'=>['required','max:255'],
             'phone'=>['required','min:11','numeric'],
-            'email'=>['required','max:255','unique:users'],
+            'email'=>['required','max:255','unique:users,email'],
             'password'=>['required','min:8','max:16','confirmed'],
             'age'=>['required'],
         ];
@@ -42,7 +42,7 @@ class EmailRequest extends FormRequest
             'phone.min:11' =>'يرجي ادخال رقم الهاتف الصحيح',
             'email.required'=>'يرجي ادخال الايميل الخاص بك',
             'email.max:255' =>'من فضلك ادخل الايميل بشكل صحيح',
-            'email.unique:users'=>'هذا الايميل خاطئ',
+            'email.unique'=>'هذا الايميل بالفعل مستخدم',
             'password.required'=>'من فضلك ادخل كلمة السر',
             'password.confirmed'=>'من فضلك تأكد من كلمة السر',
             'password.min:8'=>'يجب الا تقل كلمة السر عن 8 احرف',
