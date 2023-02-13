@@ -28,7 +28,7 @@ class User extends Authenticatable
         'age',
         'is_active',
     ];
-    public function workout_data(){
+    public function WorkoutData(){
         return $this->hasOne(WorkoutData::class,'user_id');
     }
 

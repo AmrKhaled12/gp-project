@@ -49,3 +49,5 @@ Route::group(['prefix'=>'dashboard',],function (){
     Route::get('/main',[DashboardController::class,'show_dashboard'])->name('dashboard');
 });
 
+Route::get('/data',[\App\Http\Controllers\Status\StatusController::class,'get_status'])->name('status');
+

@@ -31,6 +31,7 @@ class HomePageController extends Controller
         }
         $_SESSION['login']='on';
         $_SESSION['name']=$is_login->name;
+        $_SESSION['id']=$is_login->id;
         $_SESSION['photo']=$is_login->photo;
        return redirect()->route('dashboard');
     }

@@ -33,6 +33,7 @@ class DashboardController extends Controller
         if (!isset($_SESSION['login'])) {
           return  view('admin.auth.login');
         }
+
         $_SESSION['home']='on';
         return view('admin.dashboard.admin');
     }
