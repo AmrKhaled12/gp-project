@@ -4,51 +4,63 @@ namespace App\Http\Controllers\Status;
 
 use App\Classes\Female;
 use App\Classes\Male;
+use App\Classes\Meals;
 use App\Http\Controllers\Controller;
+use App\Models\Meal;
 use App\Models\Nutrition;
 use App\Models\User;
 use App\Models\WorkoutData;
 use Illuminate\Http\Request;
+use App\Trait\Functions_Of_Meals;
 
 class StatusController extends Controller
 {
-    public function get_status(){
+    use Functions_Of_Meals;
+    public function get_status()
+    {
         session_start();
-        if(!isset($_SESSION)){
-             return view('admin.dashboard.status')->with('error','The Email Or Password Is Incorrect !!!');
+        if (!isset($_SESSION)) {
+            return view('admin.dashboard.status')->with('error', 'The Email Or Password Is Incorrect !!!');
         }
-        $data=WorkoutData::with('users')->find($_SESSION['id']);
-        $nit_data=Nutrition::where('user_id','=',$_SESSION['id'])->get();
-        if($data->gender==1) {
+        $data = User::with('WorkoutData')->find($_SESSION['id']);
+        $nit_data = Nutrition::where('user_id', '=', $_SESSION['id'])->first();
+        // return $nit_data;
+        if ($data->WorkoutData->gender == 1) {
             $client = new Male();
-
-        }else{
+        } else {
             $client = new Female();
-
         }
-        $client->set_age($data->users->age);
-        $client->set_height($data->height);
-        $client->set_weight($data->weight);
-        $client->set_activity($data->activity_rate);
+        $client->set_age($data->age);
+        $client->set_height($data->WorkoutData->height);
+        $client->set_weight($data->WorkoutData->weight);
+        $client->set_activity($data->WorkoutData->activity_rate);
         $status = $client->status($client->get_weight(), $client->get_height(), $client->get_age(), $client->get_activity());
-        foreach ($nit_data as $val) {
-            switch ($val->goal) {
-                case 'Lose Fat':
-                    $macros = $client->LoseFat($status['activity']);
-                    break;
+        switch ($nit_data->goal) {
+            case 'Lose Fat':
+                $mycal=$status['activity']-500;
+                $macros = $client->LoseFat($mycal);
+                break;
 
-                case 'Build muscle':
-                    $macros = $client->BuildMuscle($status['activity']);
-                    break;
+            case 'Build muscle':
+                $mycal=$status['activity']+500;
+                $macros = $client->BuildMuscle($mycal);
+                break;
 
-                default :
-                    $macros = $client->MaintainWeight($status['activity']);
-                    break;
+            default:
+                $mycal=$status['activity'];
+                $macros = $client->MaintainWeight($mycal);
 
-
-            }
+                break;
         }
 
-        return view('admin.dashboard.status', with(['data' => $data, 'nit_data' => $nit_data, 'status' => $status, 'macros'=>$macros]));
+        $culc_breakfast = $this->breakfast($nit_data->plan_meals, $macros,1);
+        return $culc_breakfast;
+
+//         return view('admin.dashboard.status', with([
+//             'data' => $data,
+//             'nit_data' => $nit_data,
+//             'status' => $status,
+//             'macros' => $macros,
+//             'mycal'=>$mycal]));
     }
 }

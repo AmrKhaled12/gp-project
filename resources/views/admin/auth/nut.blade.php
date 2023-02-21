@@ -29,6 +29,15 @@
         </select>
         <br>
 
+        <label for="food">Plan Meals:</label>
+        <select name="plan_meals" class="form-control" style="width:200px;">
+            <option  selected="">None</option>
+            <option >3 Meals </option>
+            <option >3 Meals - 1 Snacks</option>
+            {{-- <option >3 Meals - 2 Snacks</option> --}}
+        </select>
+        <br>
+
         <label for="allergy">exercise level:</label>
         <select name="allergy[]" multiple="multiple" class="form-control" style="width:200px;">
             <option  selected="">Dairy</option>

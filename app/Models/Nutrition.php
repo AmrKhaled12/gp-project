@@ -17,6 +17,7 @@ class Nutrition extends Model
         'allergy',
         'user_id',
         'goal',
+        'plan_meals',
     ];
 
 

@@ -21,6 +21,7 @@ class NitritionController extends Controller
             'nutrition_system'=>$req->input('food'),
             'goal'=>$req->input('goal'),
             'allergy'=>$allergy,
+            'plan_meals'=>$req->plan_meals,
             'user_id'=>$req->input('id_of_user'),
         ]);
         return redirect()->route('dashboard');

@@ -13,14 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('nutrition', function (Blueprint $table) {
+        Schema::create('meals', function (Blueprint $table) {
             $table->id();
-            $table->string('nutrition_system');
-            $table->string('goal');
-            $table->string('allergy');
-            $table->string('plan_meals');
-            $table->integer('user_id')->unsigned();
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->text('name_meal');
+            $table->double('calories_meal',null,null,true);
+            $table->double('protein',null,null,true);
+            $table->double('carb',null,null,true);
+            $table->double('fat',null,null,true);
+            $table->timestamps();
         });
     }
 
@@ -31,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('nutrition');
+        Schema::dropIfExists('_meal');
     }
 };

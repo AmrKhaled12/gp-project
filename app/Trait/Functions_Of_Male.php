@@ -21,8 +21,8 @@ trait Functions_Of_Male
 
     }
     public function LoseFat($myCal){
-        $protein=round(($myCal*0.30)/4,1);
-        $carbs=round(($myCal*0.50)/4,1);
+        $protein=round(($myCal*0.25)/4,1);
+        $carbs=round(($myCal*0.55)/4,1);
         $fats=round(($myCal*0.20)/9,1);
         return[
             'protein'=>$protein,
@@ -32,9 +32,9 @@ trait Functions_Of_Male
     }
 
     public function MaintainWeight($myCal){
-        $protein=round(($myCal*0.30)/4,1);
-        $carbs=round(($myCal*0.40)/4,1);
-        $fats=round(($myCal*0.30)/9,1);
+        $protein=round(($myCal*0.25)/4,1);
+        $carbs=round(($myCal*0.50)/4,1);
+        $fats=round(($myCal*0.25)/9,1);
         return[
             'protein'=>$protein,
             'carbs'=>$carbs,
@@ -44,8 +44,8 @@ trait Functions_Of_Male
 
 
     public function BuildMuscle($myCal){
-        $protein=round(($myCal*0.35)/4,1);
-        $carbs=round(($myCal*0.40)/4,1);
+        $protein=round(($myCal*0.30)/4,1);
+        $carbs=round(($myCal*0.45)/4,1);
         $fats=round(($myCal*0.25)/9,1);
         return[
             'protein'=>$protein,
