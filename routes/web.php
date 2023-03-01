@@ -42,6 +42,7 @@ Route::group(['prefix'=>'workout',],function (){
 Route::group(['prefix'=>'nutrition',],function (){
     Route::get('/register/{id}',[NitritionController::class,'nut_register_show'])->name('nut_register');
     Route::post('/register/data',[NitritionController::class,'insert_nut_data'])->name('nutrition');
+    Route::get('/show',[NitritionController::class,'show_breakfast'])->name('nut_show');
 });
 
 

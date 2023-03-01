@@ -5,16 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class CompontentMeal extends Model
+class ComponentSnak extends Model
 {
     use HasFactory;
-
-    protected $table='compontent_meals';
+    protected $table='component_snaks';
     public $timestamps=false;
-    protected $hidden = [
-        'created_at',
-        'updated_at',
-    ];
 
     protected $fillable=[
         'compontent_meals',
@@ -26,8 +21,8 @@ class CompontentMeal extends Model
         'fat',
         'calories'
     ];
-    public function meals(){
-        return $this->belongsTo(Meal::class,'meal_id');
+    public function snaks(){
+        return $this->belongsTo(Snak::class,'snak_id');
     }
 
 }

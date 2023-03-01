@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('exercise_level');
             $table->double('body_fat');
             $table->integer('user_id')->unsigned();
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->cascadeOnDelete();
 
         });
     }

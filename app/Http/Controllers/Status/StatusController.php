@@ -6,6 +6,8 @@ use App\Classes\Female;
 use App\Classes\Male;
 use App\Classes\Meals;
 use App\Http\Controllers\Controller;
+use App\Models\Dinner;
+use App\Models\Lunch;
 use App\Models\Meal;
 use App\Models\Nutrition;
 use App\Models\User;
@@ -52,15 +54,21 @@ class StatusController extends Controller
 
                 break;
         }
+//          $_SESSION['breakfast'] = $this->meal($nit_data->plan_meals, $macros,1,new Meal(),'breakfast');
 
-        $culc_breakfast = $this->breakfast($nit_data->plan_meals, $macros,1);
-        return $culc_breakfast;
+        $_SESSION['nut_system'] = ['meals'=>[
+           $this->meal($nit_data->plan_meals, $macros,1,new Meal(),'breakfast'),
+           $this->meal($nit_data->plan_meals, $macros,1,new Lunch(),'lunch'),
+           $this->meal($nit_data->plan_meals, $macros,1,new Dinner(),'dinner')],
+           'macros'=> $macros,
+           ];
 
-//         return view('admin.dashboard.status', with([
-//             'data' => $data,
-//             'nit_data' => $nit_data,
-//             'status' => $status,
-//             'macros' => $macros,
-//             'mycal'=>$mycal]));
+
+         return view('admin.dashboard.status', with([
+             'data' => $data,
+             'nit_data' => $nit_data,
+             'status' => $status,
+             'macros' => $macros,
+             'mycal'=>$mycal]));
     }
 }

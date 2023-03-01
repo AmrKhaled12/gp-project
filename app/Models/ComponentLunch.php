@@ -5,19 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class CompontentMeal extends Model
+class ComponentLunch extends Model
 {
     use HasFactory;
-
-    protected $table='compontent_meals';
+    protected $table='component_lunches';
     public $timestamps=false;
-    protected $hidden = [
-        'created_at',
-        'updated_at',
-    ];
 
     protected $fillable=[
         'compontent_meals',
+        'compontent_lunches',
         'measruing_unit',
         'weight',
         'meal_id',
@@ -26,8 +22,7 @@ class CompontentMeal extends Model
         'fat',
         'calories'
     ];
-    public function meals(){
-        return $this->belongsTo(Meal::class,'meal_id');
+    public function lunches(){
+        return $this->belongsTo(Lunch::class,'lunch_id');
     }
-
 }

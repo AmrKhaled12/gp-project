@@ -20,7 +20,6 @@ return new class extends Migration
             $table->double('protein',null,null,true);
             $table->double('carb',null,null,true);
             $table->double('fat',null,null,true);
-            $table->timestamps();
         });
     }
 

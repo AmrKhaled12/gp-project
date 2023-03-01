@@ -13,16 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('compontent_meals', function (Blueprint $table) {
+        Schema::create('snaks', function (Blueprint $table) {
             $table->id();
-            $table->string('name_compontent_meal',255);
-            $table->string('measruing_unit',255);
+            $table->text('name_meal');
+            $table->double('calories_meal',null,null,true);
             $table->double('protein',null,null,true);
             $table->double('carb',null,null,true);
             $table->double('fat',null,null,true);
-            $table->double('calories',null,null,true);
-            $table->double('weight',null,null,true);
-            $table->foreignId('meal_id')->constrained('meals','id')->cascadeOnDelete();
         });
     }
 
@@ -33,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('compontent_meal');
+        Schema::dropIfExists('snaks');
     }
 };
