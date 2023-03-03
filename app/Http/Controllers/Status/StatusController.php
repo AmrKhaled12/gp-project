@@ -6,6 +6,7 @@ use App\Classes\Female;
 use App\Classes\Male;
 use App\Classes\Meals;
 use App\Http\Controllers\Controller;
+use App\Models\breakfast;
 use App\Models\Dinner;
 use App\Models\Lunch;
 use App\Models\Meal;
@@ -39,36 +40,40 @@ class StatusController extends Controller
         $status = $client->status($client->get_weight(), $client->get_height(), $client->get_age(), $client->get_activity());
         switch ($nit_data->goal) {
             case 'Lose Fat':
-                $mycal=$status['activity']-500;
+                $mycal = $status['activity'] - 500;
                 $macros = $client->LoseFat($mycal);
                 break;
 
             case 'Build muscle':
-                $mycal=$status['activity']+500;
+                $mycal = $status['activity'] + 500;
                 $macros = $client->BuildMuscle($mycal);
                 break;
 
             default:
-                $mycal=$status['activity'];
+                $mycal = $status['activity'];
                 $macros = $client->MaintainWeight($mycal);
 
                 break;
         }
-//          $_SESSION['breakfast'] = $this->meal($nit_data->plan_meals, $macros,1,new Meal(),'breakfast');
+        // return $_SESSION['breakfast'] = $this->meal($nit_data->plan_meals, $macros, 1, new Lunch(), 'lunch');
 
-        $_SESSION['nut_system'] = ['meals'=>[
-           $this->meal($nit_data->plan_meals, $macros,1,new Meal(),'breakfast'),
-           $this->meal($nit_data->plan_meals, $macros,1,new Lunch(),'lunch'),
-           $this->meal($nit_data->plan_meals, $macros,1,new Dinner(),'dinner')],
-           'macros'=> $macros,
-           ];
+        return $_SESSION['nut_system'] = [
+
+            'meals' => [
+                $this->meal($nit_data->plan_meals, $macros, 1, new breakfast(), 'breakfast'),
+                $this->meal($nit_data->plan_meals, $macros, 1, new Lunch(), 'lunch'),
+                $this->meal($nit_data->plan_meals, $macros, 1, new Dinner(), 'dinner')
+            ],
+            'macros' => $macros,
+        ];
 
 
-         return view('admin.dashboard.status', with([
-             'data' => $data,
-             'nit_data' => $nit_data,
-             'status' => $status,
-             'macros' => $macros,
-             'mycal'=>$mycal]));
+        return view('admin.dashboard.status', with([
+            'data' => $data,
+            'nit_data' => $nit_data,
+            'status' => $status,
+            'macros' => $macros,
+            'mycal' => $mycal
+        ]));
     }
 }

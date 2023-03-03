@@ -13,13 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('meals', function (Blueprint $table) {
+        Schema::create('breakfast', function (Blueprint $table) {
             $table->id();
             $table->text('name_meal');
-            $table->double('calories_meal',null,null,true);
-            $table->double('protein',null,null,true);
-            $table->double('carb',null,null,true);
-            $table->double('fat',null,null,true);
+            $table->double('calories_meal', null, null, true);
+            $table->double('protein', null, null, true);
+            $table->double('carb', null, null, true);
+            $table->double('fat', null, null, true);
         });
     }
 
