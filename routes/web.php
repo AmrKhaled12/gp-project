@@ -37,6 +37,7 @@ Route::group(['prefix'=>'user',],function (){
 Route::group(['prefix'=>'workout',],function (){
     Route::get('/register/{id}',[WorkoutController::class,'workout_register_show'])->name('workout_register');
     Route::post('/register/data',[WorkoutController::class,'insert_workout_data'])->name('workout');
+    Route::get('/show_video',[WorkoutController::class,'show_video'])->name('show_video');
 });
 
 Route::group(['prefix'=>'nutrition',],function (){

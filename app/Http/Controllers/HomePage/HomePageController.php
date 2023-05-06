@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\HomePage;
 
+use App\Classes\client;
+use App\Trait\GetData;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\EmailRequest;
@@ -10,6 +12,7 @@ use App\Models\User;
 
 class HomePageController extends Controller
 {
+    use GetData;
     public function get_login(){
         session_start();
         if(isset($_SESSION['home']))
@@ -23,17 +26,23 @@ class HomePageController extends Controller
 
     public function post_login(LoginRequest $request)
     {
-        session_start();
+
         $is_login=User::where(['email'=>$request->email,'password'=>$request->password])->first();
         if(collect($is_login)->isEmpty())
         {
             return view('admin.auth.login')->with('error','The Email Or Password Is Incorrect !!!');
         }
-        $_SESSION['login']='on';
-        $_SESSION['name']=$is_login->name;
-        $_SESSION['id']=$is_login->id;
-        $_SESSION['photo']=$is_login->photo;
-       return redirect()->route('dashboard');
+        else {
+            session_start();
+            $_SESSION['login'] = 'on';
+            $data= GetData::data_of_workout_and_nutrition($is_login->id);
+            $client = new client();
+            $client->setData($data);
+            $client->calc_status();
+            $client->calc_mycal();
+            $_SESSION['client']=$client;
+            return redirect()->route('dashboard');
+        }
     }
     public function logout()
     {

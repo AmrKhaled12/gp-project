@@ -12,23 +12,23 @@ trait Functions_Of_Meals
 
 
 
-    public function culc_macros_meal($plan_meals, $macros)
+    public function culc_macros_meal($macros)
     {
-        switch ($plan_meals) {
-            case '3 Meals':
-                return
-                    [
-                        'protein_meal_1' => round($macros['protein'] * 0.2, 1),
-                        'protein_meal_2' => round($macros['protein'] * 0.5, 1),
-                        'protein_meal_3' => round($macros['protein'] * 0.2, 1),
-                        'carb_meal_1'    => round($macros['carbs'] * 0.27, 1),
-                        'carb_meal_2'    => round($macros['carbs'] * 0.35, 1),
-                        'carb_meal_3'    => round($macros['carbs'] * 0.3, 1),
-                        'fat_meal_1'    =>  round($macros['fats'] * 0.25, 1),
-                        'fat_meal_2'    =>  round($macros['fats'] * 0.35, 1),
-                        'fat_meal_3'    =>  round($macros['fats'] * 0.3, 1),
-                    ];
-                break;
+//        switch ($plan_meals) {
+//            case '3 Meals':
+//                return
+//                    [
+//                        'protein_meal_1' => round($macros['protein'] * 0.2, 1),
+//                        'protein_meal_2' => round($macros['protein'] * 0.5, 1),
+//                        'protein_meal_3' => round($macros['protein'] * 0.2, 1),
+//                        'carb_meal_1'    => round($macros['carbs'] * 0.27, 1),
+//                        'carb_meal_2'    => round($macros['carbs'] * 0.35, 1),
+//                        'carb_meal_3'    => round($macros['carbs'] * 0.3, 1),
+//                        'fat_meal_1'    =>  round($macros['fats'] * 0.25, 1),
+//                        'fat_meal_2'    =>  round($macros['fats'] * 0.35, 1),
+//                        'fat_meal_3'    =>  round($macros['fats'] * 0.3, 1),
+//                    ];
+                //break;
                 // case '3 Meals - 1 Snacks':
                 //     return
                 //     [
@@ -46,7 +46,7 @@ trait Functions_Of_Meals
                 //     'fats_4'   =>($macros['fats']*0.10),
                 //     ];
                 //     break;
-            default:
+//            default:
                 return
                     [
                         'breakfast' => [
@@ -84,81 +84,6 @@ trait Functions_Of_Meals
                     ];
                 // break;
         }
-    }
-    // public function meal($plan_meals, $macros, $id, $model, $type)
-    // {
-
-    //     $meals = $this->culc_macros_meal($plan_meals, $macros);
-    //     $meal = $model::find($id);
-    //     $units_meal = $meal->compontent_meals;
-    //     if (
-    //         ($meal->calories_meal - $meals[$type]['cals']) < 15
-    //         and ($meal->calories_meal - $meals[$type]['cals']) > -15
-    //     ) {
-    //         return
-    //             [
-    //                 'meal' => $meal->setHidden(['compontent_meals', 'created_at', 'updated_at']),
-    //                 'compontent_meal' => $units_meal
-    //             ];
-    //     }
-
-
-    //     $range_p = $meals[$type]['protein'] - $meal->protein;
-    //     $add = $range_p / count($units_meal);
-
-    //     foreach ($units_meal as $unit) {
-    //         $p = $unit->protein;
-    //         if ($add > $p) {
-    //             $p = $add;
-    //         }
-    //         $unit->protein += $add;
-    //         $unit->carb = (($p + $add) / $p) * $unit->carb;
-    //         $unit->fat = (($p + $add) / $p) * $unit->fat;
-    //         $unit->weight = (($p + $add) / $p) * $unit->weight;
-    //         $unit->calories = ($unit->carb * 4) + ($unit->protein * 4) + ($unit->fat * 9);
-    //     }
-    //     $meal->protein = $units_meal->sum('protein');
-    //     $meal->carb = $units_meal->sum('carb');
-    //     $meal->fat = $units_meal->sum('fat');
-    //     $meal->calories_meal = ($units_meal->sum('protein') * 4) + ($units_meal->sum('carb') * 4) + ($units_meal->sum('fat') * 9);
-
-    //     return
-    //         [
-    //             'meal' => $meal->setHidden(['compontent_meals', 'created_at', 'updated_at']),
-    //             'compontent_meal' => $units_meal,
-
-    //         ];
-    // }
-
-
-    public function meal($plan_meals, $macros, $id, $model, $type)
-    {
-
-        $meals = $this->culc_macros_meal($plan_meals, $macros);
-        $meal = $model::find($id);
-        $units_meal = $meal->compontent_meals;
-
-        // if (
-        //     ($meal->calories_meal - $meals[$type]['cals']) < 15
-        //     and ($meal->calories_meal - $meals[$type]['cals']) > -15
-        // ) {
-        //     return
-        //         [
-        //             'meal' => $meal->setHidden(['compontent_meals', 'created_at', 'updated_at']),
-        //             'compontent_meal' => $units_meal
-        //         ];
-        // }
-
-        $this->culc_protein($meal, $units_meal, $meals[$type]['protein']);
-        $this->culc_carb($meal, $units_meal, $meals[$type]['carb']);
-        $this->culc_fat($meal, $units_meal, $meals[$type]['fat']);
-        return
-            [
-                'meal' => $meal->setHidden(['compontent_meals', 'created_at', 'updated_at']),
-                'compontent_meal' => $units_meal,
-
-            ];
-    }
     private function culc_protein($meal, $units_meal, $needed_protein)
     {
         $range = $needed_protein - $meal->protein;

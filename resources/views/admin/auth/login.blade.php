@@ -26,11 +26,6 @@ Login
                             </div>
                         </div>
                     </div>
-                    @error('email')
-                    <div class="alert alert-danger" role="alert">
-                       {{$message}}
-                    </div>
-                    @enderror
                     <div class="input-group mb-3">
                         <input type="password" name="password" class="form-control" placeholder="Password">
                         <div class="input-group-append">

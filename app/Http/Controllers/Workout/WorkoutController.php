@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Workout;
 use App\Classes\Female;
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use App\Models\Video;
 use App\Models\WorkoutData;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
@@ -37,5 +38,9 @@ class WorkoutController extends Controller
         ]);
         return redirect()->route('nut_register',compact('id'));
 
+    }
+    public function show_video(){
+        $video=Video::find(3);
+        return view('admin.dashboard.workout',with(['video'=>$video->video]));
     }
 }
