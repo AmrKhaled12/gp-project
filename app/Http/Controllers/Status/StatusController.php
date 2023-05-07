@@ -21,11 +21,7 @@ class StatusController extends Controller
 {
     public function get_status()
     {
-        session_start();
-        if(!isset($_SESSION['client'])){
-            return redirect()->route('dashboard');
-        }
-        $client=$_SESSION['client'];
-        return view('admin.dashboard.status', with(['client'=>$client]));
+        $client = $_SESSION['client'];
+        return view('admin.dashboard.status', with(['client' => $client]));
     }
 }
