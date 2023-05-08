@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Classes;
+namespace App\Classes\StatusClient;
 
 class client extends Status
 {
@@ -15,6 +15,9 @@ class client extends Status
     public $activity;
     public $gender;
     public $exercise_level;
+    public $workout_place;
+    public $workout_tools;
+    public $number_of_days;
     public $body_fat;
     public $allergy;
     public $goal;
@@ -31,6 +34,9 @@ class client extends Status
         $this->body_fat = $data->WorkoutData->body_fat;
         $this->allergy = $data->nutrition->allergy;
         $this->activity = $data->WorkoutData->activity_rate;
+        $this->workout_place = $data->WorkoutData->workout_place;
+        $this->workout_tools = $data->WorkoutData->workout_tools;
+        $this->number_of_days = $data->WorkoutData->number_of_days;
         $this->email = $data->email;
         $this->photo = $data->phone;
         $this->height = $data->WorkoutData->height;

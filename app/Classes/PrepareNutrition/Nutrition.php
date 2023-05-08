@@ -1,16 +1,12 @@
 <?php
 
-namespace App\Classes;
+namespace App\Classes\PrepareNutrition;
 
 use App\Trait\Functions_Of_Meals;
 
 class Nutrition
 {
     use Functions_Of_Meals;
-    public $breakfast;
-    public $lunch;
-    public $dinner;
-    public $snak;
 
     public function meal($macros, $id, $model, $type)
     {

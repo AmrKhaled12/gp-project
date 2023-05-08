@@ -20,6 +20,7 @@ class CheckUser
         if (!isset($_SESSION['login'])) {
             return redirect()->route('get_login');
         }
+
         return $next($request);
     }
 }

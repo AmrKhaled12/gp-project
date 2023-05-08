@@ -8,6 +8,7 @@ class DashboardController extends Controller
 {
   public function show_dashboard()
   {
+
     $_SESSION['home'] = 'on';
 
     return view('admin.dashboard.admin');

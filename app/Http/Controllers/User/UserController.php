@@ -5,8 +5,6 @@ namespace App\Http\Controllers\User;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\EmailRequest;
 use App\Models\User;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Session;
 
 class UserController extends Controller
 {
@@ -21,7 +19,7 @@ class UserController extends Controller
         User::create([
             'name' => $req->input('name'),
             'email' => $req->input('email'),
-            'password' =>$req->password,
+            'password' => $req->password,
             'phone' => $req->input('phone'),
             'age' => $req->input('age')
         ]);

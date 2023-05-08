@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Nitrition;
 
-use App\Classes\Nutrition as ClassesNutrition;
+use App\Classes\PrepareNutrition\Nutrition as ClassesNutrition;
 use App\Classes\System\NutritionSystem;
 use App\Http\Controllers\Controller;
 use App\Models\Nutrition;
@@ -36,9 +36,8 @@ class NitritionController extends Controller
 
     public function show_breakfast()
     {
-        session_start();
         $client = $_SESSION['client'];
         $nutrition_system = new NutritionSystem(new ClassesNutrition(), $client);
-        $nutrition_system->Build();
+        return $nutrition_system->Build();
     }
 }

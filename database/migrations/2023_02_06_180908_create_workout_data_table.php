@@ -20,10 +20,13 @@ return new class extends Migration
             $table->boolean('gender');
             $table->string('activity_rate');
             $table->string('exercise_level');
+            $table->string('workout_place');
+            $table->string('workout_days');
+            $table->string('workout_tools')->nullable(true);
+            $table->integer('number_of_days');
             $table->double('body_fat');
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users')->cascadeOnDelete();
-
         });
     }
 

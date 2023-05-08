@@ -5,7 +5,7 @@ namespace App\Classes\System;
 use App\Models\Lunch;
 use App\Models\Dinner;
 use App\Models\breakfast;
-use App\Classes\Nutrition;
+use App\Classes\PrepareNutrition\Nutrition;
 
 class NutritionSystem
 {

@@ -2,16 +2,13 @@
 
 namespace App\Http\Controllers\HomePage;
 
-use App\Classes\client;
-use App\Classes\System\GenerateClient;
+use App\Classes\System\Generate_Client_Information;
+use App\Classes\StatusClient\client;
 use App\Trait\GetData;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\EmailRequest;
 use App\Http\Requests\LoginRequest;
 use App\Models\User;
-use Illuminate\Contracts\Session\Session;
-use Illuminate\Support\Facades\Auth;
+
 
 class HomePageController extends Controller
 {
@@ -25,13 +22,19 @@ class HomePageController extends Controller
     public function post_login(LoginRequest $request)
     {
         $user = User::where(['email' => $request->email, 'password' => $request->password])->first();
-        if (collect($user)->isEmpty()) {
-            return view('admin.auth.login')->with('error', 'The Email Or Password Is Incorrect !!!');
-        } else {
 
+        if (collect($user)->isEmpty())
+
+            return view('admin.auth.login')->with('error', 'The Email Or Password Is Incorrect !!!');
+
+        else {
+
+            session_start();
             $_SESSION['login'] = 'on';
-            $client = new GenerateClient(new client, $user->id);
+
+            $client = new Generate_Client_Information(new client(), $user->id);
             $client->Generate();
+
             return redirect()->route('dashboard');
         }
     }

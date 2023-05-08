@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\User\UserController;
+use App\Http\Controllers\Status\StatusController;
 use App\Http\Controllers\Workout\WorkoutController;
 use App\Http\Controllers\HomePage\HomePageController;
 use App\Http\Controllers\Dashboard\DashboardController;
@@ -36,7 +37,7 @@ Route::group(['prefix' => 'user',], function () {
 Route::group(['prefix' => 'workout', 'middleware' => 'Are_You_Login?'], function () {
     Route::get('/register/{id}', [WorkoutController::class, 'workout_register_show'])->name('workout_register');
     Route::post('/register/data', [WorkoutController::class, 'insert_workout_data'])->name('workout');
-    Route::get('/show_video', [WorkoutController::class, 'show_video'])->name('show_video');
+    Route::get('/plan_workout', [WorkoutController::class, 'plan_workout'])->name('plan_workout');
 });
 
 Route::group(['prefix' => 'nutrition', 'middleware' => 'Are_You_Login?'], function () {
@@ -45,9 +46,10 @@ Route::group(['prefix' => 'nutrition', 'middleware' => 'Are_You_Login?'], functi
     Route::get('/show', [NitritionController::class, 'show_breakfast'])->name('nut_show');
 });
 
-
 Route::group(['prefix' => 'dashboard', 'middleware' => 'Are_You_Login?'], function () {
     Route::get('/main', [DashboardController::class, 'show_dashboard'])->name('dashboard');
 });
 
-Route::get('/data', [\App\Http\Controllers\Status\StatusController::class, 'get_status'])->name('status');
+Route::group(['prefix' => 'status', 'middleware' => 'Are_You_Login?'], function () {
+    Route::get('/data', [StatusController::class, 'get_status'])->name('status');
+});
