@@ -17,7 +17,11 @@ class WorkoutData extends Model
         'activity_rate',
         'exercise_level',
         'body_fat',
-        'user_id'
+        'user_id',
+        'workout_place',
+        'workout_days',
+        'workout_tools',
+        'number_of_Days',
     ];
 
     public function users(){

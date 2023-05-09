@@ -16,9 +16,9 @@ use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
-    public function __construct() {
-        $this->middleware('auth:api', ['except' => ['login', 'register']]);
-    }
+//    public function __construct() {
+//        $this->middleware('auth:api', ['except' => ['login', 'register']]);
+//    }
     /**
      * Get a JWT via given credentials.
      *
@@ -32,15 +32,15 @@ class AuthController extends Controller
         if ($validator->fails()) {
             return response()->json($validator->errors(), 422);
         }
-        $token = auth('api')->attempt(['email'=>$request->email,'password'=>$request->password]);
-
+        $token = auth('api')->attempt($validator->validated());
         if (!$token) {
             return response()->json(['error' => 'Unauthorized'], 401);
         }
+        session_start();
         $user=User::where('email','=',$request->email)->first();
         $client = new Generate_Client_Information(new client(), $user->id);
-        $client->Generate();
-        setcookie('token',$token,time()+60*60);
+        $_SESSION['client']=$client->Generate();
+//        setcookie('token',$token,time()+60*60);
         return $this->createNewToken($token);
     }
  /**
@@ -108,6 +108,9 @@ class AuthController extends Controller
      */
     public function logout() {
         auth()->logout();
+        session_start();
+        session_unset();
+        session_destroy();
         return response()->json(['message' => 'User successfully signed out']);
     }
     /**

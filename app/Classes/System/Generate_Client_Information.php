@@ -17,11 +17,10 @@ class Generate_Client_Information
     }
     public function Generate()
     {
-        session_start();
         $data = GetData::data_of_workout_and_nutrition($this->id);
         $this->client->setData($data);
         $this->client->calc_status();
         $this->client->calc_mycal();
-        $_SESSION['client'] = $this->client;
+        return $this->client;
     }
 }

@@ -13,9 +13,6 @@ class ApiNutritionController extends Controller
     public function apiBuildNitritionSystem()
     {
         session_start();
-        if(!isset($_COOKIE['token'])){
-            return response('error');
-        }
         $client=($_SESSION['client']);
         $nutrition_system = new NutritionSystem(new ClassesNutrition(), $client);
         return $nutrition_system->Build();

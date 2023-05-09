@@ -21,6 +21,7 @@ class HomePageController extends Controller
 
     public function post_login(LoginRequest $request)
     {
+//        $password=bcrypt($request->password);
         $user = User::where(['email' => $request->email, 'password' => $request->password])->first();
 
         if (collect($user)->isEmpty())
@@ -31,9 +32,8 @@ class HomePageController extends Controller
 
             session_start();
             $_SESSION['login'] = 'on';
-
             $client = new Generate_Client_Information(new client(), $user->id);
-            $client->Generate();
+            $_SESSION['client']=$client->Generate();
 
             return redirect()->route('dashboard');
         }

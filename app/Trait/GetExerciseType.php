@@ -21,10 +21,10 @@ trait GetExerciseType
             ];
     }
 
-    public function GetExerciseType($type, $data)
+    public function GetExerciseType($days,$data)
     {
         $muscles = $this->Split_Exercies($data);
-        switch ($type) {
+        switch ($days) {
 
             case '3':
                 return
