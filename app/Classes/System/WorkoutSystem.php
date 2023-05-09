@@ -4,7 +4,7 @@ namespace App\Classes\System;
 
 use App\Classes\PrepareWorkout\Workout;
 
-class WorkoutSystem
+class WorkoutSystem implements ISystem
 {
     private Workout $workout;
     private $data;

@@ -7,7 +7,7 @@ use App\Models\Dinner;
 use App\Models\breakfast;
 use App\Classes\PrepareNutrition\Nutrition;
 
-class NutritionSystem
+class NutritionSystem implements ISystem
 {
 
     private Nutrition $nut;
