@@ -9,6 +9,7 @@ use App\Models\WorkoutData;
 
 trait TestApi
 {
+
     public function ReturnRespone($data=null,$status=null,$message=null){
         $array=[
             'data'=>$data,

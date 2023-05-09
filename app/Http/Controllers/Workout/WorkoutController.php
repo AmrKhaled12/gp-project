@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Workout;
 
 use App\Classes\System\WorkoutSystem;
 use App\Http\Controllers\Controller;
+use App\Models\Nutrition;
 use App\Models\Video;
 use App\Models\WorkoutData;
 use Illuminate\Http\Request;
