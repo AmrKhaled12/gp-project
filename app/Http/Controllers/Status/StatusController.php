@@ -12,6 +12,6 @@ class StatusController extends Controller
     {
 
         $client = $_SESSION['client'];
-        return view('admin.dashboard.status', with(['client' => $client]));
+        return view('admin.Dashboard.Status.status', with(['client' => $client]));
     }
 }

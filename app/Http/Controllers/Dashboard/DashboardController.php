@@ -11,6 +11,6 @@ class DashboardController extends Controller
 
     $_SESSION['home'] = 'on';
 
-    return view('admin.dashboard.admin');
+    return view('admin.Dashboard.Timeline.Timeline');
   }
 }
