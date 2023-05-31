@@ -16,24 +16,24 @@ class HomePageController extends Controller
     public function get_login()
     {
 
-        return view('admin.auth.login');
+        return view('admin.Login.login');
     }
 
     public function post_login(LoginRequest $request)
     {
-       //$password=bcrypt($request->password);
+        //$password=bcrypt($request->password);
         $user = User::where(['email' => $request->email, 'password' => $request->password])->first();
 
         if (collect($user)->isEmpty())
 
-            return view('admin.auth.login')->with('error', 'The Email Or Password Is Incorrect !!!');
+            return view('admin.Login.login')->with('error', 'The Email Or Password Is Incorrect !!!');
 
         else {
 
             session_start();
             $_SESSION['login'] = 'on';
             $client = new Generate_Client_Information(new client(), $user->id);
-            $_SESSION['client']=$client->Generate();
+            $_SESSION['client'] = $client->Generate();
 
             return redirect()->route('dashboard');
         }
@@ -43,6 +43,6 @@ class HomePageController extends Controller
         session_start();
         session_unset();
         session_destroy();
-        return view('admin.auth.login');
+        return view('admin.Login.login');
     }
 }

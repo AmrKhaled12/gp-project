@@ -15,7 +15,7 @@ class WorkoutController extends Controller
 
     public function workout_register_show($id)
     {
-        return view('admin.auth.workout_register', compact('id'));
+        return view('admin.Registration.Workout-Register', compact('id'));
     }
 
     public function insert_workout_data(Request $req)
@@ -33,15 +33,15 @@ class WorkoutController extends Controller
             'gender' => $gender,
             'activity_rate' => $req->input('activity'),
             'exercise_level' => $req->input('exercise_level'),
-//            'workout_place' => $req->workout_place,
-//            'workout_days' => $req->workout_days,
-//            'workout_tools' => $req->workout_tools,
-//            'number_of_Days' => $req->number_of_days,
+            //            'workout_place' => $req->workout_place,
+            //            'workout_days' => $req->workout_days,
+            //            'workout_tools' => $req->workout_tools,
+            //            'number_of_Days' => $req->number_of_days,
             'body_fat' => $req->input('bodyfat'),
             'user_id' => $id
         ]);
 
-        return view('admin.auth.nut', compact('id'));
+        return view('admin.Registration.Nutrition-Register', compact('id'));
     }
     public function plan_workout()
     {
