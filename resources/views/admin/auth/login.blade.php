@@ -1,85 +1,80 @@
-@section('title')
-Login
-@endsection
-@include('layouts.head')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--=============== BOX Icons ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="{{asset('assets/css/stylesLogin.css')}}">
+
+    <title></title>
+</head>
 <body>
-    <div class="login-box">
+<div class="container">
+    <div class="login__content">
+        <img src="{{asset('assets/img/gym-login.jpg')}}" alt="login" class="login__img">
 
-        <!-- /.login-logo -->
-        <div class="card">
-            <div class="card-body login-card-body">
-                <p class="login-box-msg">Sign in to start your session</p>
-
-                <form action="{{route('post_login')}}" method="post">
-                    @csrf
-                    @if (isset($error))
-                    <div class="alert alert-danger" role="alert">
-                        {{ $error }}
-                    </div>
-                    @endif
-                    <div class="input-group mb-3">
-                        <input type="text" name="email" class="form-control" placeholder="email" value="{{ old('email') }}">
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                                <span class="fas fa-envelope"></span>
-                            </div>
+        <form action="{{route('post_login')}}" method="post" class="login__form">
+            @csrf
+            @if (isset($error))
+                <div class="alert alert-danger" role="alert">
+                    {{ $error }}
+                </div>
+            @endif
+            <div>
+                <h1 class="login__title">
+                    <span>Welcome </span>  Back
+                </h1>
+                <p class="login__description">
+                    Welcome! Please login to continue.
+                </p>
+            </div>
+            <div>
+                <div class="login__inputs">
+                    <div>
+                        <label for="" class="login__label">Email</label>
+                        <div class="input">
+                            <i class="bx bx-envelope input__lock"></i>
+                            <input name="email" type="email" value="{{ old('email') }}" placeholder="Enter your email address" required class="input__password input__email">
                         </div>
+
                     </div>
-                    <div class="input-group mb-3">
-                        <input type="password" name="password" class="form-control" placeholder="Password">
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                                <span class="fas fa-lock"></span>
-                            </div>
+
+                    <div>
+                        <label for="" class="login__label">Password</label>
+
+                        <div class="input">
+                            <div class="input__overlay" id="input-overlay"></div>
+                            <i class="bx bx-lock-alt input__lock"></i>
+                            <input name="password" type="password" placeholder="Enter your password" required class="input__password" id="input-pass">
+                            <i class="bx bx-hide input__icon" id="input-icon"></i>
                         </div>
                     </div>
                     @error('password')
                     <div class="alert alert-danger" role="alert">
-                       {{$message}}
+                        {{$message}}
                     </div>
                     @enderror
-                    <div class="row">
-                        <div class="col-8">
-                            <div class="icheck-primary">
-                                <input type="checkbox" id="remember">
-                                <label for="remember">
-                                    Remember Me
-                                </label>
-                            </div>
-                        </div>
-                        <!-- /.col -->
-                        <div class="col-4">
-                            <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
-                        </div>
-                        <!-- /.col -->
-                    </div>
-                </form>
-
-                <div class="social-auth-links text-center mb-3">
-                    <p>- OR -</p>
-                    <a href="#" class="btn btn-block btn-primary">
-                        <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
-                    </a>
-                    <a href="#" class="btn btn-block btn-danger">
-                        <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
-                    </a>
                 </div>
-                <!-- /.social-auth-links -->
 
-                <p class="mb-1">
-                    <a href="#">I forgot my password</a>
-                </p>
-                <p class="mb-0">
-                    <a href="{{route('email_register')}}" class="text-center">Register a new membership</a>
-                </p>
             </div>
-            <!-- /.login-card-body -->
-        </div>
+
+            <div>
+                <div class="login__buttons">
+                    <button type="submit" class="login__button" >Log In</button>
+                    <a class="login__button login__button-ghost" href="{{route('email_register')}}" >Sign Up</a>
+                </div>
+
+                <a href="" class="login__forget">Forgot Password</a>
+            </div>
+        </form>
     </div>
-    <!-- /.login-box -->
+</div>
 
-    <!-- jQuery -->
-    @include('layouts.script')
-
+<!--=============== MAIN JS ===============-->
+<script src="{{asset('assets/js/signs.js')}}"></script>
 </body>
+</html>

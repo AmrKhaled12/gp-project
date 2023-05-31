@@ -20,7 +20,7 @@ class WorkoutController extends Controller
 
     public function insert_workout_data(Request $req)
     {
-        $id = $req->id_of_user;
+        $id = $req->input('id_of_user');
 
         if ($req->input('gender') == 'male') {
             $gender = 1;
@@ -28,20 +28,20 @@ class WorkoutController extends Controller
             $gender = 0;
         }
         WorkoutData::create([
-            'height' => $req->height,
-            'weight' => $req->weight,
+            'height' => $req->input('height'),
+            'weight' => $req->input('weight'),
             'gender' => $gender,
-            'activity_rate' => $req->activity,
-            'exercise_level' => $req->exercise_level,
-            'workout_place' => $req->workout_place,
-            'workout_days' => $req->workout_days,
-            'workout_tools' => $req->workout_tools,
-            'number_of_Days' => $req->number_of_days,
-            'body_fat' => $req->bodyfat,
+            'activity_rate' => $req->input('activity'),
+            'exercise_level' => $req->input('exercise_level'),
+//            'workout_place' => $req->workout_place,
+//            'workout_days' => $req->workout_days,
+//            'workout_tools' => $req->workout_tools,
+//            'number_of_Days' => $req->number_of_days,
+            'body_fat' => $req->input('bodyfat'),
             'user_id' => $id
         ]);
 
-        return redirect()->route('nut_register', compact('id'));
+        return view('admin.auth.nut', compact('id'));
     }
     public function plan_workout()
     {
