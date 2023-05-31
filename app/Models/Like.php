@@ -10,11 +10,11 @@ class Like extends Model
     use HasFactory;
 
     protected $table = 'likes';
+
     protected $fillable = [
         'is_like',
         'user_id',
         'post_id',
-
     ];
 
     public function post()
