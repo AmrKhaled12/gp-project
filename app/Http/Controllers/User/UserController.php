@@ -15,17 +15,17 @@ class UserController extends Controller
 
     public function insert_email_data(EmailRequest $req)
     {
-        $password=bcrypt($req->password);
+//        $password=bcrypt($req->password);
         User::create([
             'name' => $req->input('name'),
             'email' => $req->input('email'),
-            'password' => $password,
+            'password' => $req->password,
             'phone' => $req->input('phone'),
             'age' => $req->input('age')
         ]);
 
         $id = User::where('email', '=', $req->email)->first()->id;
 
-        return redirect()->route('workout_register', compact('id'));
+        return view('admin.auth.workout_register', compact('id'));
     }
 }

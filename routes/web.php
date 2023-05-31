@@ -31,18 +31,20 @@ Route::get('/logout', [HomePageController::class, 'logout'])->name('logout');
 Route::group(['prefix' => 'user',], function () {
     Route::get('/register', [UserController::class, 'email_register_show'])->name('email_register');
     Route::post('/register', [UserController::class, 'insert_email_data'])->name('register');
+    Route::post('workout/register/data', [WorkoutController::class, 'insert_workout_data'])->name('workout');
+    Route::post('nutrition/register/data', [NitritionController::class, 'insert_nut_data'])->name('nutrition');
 });
 
 
 Route::group(['prefix' => 'workout', 'middleware' => 'Are_You_Login?'], function () {
-    Route::get('/register/{id}', [WorkoutController::class, 'workout_register_show'])->name('workout_register');
-    Route::post('/register/data', [WorkoutController::class, 'insert_workout_data'])->name('workout');
+    //Route::get('/register/{id}', [WorkoutController::class, 'workout_register_show'])->name('workout_register');
+
     Route::get('/plan_workout', [WorkoutController::class, 'plan_workout'])->name('plan_workout');
 });
 
 Route::group(['prefix' => 'nutrition', 'middleware' => 'Are_You_Login?'], function () {
-    Route::get('/register/{id}', [NitritionController::class, 'nut_register_show'])->name('nut_register');
-    Route::post('/register/data', [NitritionController::class, 'insert_nut_data'])->name('nutrition');
+    //Route::get('/register/{id}', [NitritionController::class, 'nut_register_show'])->name('nut_register');
+
     Route::get('/show', [NitritionController::class, 'show_breakfast'])->name('nut_show');
 });
 
