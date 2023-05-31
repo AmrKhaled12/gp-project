@@ -19,10 +19,9 @@ use App\Http\Controllers\Nitrition\NitritionController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('admin.auth.login');
-// })->name('get_login');
-
+ Route::get('/test/liveware', function () {
+     return view('admin.testLiveware');
+ });
 
 Route::get('/', [HomePageController::class, 'get_login'])->name('get_login')->middleware('Are_You_in_HomePage?');
 Route::post('/', [HomePageController::class, 'post_login'])->name('post_login');

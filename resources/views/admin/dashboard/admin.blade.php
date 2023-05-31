@@ -13,7 +13,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!--=============== REMIXICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-
+    <livewire:styles />
     <title>FitnessFuelX</title>
 </head>
 <body>
@@ -75,9 +75,9 @@
 {{--                <li class="nav-item d-none d-sm-inline-block">--}}
 {{--                    <a href="index3.html" class="nav-link">Home</a>--}}
 {{--                </li>--}}
-{{--                <li class="nav-item d-none d-sm-inline-block">--}}
-{{--                    <a href="{{route('logout')}}" class="nav-link">Logout</a>--}}
-{{--                </li>--}}
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="{{route('logout')}}" class="nav-link">Logout</a>
+                </li>
 {{--            </ul>--}}
             <a href="#" class="header__logo">
                 <img src="{{asset('assets/img/favicon.png')}}" alt="logo">
@@ -609,5 +609,6 @@
 
 <!--=============== MAIN JS ===============-->
 <script src="{{asset('assets/js/timeline.js')}}"></script>
+<livewire:scripts />
 </body>
 </html>
