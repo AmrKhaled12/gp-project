@@ -15,10 +15,11 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->integerIncrements('id');
-            $table->string('name',255);
+            $table->string('name', 255);
             $table->string('email')->unique();
             $table->string('password');
             $table->string('phone');
+            $table->string('photo', 255);
             $table->integer('age');
             $table->boolean('is_active')->default(1);
             $table->timestamps();
