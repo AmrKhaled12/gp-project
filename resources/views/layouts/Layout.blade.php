@@ -107,7 +107,6 @@
             <!-- here i will put post and create post  -->
             <div class="page__container">
 
-                @include('admin.Dashboard.Timeline.assets-timeline.create-post')
                 @include('admin.Dashboard.Timeline.assets-timeline.posts-timeline')
 
             </div>
