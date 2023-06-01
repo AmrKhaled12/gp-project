@@ -1,3 +1,5 @@
+@for($i=0;$i<count($data);$i++) 
+ @for($j=0;$j<count($posts[$i]);$j++) 
 <div class="post__maker main-post post-maker">
     <div class="owner__container">
         <div class="owner__info">
@@ -39,7 +41,7 @@
     </div>
     {{-- ################################################################################### --}}
     <div class="thinking__line"></div>
-
+    @yield('comments')
     <div class="comment__section">
         <div class="post__thinking">
             <div class="post__img">
@@ -56,6 +58,8 @@
     </div>
 </div>
 
+  @endfor
+    @endfor
 
 {{-- <div class="post__maker post-maker">
     <div class="owner__container">
