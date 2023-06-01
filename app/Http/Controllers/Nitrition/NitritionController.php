@@ -15,7 +15,7 @@ class NitritionController extends Controller
 
     public function nut_register_show($id)
     {
-        return view('admin.auth.nut', compact('id'));
+        return view('admin.Registration.Nutrition-Register', compact('id'));
     }
 
     public function insert_nut_data(Request $req)

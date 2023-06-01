@@ -15,6 +15,9 @@ class Post extends Model
         'user_id',
         'media'
     ];
+    public function user(){
+        return $this->hasone(User::class, 'user_id');
+    }
 
     public function comments()
     {

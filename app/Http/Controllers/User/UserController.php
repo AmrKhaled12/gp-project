@@ -10,12 +10,12 @@ class UserController extends Controller
 {
     public function email_register_show()
     {
-        return view('admin.auth.email_register');
+        return view('admin.Registration.Email-Register');
     }
 
     public function insert_email_data(EmailRequest $req)
     {
-//        $password=bcrypt($req->password);
+        //        $password=bcrypt($req->password);
         User::create([
             'name' => $req->input('name'),
             'email' => $req->input('email'),
@@ -26,6 +26,6 @@ class UserController extends Controller
 
         $id = User::where('email', '=', $req->email)->first()->id;
 
-        return view('admin.auth.workout_register', compact('id'));
+        return view('admin.Registration.Workout-Register', compact('id'));
     }
 }

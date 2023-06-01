@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Post\PostController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\User\UserController;
 use App\Http\Controllers\Status\StatusController;
@@ -22,10 +23,14 @@ use App\Http\Controllers\Nitrition\NitritionController;
  Route::get('/test/liveware', function () {
      return view('admin.testLiveware');
  });
-
 Route::get('/', [HomePageController::class, 'get_login'])->name('get_login')->middleware('Are_You_in_HomePage?');
 Route::post('/', [HomePageController::class, 'post_login'])->name('post_login');
 Route::get('/logout', [HomePageController::class, 'logout'])->name('logout');
+
+Route::group(['prefix' => 'post','middleware' => 'Are_You_Login?'], function () {
+    Route::get('create/post',[PostController::class,'showCreatePost'])->name('showCreatePost');
+    Route::post('create/post',[PostController::class,'storePost'])->name('storePost');
+});
 
 Route::group(['prefix' => 'user',], function () {
     Route::get('/register', [UserController::class, 'email_register_show'])->name('email_register');
@@ -49,6 +54,7 @@ Route::group(['prefix' => 'nutrition', 'middleware' => 'Are_You_Login?'], functi
 
 Route::group(['prefix' => 'dashboard', 'middleware' => 'Are_You_Login?'], function () {
     Route::get('/main', [DashboardController::class, 'show_dashboard'])->name('dashboard');
+
 });
 
 Route::group(['prefix' => 'status', 'middleware' => 'Are_You_Login?'], function () {
