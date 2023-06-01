@@ -46,7 +46,7 @@ return [
 
         'Post-Image' => [
             'driver' => 'local',
-            'root' => storage_path('app/public/images/Post-Images'),
+            'root' => storage_path('app/public/images/Post-Image'),
             'url' => env('APP_URL').'/public',
             'visibility' => 'public',
             'throw' => false,
