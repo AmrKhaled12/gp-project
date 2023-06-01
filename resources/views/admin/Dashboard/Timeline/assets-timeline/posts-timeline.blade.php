@@ -1,5 +1,5 @@
 @for($i=0;$i<count($data);$i++) 
- @for($j=0;$j<count($posts[$i]);$j++) 
+ @for($j=0;$j<count($posts[$i]);$j++)
 <div class="post__maker main-post post-maker">
     <div class="owner__container">
         <div class="owner__info">

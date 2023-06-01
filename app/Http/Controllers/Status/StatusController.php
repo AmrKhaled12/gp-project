@@ -3,8 +3,9 @@
 namespace App\Http\Controllers\Status;
 
 
-use App\Http\Controllers\Controller;
 use App\Models\Exercise;
+use App\Events\NewNotification;
+use App\Http\Controllers\Controller;
 
 class StatusController extends Controller
 {
