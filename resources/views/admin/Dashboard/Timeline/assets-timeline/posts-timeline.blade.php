@@ -1,4 +1,4 @@
-@foreach ($posts as $post)
+{{-- @foreach ($posts as $post) --}}
 <div class="post__maker main-post post-maker">
     <div class="owner__container">
         <div class="owner__info">
@@ -40,7 +40,7 @@
     </div>
     {{-- ################################################################################### --}}
     <div class="thinking__line"></div>
-
+    @yield('comments')
     <div class="comment__section">
         <div class="post__thinking">
             <div class="post__img">
@@ -56,7 +56,7 @@
         </div>
     </div>
 </div>
-@endforeach
+{{-- @endforeach --}}
 
 
 
