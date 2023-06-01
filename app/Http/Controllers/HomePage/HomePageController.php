@@ -4,6 +4,7 @@ namespace App\Http\Controllers\HomePage;
 
 use App\Classes\System\Generate_Client_Information;
 use App\Classes\StatusClient\client;
+use App\Events\NewNotification;
 use App\Trait\GetData;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\LoginRequest;

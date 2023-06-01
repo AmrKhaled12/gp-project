@@ -1,4 +1,3 @@
-{{-- @foreach ($posts as $post) --}}
 <div class="post__maker main-post post-maker">
     <div class="owner__container">
         <div class="owner__info">
@@ -56,6 +55,7 @@
         </div>
     </div>
 </div>
+
 {{-- @endforeach --}}
 
 

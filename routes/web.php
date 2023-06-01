@@ -56,8 +56,8 @@ Route::group(['prefix' => 'status', 'middleware' => 'Are_You_Login?'], function 
     Route::get('/data', [StatusController::class, 'get_status'])->name('status');
 });
 
-// Route::get('comment', function () {
-//     // $hello = 'omar';
-//     // return view('admin.Dashboard.Timeline.Timeline', compact('hello'));
-//     return view('admin.Dashboard.Timeline.assets-timeline.comment-page');
-// });
+Route::get('comment', function () {
+    // $hello = 'omar';
+    // return view('admin.Dashboard.Timeline.Timeline', compact('hello'));
+    return view('admin.Dashboard.Timeline.Comment-Page');
+});

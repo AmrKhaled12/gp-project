@@ -8,6 +8,7 @@ use App\Models\Nutrition;
 use App\Models\Video;
 use App\Models\WorkoutData;
 use Illuminate\Http\Request;
+use App\Events\NewNotification;
 
 
 class WorkoutController extends Controller
@@ -49,6 +50,9 @@ class WorkoutController extends Controller
         // return view('admin.dashboard.workout', with(['video' => $video->video]));
         // return response()->json(($_SESSION['client']));
         $workout_system = new WorkoutSystem($_SESSION['client']);
+
+        $arr = ['user_creator' => 'omarhesham'];
+        event(new NewNotification($arr));
         return $workout_system->Build();
     }
 }

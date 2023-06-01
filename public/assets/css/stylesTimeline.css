@@ -364,9 +364,36 @@ position: relative;
   color: var(--title-color-dark);
 }
 
+
 .notification:hover{
   color: var(--first-color);
 }
+
+/* .notification {
+
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  padding: 15px 26px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+} */
+
+/* .notification:hover {
+
+} */
+
+/* .notification .badge {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: medium ;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 20px 25px;
+  border-radius: 50%;
+  color: white;
+} */
 
 .notifications-container {
   position: absolute;
