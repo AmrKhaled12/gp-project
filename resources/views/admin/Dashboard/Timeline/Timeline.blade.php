@@ -20,7 +20,8 @@
 </head>
 
 <body>
-
+@method('post')
+@csrf
 
     <!--=============== NAVBAR ===============-->
     <nav class="nav" id="nav">

@@ -4,7 +4,7 @@
             <img src="{{asset('assets/img/perfil.png')}}" alt="">
         </div>
         <div class="thinking">
-            <input type="text" class="thinking__input" placeholder="What's on your mind ?">
+            <input type="text" class="thinking__input" placeholder="What's on your mind ?" onclick="window.location.href = '{{route('showCreatePost')}}' ;">
         </div>
     </div>
 

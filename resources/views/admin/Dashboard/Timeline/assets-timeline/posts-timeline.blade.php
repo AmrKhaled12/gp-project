@@ -1,3 +1,5 @@
+@for($i=0;$i<count($data);$i++) 
+ @for($j=0;$j<count($posts[$i]);$j++)
 <div class="post__maker main-post post-maker">
     <div class="owner__container">
         <div class="owner__info">
@@ -5,8 +7,8 @@
                 <img src="{{asset('assets/img/favicon.png')}}" alt="">
             </div>
             <div class="owner__name">
-                <h1 class="user__name">FitnessFuelX</h1>
-                <p class="time">April 21 at 9:75 AM </p>
+                <h1 class="user__name">{{$data[$i]->name}}</h1>
+                <p class="time">{{$posts[$i][$j]->created_at}} </p>
             </div>
         </div>
         <div class="posts__icons">
@@ -14,7 +16,7 @@
         </div>
     </div>
     <div class="posts__content">
-        <p>Welcome in our agency, <br> FitnessFuelX was honored to have you join us</p>
+        <p>{{$posts[$i][$j]->text}}</p>
     </div>
     <div class="posts__img">
         <img src="{{asset('assets/img/gymman.jpg')}}" alt="">
@@ -56,9 +58,8 @@
     </div>
 </div>
 
-{{-- @endforeach --}}
-
-
+  @endfor
+    @endfor
 
 {{-- <div class="post__maker post-maker">
     <div class="owner__container">
