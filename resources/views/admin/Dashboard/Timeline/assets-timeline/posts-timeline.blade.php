@@ -22,7 +22,7 @@
     </div>
     <div class="reaction__container">
         {{-- @include('admin.Dashboard.Timeline.assets-timeline.like') --}}
-        @livewire('like')
+        @livewire('like',['post_id'=>$post->id])
         @include('admin.Dashboard.Timeline.assets-timeline.comment')
     </div>
     <div class="thinking__line"></div>
@@ -31,7 +31,7 @@
 
         <div class="like" id="like-reaction">
             <i class="ri-thumb-up-fill"></i>
-            <p>Like</p>
+            <p wire:click="like" class="like">Like</p>
         </div>
         {{-- ################################################################################### --}}
         <div class="post comment-box">
