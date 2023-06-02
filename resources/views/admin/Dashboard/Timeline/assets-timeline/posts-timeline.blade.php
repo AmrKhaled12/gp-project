@@ -1,5 +1,4 @@
-@for($i=0;$i<count($data);$i++) 
- @for($j=0;$j<count($posts[$i]);$j++)
+@foreach ($posts as $post)
 <div class="post__maker main-post post-maker">
     <div class="owner__container">
         <div class="owner__info">
@@ -7,8 +6,8 @@
                 <img src="{{asset('assets/img/favicon.png')}}" alt="">
             </div>
             <div class="owner__name">
-                <h1 class="user__name">{{$data[$i]->name}}</h1>
-                <p class="time">{{$posts[$i][$j]->created_at}} </p>
+                <h1 class="user__name">{{$post->user->name}}</h1>
+                <p class="time">{{$post->created_at}} </p>
             </div>
         </div>
         <div class="posts__icons">
@@ -16,13 +15,14 @@
         </div>
     </div>
     <div class="posts__content">
-        <p>{{$posts[$i][$j]->text}}</p>
+        <p>{{$post->text}}</p>
     </div>
     <div class="posts__img">
         <img src="{{asset('assets/img/gymman.jpg')}}" alt="">
     </div>
     <div class="reaction__container">
-        @include('admin.Dashboard.Timeline.assets-timeline.like')
+        {{-- @include('admin.Dashboard.Timeline.assets-timeline.like') --}}
+        @livewire('like')
         @include('admin.Dashboard.Timeline.assets-timeline.comment')
     </div>
     <div class="thinking__line"></div>
@@ -58,8 +58,7 @@
     </div>
 </div>
 
-  @endfor
-    @endfor
+@endforeach
 
 {{-- <div class="post__maker post-maker">
     <div class="owner__container">
