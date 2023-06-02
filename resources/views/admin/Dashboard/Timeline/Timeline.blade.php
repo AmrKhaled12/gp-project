@@ -20,8 +20,8 @@
 </head>
 
 <body>
-@method('post')
-@csrf
+    @method('post')
+    @csrf
 
     <!--=============== NAVBAR ===============-->
     <nav class="nav" id="nav">
@@ -138,6 +138,8 @@
     </script>
     <script src="{{ asset('assets/js/pusherNotifications.js') }}"></script>
     <script src="{{asset('assets/js/timeline.js')}}"></script>
+
+    @livewireScripts
 </body>
 
 </html>
