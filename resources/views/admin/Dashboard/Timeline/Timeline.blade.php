@@ -94,7 +94,8 @@
 
                 <div class="icons">
 
-                    @include('admin.Dashboard.Timeline.assets-timeline.notification')
+                    {{-- @include('admin.Dashboard.Timeline.assets-timeline.notification') --}}
+                    @livewire('notification')
 
                     <!-- Toggle button -->
                     <div class="header__toggle" id="header-toggle">
@@ -123,20 +124,18 @@
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://js.pusher.com/7.2/pusher.min.js"></script>
     <script>
-        // Enable pusher logging - don't include this in production
-      Pusher.logToConsole = true;
+        Pusher.logToConsole = true;
   
       var pusher = new Pusher('3a50f7c38a677530c253', {
         cluster: 'mt1'
       });
-    //   var channel = pusher.subscribe("notification");
-    //   channel.bind("NewNotification", function (data) {
-        
-    //   });
+      var channel = pusher.subscribe("notification");
+      channel.bind("PushNotification", function (data) {
+        Livewire.emit('notify',data[2])
+      });
   
      
     </script>
-    <script src="{{ asset('assets/js/pusherNotifications.js') }}"></script>
     <script src="{{asset('assets/js/timeline.js')}}"></script>
 
     @livewireScripts

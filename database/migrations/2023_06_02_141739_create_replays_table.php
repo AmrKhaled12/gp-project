@@ -13,12 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('follows', function (Blueprint $table) {
+        Schema::create('replays', function (Blueprint $table) {
             $table->id();
-            $table->integer('following')->unsigned();
-            $table->foreign('following')->references('id')->on('users')->cascadeOnDelete();
-            $table->integer('follower')->unsigned();
-            $table->foreign('follower')->references('id')->on('users')->cascadeOnDelete();
+            $table->text('text');
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users')->cascadeOnDelete();
+            $table->foreignId('post_id')->constrained('posts', 'id')->cascadeOnDelete();
+            $table->foreignId('comment_id')->constrained('comments', 'id')->cascadeOnDelete();
             $table->timestamps();
         });
     }
@@ -30,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('follow');
+        Schema::dropIfExists('replays');
     }
 };

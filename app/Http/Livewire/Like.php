@@ -9,30 +9,34 @@ class Like extends Component
 {
     public $counter = 0;
     public $post_id;
+    protected $listeners = ["like" => 'Like'];
+
     public function mount($post_id)
     {
         $this->post_id = $post_id;
     }
+
     public function render()
     {
+        $this->counter = likes::where('post_id', '=', $this->post_id)->get()->count();
         return view('livewire.like');
     }
 
-    public function like()
+    public function Like($post_id)
     {
         session_start();
-        $like = likes::where('user_id', '=', $_SESSION['client']->id)->where('post_id', '=', $this->post_id)->first();
+        $like = likes::where('user_id', '=', $_SESSION['client']->id)->where('post_id', '=', $post_id)->first();
         if (!isset($like)) {
             likes::create([
                 'user_id' => $_SESSION['client']->id,
-                'post_id' => $this->post_id,
+                'post_id' => $post_id,
                 'is_like' => 1
             ]);
         } else {
-            likes::where('user_id', '=', $_SESSION['client']->id)->where('post_id', '=', $this->post_id)->truncate();
+            likes::where('user_id', '=', $_SESSION['client']->id)->where('post_id', '=', $post_id)->truncate();
         }
-        $this->counter = likes::where('post')->get()->count();
-        return $this->counter;
+        $this->counter = likes::where('post_id', '=', $post_id)->get()->count();
+        // return $this->counter = $post_id;
     }
 
     // public function comment()
