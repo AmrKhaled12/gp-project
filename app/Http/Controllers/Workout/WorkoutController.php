@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers\Workout;
 
-use App\Classes\System\WorkoutSystem;
-use App\Http\Controllers\Controller;
-use App\Models\Nutrition;
 use App\Models\Video;
+use App\Models\Nutrition;
 use App\Models\WorkoutData;
+use App\Models\Notification;
 use Illuminate\Http\Request;
-use App\Events\NewNotification;
-
+use App\Events\PushNotification;
+use App\Http\Controllers\Controller;
+use App\Classes\System\WorkoutSystem;
 
 class WorkoutController extends Controller
 {
@@ -49,10 +49,10 @@ class WorkoutController extends Controller
         // $video = Video::find(3);
         // return view('admin.dashboard.workout', with(['video' => $video->video]));
         // return response()->json(($_SESSION['client']));
+        session_start();
         $workout_system = new WorkoutSystem($_SESSION['client']);
-
-        $arr = ['user_creator' => 'omarhesham'];
-        event(new NewNotification($arr));
+        // $arr = ['user_id' => 2, 'table_id' => 1, 'type' => 'comment'];
+        // event(new PushNotification($arr));
         return $workout_system->Build();
     }
 }

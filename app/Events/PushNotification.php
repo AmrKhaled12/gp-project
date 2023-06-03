@@ -2,6 +2,8 @@
 
 namespace App\Events;
 
+use App\Http\Livewire\Notification;
+use App\Trait\CreateNotificationByType;
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Broadcasting\PresenceChannel;
@@ -10,24 +12,25 @@ use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 
-class NewNotification implements ShouldBroadcast
+class PushNotification implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
+    use CreateNotificationByType;
 
-
-    public $user_creator;
+    public $user_id;
+    public $table_id;
+    public $type;
     // protected $data;
     // protected $type;
     // protected $time;
     // protected $read_at;
 
-    public function __construct($arr)
+    public function __construct($data)
     {
-        $this->user_creator = $arr;
-        // $this->data = $arr['data'];
-        // $this->type = $arr['type'];
-        // $this->time = $arr['time'];
-        // $this->read_at = $arr['read_at'];
+        $this->user_id = $data['user_id'];
+        $this->table_id = $data['table_id'];
+        $this->type = $data['type'];
+        $this->Create_Notification($this->type, $data);
     }
 
     /**
@@ -43,6 +46,6 @@ class NewNotification implements ShouldBroadcast
 
     public function broadcastAs()
     {
-        return 'NewNotification';
+        return 'PushNotification';
     }
 }

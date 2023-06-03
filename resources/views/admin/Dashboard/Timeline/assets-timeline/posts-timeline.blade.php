@@ -29,10 +29,7 @@
     {{-- ################################################################################### --}}
     <div class="posts__reaction">
 
-        <div class="like" id="like-reaction">
-            <i class="ri-thumb-up-fill"></i>
-            <p wire:click="like" class="like">Like</p>
-        </div>
+        @livewire('button-like',['post_id'=>$post->id])
         {{-- ################################################################################### --}}
         <div class="post comment-box">
             <i class="ri-chat-3-line"></i>
