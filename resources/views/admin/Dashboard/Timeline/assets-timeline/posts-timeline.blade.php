@@ -22,6 +22,7 @@
     </div>
 
     @livewire('like',['post_id'=>$post->id])
+    @livewire('input-comment',['post_id'=>$post->id])
 
 </div>
 

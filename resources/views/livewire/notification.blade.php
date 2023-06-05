@@ -1,5 +1,10 @@
 <a href="#">
-    <i class='bx bxs-bell-ring notification'></i>
+    @if(!isset($icon))
+    <i class='bx bxs-bell notification'></i>
+    @endif
+    @if ($icon==1)
+    <i class='bx bxs-bell-ring notification__ring'></i>
+    @endif
     <div class="notifications-container" style="display: none;">
         <ul>
             <li class="dropdown-notifications">

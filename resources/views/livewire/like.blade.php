@@ -1,4 +1,3 @@
-
 <div>
     <div class="reaction__container">
         {{-- @include('admin.Dashboard.Timeline.assets-timeline.like') --}}
@@ -30,14 +29,14 @@
     {{-- ################################################################################### --}}
     <div class="posts__reaction">
 
-        @if ($like_btn==1)
+        @if ($like_btn==true)
         <div wire:click="insert_like" class="like" style="color: red" id="like-reaction">
             <i class="ri-thumb-up-fill"></i>
             <p class="like">like</p>
         </div>
         @endif
 
-        @if ($like_btn==null)
+        @if ($like_btn==false)
         <div wire:click="insert_like" class="like" id="like-reaction">
             <i class="ri-thumb-up-fill"></i>
             <p class="like">like</p>
@@ -46,33 +45,10 @@
         {{-- ################################################################################### --}}
         <div class="post comment-box">
             <i class="ri-chat-3-line"></i>
-            {{-- <a class="post comment-box" href="{{route('getComments',$post->id)}}">Comment</a> --}}
-            <p>Comment</p>
+            <a class="post comment-box" href="{{route('getComments',$post_id)}}">Comment</a>
         </div>
     </div>
     {{-- ################################################################################### --}}
     <div class="thinking__line"></div>
- 
-    <div class="comment__section">
-        <div class="post__thinking">
-            <div class="post__img">
-                <img src="{{asset('assets/img/perfil.png')}}" alt="">
-            </div>
 
-            <form wire:submit.prevent="insert_comment">
-
-                <div class="thinking">
-                    <input wire:model.defer="comment" type="text" class="thinking__input comment__input"
-                        placeholder="Write a public comment...">
-                    <div id="div_btn" type="submit" wire:click="insert_comment" class="comment__sender">
-                        <i class="ri-send-plane-2-fill"></i>
-                    </div>
-
-                </div>
-
-
-            </form>
-
-        </div>
-    </div>
 </div>
