@@ -20,6 +20,7 @@
     <div class="posts__img">
         <img src="{{asset('assets/img/gymman.jpg')}}" alt="">
     </div>
+
     @livewire('like',['post_id'=>$post->id])
 
 </div>

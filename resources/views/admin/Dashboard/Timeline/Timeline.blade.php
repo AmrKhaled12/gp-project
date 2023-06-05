@@ -81,10 +81,10 @@
                     {{-- <li class="nav-item d-none d-sm-inline-block">--}}
                         {{-- <a href="index3.html" class="nav-link">Home</a>--}}
                         {{-- </li>--}}
-                    {{-- <li class="nav-item d-none d-sm-inline-block">--}}
-                        {{-- <a href="{{route('logout')}}" class="nav-link">Logout</a>--}}
-                        {{-- </li>--}}
-                    {{-- </ul>--}}
+                     <li class="nav-item d-none d-sm-inline-block">
+                         <a href="{{route('logout')}}" class="nav-link">Logout</a>
+                         </li>
+                     </ul>
                 <a href="#" class="header__logo">
                     <img src="{{asset('assets/img/favicon.png')}}" alt="logo">
                     <p>FitnessFuelX</p>
@@ -124,6 +124,7 @@
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://js.pusher.com/7.2/pusher.min.js"></script>
     <script>
+
         Pusher.logToConsole = true;
   
       var pusher = new Pusher('3a50f7c38a677530c253', {

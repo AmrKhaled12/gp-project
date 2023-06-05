@@ -1,3 +1,4 @@
+
 <div>
     <div class="reaction__container">
         {{-- @include('admin.Dashboard.Timeline.assets-timeline.like') --}}
@@ -51,7 +52,7 @@
     </div>
     {{-- ################################################################################### --}}
     <div class="thinking__line"></div>
-    @yield('comments')
+ 
     <div class="comment__section">
         <div class="post__thinking">
             <div class="post__img">

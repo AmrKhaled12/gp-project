@@ -47,6 +47,7 @@ a {
 	margin-top: 0;
 	width: 65px;
 	height: 65px;
+    border-radius: 50px;
 }
 
 .blog-comment .post-comments{
@@ -56,6 +57,7 @@ a {
 	margin-right: 0px;
     padding: 10px 20px;
     position: relative;
+    border-radius: 30px;
     -webkit-border-radius: 4px;
        -moz-border-radius: 4px;
        	 -o-border-radius: 4px;
@@ -63,6 +65,7 @@ a {
 	background: #616161;
 	color: #ffffff;
 	position: relative;
+
 }
 
 .blog-comment .meta {
