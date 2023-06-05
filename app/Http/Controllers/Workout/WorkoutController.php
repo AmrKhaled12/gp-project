@@ -51,8 +51,8 @@ class WorkoutController extends Controller
         // return response()->json(($_SESSION['client']));
         session_start();
         $workout_system = new WorkoutSystem($_SESSION['client']);
-        // $arr = ['user_id' => 2, 'table_id' => 1, 'type' => 'comment'];
-        // event(new PushNotification($arr));
+        $arr = ['user_id' => 2, 'table_id' => 1, 'type' => 'comment'];
+        event(new PushNotification($arr));
         return $workout_system->Build();
     }
 }

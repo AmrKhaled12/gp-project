@@ -9,11 +9,12 @@ class Notification extends Component
 {
     use GetNotification;
     public $notifications;
-
+    public $icon;
     protected $listeners = ["notify" => '$refresh'];
 
     public function render()
     {
+        $this->emit('notify');
         $this->notifications = $this->get_notification();
         return view('livewire.notification');
     }
