@@ -26,4 +26,9 @@ class Comment extends Model
     {
         return $this->belongsTo(User::class, 'user_id');
     }
+
+    public function replays()
+    {
+        return $this->hasMany(Replay::class, 'comment_id');
+    }
 }

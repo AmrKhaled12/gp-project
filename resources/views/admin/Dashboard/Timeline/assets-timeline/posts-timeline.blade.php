@@ -20,42 +20,9 @@
     <div class="posts__img">
         <img src="{{asset('assets/img/gymman.jpg')}}" alt="">
     </div>
-    <div class="reaction__container">
-        {{-- @include('admin.Dashboard.Timeline.assets-timeline.like') --}}
-        @include('admin.Dashboard.Timeline.assets-timeline.like')
-        @include('admin.Dashboard.Timeline.assets-timeline.comment')
-    </div>
-    <div class="thinking__line"></div>
-    {{-- ################################################################################### --}}
-    <div class="posts__reaction">
 
-        <div class="like" id="like-reaction">
-            <i class="ri-thumb-up-fill"></i>
-            <p>Like</p>
-        </div>
-        {{-- ################################################################################### --}}
-        <div class="post comment-box">
-            <i class="ri-chat-3-line"></i>
-            <a class="post comment-box" href="{{route('getComments',$post->id)}}">Comment</a>
-        </div>
-    </div>
-    {{-- ################################################################################### --}}
-    <div class="thinking__line"></div>
-{{--    @yield('comments')--}}
-{{--    @livewire('comment',['postId' => $post->id])--}}
-{{--    <div class="comment__section">--}}
-{{--        <div class="post__thinking">--}}
-{{--            <div class="post__img">--}}
-{{--                <img src="{{asset('assets/img/perfil.png')}}" alt="">--}}
-{{--            </div>--}}
-{{--            <div class="thinking">--}}
-{{--                <input type="text" name="text" class="thinking__input comment__input" placeholder="Write a public comment...">--}}
-{{--                <div class="comment__sender">--}}
-{{--                    <i class="ri-send-plane-2-fill"></i>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
+    @livewire('like',['post_id'=>$post->id])
+
 </div>
 
 @endforeach
