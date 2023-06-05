@@ -11,6 +11,3 @@
         </ul>
     </div>
 </div> --}}
-<div>
-    <p>{{ $post->id }}</p>
-</div>

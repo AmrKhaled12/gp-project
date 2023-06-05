@@ -23,11 +23,13 @@ use App\Http\Controllers\Nitrition\NitritionController;
  Route::get('/test/liveware', function () {
      return view('admin.testLiveware');
  });
+ Route::get('dashboard/main2',[PostController::class,'storeComment'])->name('storeComment');
+Route::get('get/comments/{id}',[PostController::class,'getComments'])->name('getComments');
 Route::get('/', [HomePageController::class, 'get_login'])->name('get_login')->middleware('Are_You_in_HomePage?');
 Route::post('/', [HomePageController::class, 'post_login'])->name('post_login');
 Route::get('/logout', [HomePageController::class, 'logout'])->name('logout');
 
-Route::group(['prefix' => 'post','middleware' => 'Are_You_Login?'], function () {
+Route::group(['prefix' => 'post',], function () {
     Route::get('create/post',[PostController::class,'showCreatePost'])->name('showCreatePost');
     Route::post('create/post',[PostController::class,'storePost'])->name('storePost');
 });
@@ -40,19 +42,19 @@ Route::group(['prefix' => 'user',], function () {
 });
 
 
-Route::group(['prefix' => 'workout', 'middleware' => 'Are_You_Login?'], function () {
+Route::group(['prefix' => 'workout', ], function () {
     //Route::get('/register/{id}', [WorkoutController::class, 'workout_register_show'])->name('workout_register');
 
     Route::get('/plan_workout', [WorkoutController::class, 'plan_workout'])->name('plan_workout');
 });
 
-Route::group(['prefix' => 'nutrition', 'middleware' => 'Are_You_Login?'], function () {
+Route::group(['prefix' => 'nutrition', ], function () {
     //Route::get('/register/{id}', [NitritionController::class, 'nut_register_show'])->name('nut_register');
 
     Route::get('/show', [NitritionController::class, 'show_breakfast'])->name('nut_show');
 });
 
-Route::group(['prefix' => 'dashboard', 'middleware' => 'Are_You_Login?'], function () {
+Route::group(['prefix' => 'dashboard', ], function () {
     Route::get('/main', [DashboardController::class, 'show_dashboard'])->name('dashboard');
 
 });

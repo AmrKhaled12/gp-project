@@ -81,10 +81,10 @@
                     {{-- <li class="nav-item d-none d-sm-inline-block">--}}
                         {{-- <a href="index3.html" class="nav-link">Home</a>--}}
                         {{-- </li>--}}
-                    {{-- <li class="nav-item d-none d-sm-inline-block">--}}
-                        {{-- <a href="{{route('logout')}}" class="nav-link">Logout</a>--}}
-                        {{-- </li>--}}
-                    {{-- </ul>--}}
+                     <li class="nav-item d-none d-sm-inline-block">
+                         <a href="{{route('logout')}}" class="nav-link">Logout</a>
+                         </li>
+                     </ul>
                 <a href="#" class="header__logo">
                     <img src="{{asset('assets/img/favicon.png')}}" alt="logo">
                     <p>FitnessFuelX</p>
@@ -125,16 +125,16 @@
     <script>
         // Enable pusher logging - don't include this in production
       Pusher.logToConsole = true;
-  
+
       var pusher = new Pusher('3a50f7c38a677530c253', {
         cluster: 'mt1'
       });
     //   var channel = pusher.subscribe("notification");
     //   channel.bind("NewNotification", function (data) {
-        
+
     //   });
-  
-     
+
+
     </script>
     <script src="{{ asset('assets/js/pusherNotifications.js') }}"></script>
     <script src="{{asset('assets/js/timeline.js')}}"></script>
