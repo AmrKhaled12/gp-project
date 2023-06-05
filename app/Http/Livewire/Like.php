@@ -2,55 +2,53 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Comment;
 use App\Models\Like as likes;
 use Livewire\Component;
 
 class Like extends Component
 {
-    public $counter = 0;
+    public $counter_like = 0;
+    public $counter_comment = 0;
     public $post_id;
-    protected $listeners = ["like" => 'Like'];
+    public $comment;
+    public $like_btn;
 
-    public function mount($post_id)
-    {
-        $this->post_id = $post_id;
-    }
 
     public function render()
     {
-        $this->counter = likes::where('post_id', '=', $this->post_id)->get()->count();
+        $this->counter_like = likes::where('post_id', '=', $this->post_id)->get()->count();
+        $this->counter_comment = Comment::where('post_id', '=', $this->post_id)->get()->count();
+        $this->like_btn = likes::select('is_like')->where('post_id', '=', $this->post_id)->where('user_id', '=', $_SESSION['client']->id)->exists();
+
         return view('livewire.like');
     }
 
-    public function Like($post_id)
+    public function insert_like()
     {
         session_start();
-        $like = likes::where('user_id', '=', $_SESSION['client']->id)->where('post_id', '=', $post_id)->first();
+        $like = likes::where('user_id', '=', $_SESSION['client']->id)->where('post_id', '=', $this->post_id)->first();
         if (!isset($like)) {
             likes::create([
                 'user_id' => $_SESSION['client']->id,
-                'post_id' => $post_id,
+                'post_id' => $this->post_id,
                 'is_like' => 1
             ]);
         } else {
-            likes::where('user_id', '=', $_SESSION['client']->id)->where('post_id', '=', $post_id)->truncate();
+            likes::where('user_id', '=', $_SESSION['client']->id)->where('post_id', '=', $this->post_id)->truncate();
         }
-        $this->counter = likes::where('post_id', '=', $post_id)->get()->count();
-        // return $this->counter = $post_id;
+        $this->counter_like = likes::where('post_id', '=', $this->post_id)->get()->count();
     }
 
-    // public function comment()
-    // {
-    //     session_start();
-    //     $like = Like::where('user_id', '=', $_SESSION['client']->id && 'post_id', '=', $this->post_id)->first();
-    //     if ($like->is_like != 1) {
-    //         Like::create([
-    //             'user_id' => $_SESSION['client']->id,
-    //             'post_id' => $this->post_id,
-    //             'is_like' => 1
-    //         ]);
-    //     }
-    //     $this->counter = Like::get()->count();
-    //     return $this->counter;
-    // }
+    public function insert_comment()
+    {
+        session_start();
+        Comment::create([
+            'text' => $this->comment,
+            'post_id' => $this->post_id,
+            'user_id' => $_SESSION['client']->id,
+        ]);
+
+        $this->counter_comment = Comment::where('post_id', '=', $this->post_id)->get()->count();
+    }
 }
