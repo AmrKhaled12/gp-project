@@ -21,9 +21,9 @@ use App\Http\Controllers\Nitrition\NitritionController;
 */
 
 
-Route::get('dashboard/main2',[PostController::class,'storeComment'])->name('storeComment');
-Route::get('get/comments/{id}',[PostController::class,'getComments'])->name('getComments');
-Route::get('get/search',[PostController::class,'showsearch'])->name('search');
+Route::get('dashboard/main2', [PostController::class, 'storeComment'])->name('storeComment');
+Route::get('get/comments/{id}', [PostController::class, 'getComments'])->name('getComments');
+Route::get('get/search', [PostController::class, 'showsearch'])->name('search');
 
 Route::get('/', [HomePageController::class, 'get_login'])->name('get_login')->middleware('Are_You_in_HomePage?');
 Route::post('/', [HomePageController::class, 'post_login'])->name('post_login');
@@ -60,6 +60,7 @@ Route::group(['prefix' => 'nutrition'], function () {
 Route::group(['prefix' => 'dashboard'], function () {
 
     Route::get('/main', [DashboardController::class, 'show_dashboard'])->name('dashboard');
+    Route::get('/profile/{id}', [DashboardController::class, 'show_profile'])->name('Profile-follow');
 });
 
 Route::group(['prefix' => 'status'], function () {

@@ -36,7 +36,7 @@ class Like extends Component
                 'is_like' => 1
             ]);
         } else {
-            likes::where('user_id', '=', $_SESSION['client']->id)->where('post_id', '=', $this->post_id)->truncate();
+            likes::where('user_id', '=', $_SESSION['client']->id)->where('post_id', '=', $this->post_id)->delete();
         }
     }
 

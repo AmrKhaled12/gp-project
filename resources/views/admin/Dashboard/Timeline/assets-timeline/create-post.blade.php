@@ -4,21 +4,25 @@
             <img src="{{asset('assets/img/perfil.png')}}" alt="">
         </div>
         <div class="thinking">
-            <input type="text" class="thinking__input" placeholder="What's on your mind ?" onclick="window.location.href = '{{route('showCreatePost')}}' ;">
+            <input type="text" class="thinking__input" placeholder="What's on your mind ?"
+                onclick="window.location.href = '{{route('showCreatePost')}}' ;">
         </div>
     </div>
 
     <div class="thinking__line"></div>
-
     <div class="thinking__share">
-        <div class="photo">
+        <button id="fileButton" class="photo">
             <i class="ri-image-add-fill"></i>
             <p>Photo</p>
-        </div>
+        </button>
+        <input type="file" id="fileInput" style="display: none;">
 
-        <div class="post">
+
+        <button class="post">
             <i class="ri-share-forward-fill"></i>
             <p>Post</p>
-        </div>
+        </button>
     </div>
+
+</div>
 </div>

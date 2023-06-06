@@ -154,6 +154,35 @@ img {
   row-gap: 1.5rem;
 }
 
+.logout{
+  margin-top: 2rem;
+}
+
+.logout__button{
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  margin: 1rem;
+  border-radius: 4rem;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  -o-border-radius: 4rem;
+  padding: 1rem;
+  background-color:hsl(0, 67%, 52%) ;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.logout__button:hover{
+  background-color:hsl(0, 100%, 62%) ;
+}
+
 .nav__link {
   color: var(--text-color-dark);
   display: inline-flex;
@@ -548,6 +577,13 @@ position: relative;
 
 .thinking__share i{
   font-size: 20px;
+}
+
+.thinking__share button{
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
 }
 
 .thinking__share .photo,

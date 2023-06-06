@@ -1,5 +1,5 @@
 <a href="#">
-    @if(!isset($icon))
+    @if($icon==0)
     <i class='bx bxs-bell notification'></i>
     @endif
     @if ($icon==1)
