@@ -18,10 +18,4 @@ class DashboardController extends Controller
     $posts  = Post::with('user')->get();
     return view('admin.Dashboard.Timeline.Timeline', compact('posts'));
   }
-
-  public function show_profile($main_id)
-  {
-    $data = $this->get_information_user($main_id);
-    return view('admin.Profile.userProfile', compact('data'));
-  }
 }

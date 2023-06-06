@@ -155,9 +155,6 @@ comments.forEach((comment) => {
 //     }
 //   });
 // });
-document.getElementById("div_btn").addEventListener("click", function () {
-    document.getElementById("fileButton").click();
-});
 
 document.getElementById("fileButton").addEventListener("click", function () {
     document.getElementById("fileInput").click();
@@ -169,4 +166,8 @@ document.getElementById("fileInput").addEventListener("change", function () {
         // Display the selected file name or perform any other desired action
         console.log("Selected file:", fileName);
     }
+});
+
+document.getElementById("div_btn").addEventListener("click", function () {
+    document.getElementById("fileButton").click();
 });

@@ -1,594 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.Layout')
+@section('style-user_profile')
+<link rel="stylesheet" href="{{asset('assets/css/stylesProfile.css')}}">
+<link href="{{ asset('assets/lightbox2-2.11.4/dist/css/lightbox.min.css') }}" rel="stylesheet" />
+@endsection
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="{{asset('assets/css/stylesProfile.css')}}">
-
-    <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="{{asset('assets/img/favicon.png') }}" type="image/x-icon">
-
-    <!--=============== BOXICON ===============-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!--=============== REMIXICONS ===============-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-    <!--=============== lightbox ===============-->
-    <link href="{{ asset('assets/lightbox2-2.11.4/dist/css/lightbox.min.css') }}" rel="stylesheet" />
-
-    <title>FitnessFuelX</title>
-</head>
-
-<body>
-
-
-    <!--=============== SIDEBAR ===============-->
-    <nav class="nav" id="nav">
-        <div class="nav__menu container" id="nav-menu">
-            <div class="nav__shape"></div>
-
-            <div class="nav__close" id="nav-close">
-                <i class='bx bx-x'></i>
-            </div>
-
-            <div class="nav__data">
-                <div class="nav__mask">
-                    <img src="{{asset('assets/img/perfil.png')}}" alt="" class="nav__img">
+@section('user_profile')
+<section class="section section__height container" id="home">
+    <!-- here i will put post and create post  -->
+    <div class="page__container">
+        <div class="post__maker">
+            <div class="profile__container">
+                <div class="profile__mask">
+                    <a href="{{ asset('assets/img/perfil.png') }}" data-lightbox="image-1" data-title="Profile Picture">
+                        <img class="profile__img" src="{{asset('assets/img/perfil.png')}}" alt="">
+                    </a>
                 </div>
+                {{-- ############################################## --}}
+                <div class="profile__name">
+                    <h1 class="nav__name">
+                        <p class="user__name">Abdelrahman <br> Mahmoud</p>
+                    </h1>
 
-                <span class="nav__greeting">Hi,</span>
-                <h1 class="nav__name">
-                    <p class="user__name">Abdelrahman <br> Mahmoud</p>
-                </h1>
+                    <button class="follow__button" onclick="window.location.href = '{{ route('add-follow') }}';">
+                        Follow
+                    </button>
+
+                    <button style="display: none;" class="following__button">
+                        Following
+                    </button>
+
+                </div>
+                {{-- #################################################### --}}
             </div>
 
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="#" class="nav__link active-link">
-                        <i class="ri-home-4-line"></i> Home
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="Profile.html" class="nav__link">
-                        <i class="ri-user-line"></i> Profile
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="workout.html" class="nav__link">
-                        <i class='bx bx-dumbbell'></i> Workout
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="nutrition.html" class="nav__link">
-                        <i class='bx bx-bowl-hot'></i> Nutrition
-                    </a>
-                </li>
-            </ul>
-            <div class="logout">
-                <button class="logout__button">Logout</button>
-            </div>
-        </div>
-    </nav>
+            <div class="thinking__line"></div>
 
-    <!--=============== MAIN ===============-->
-    <main class="main" id="main">
-        <!--=============== HEADER ===============-->
-        <header class="header" id="header">
-            <nav class="header__nav container">
-                <a href="#" class="header__logo">
-                    <img src="{{ asset('assets/img/favicon.png') }}" alt="logo">
-                    <p>FitnessFuelX</p>
+            <div class="follow__section">
+                <a class="posts__count counter" href="">
+                    <h1>{{ $posts->count() }}</h1>
+                    <h2>posts</h2>
                 </a>
-
-                <div class="containner">
-                    <form action="" class="search" id="search-bar">
-                        <input type="search" class="search__input" placeholder="Search...">
-
-                        <div class="search__button" id="search-button">
-                            <i class="ri-search-2-line search__icon"></i>
-                            <i class="ri-close-line search__close"></i>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="icons">
-
-                    <a href="#">
-                        <i class='bx bxs-bell-ring notification'></i>
-                        <i style="display: none;" class='bx bxs-bell-ring notification__ring'></i>
-                        <div class="notifications-container" style="display: none;">
-                            <ul>
-                                <li>
-                                    <p class="user__name">Amr Khaled</p> Started following you.
-                                </li>
-                                <div class="thinking__line"></div>
-                                <li>
-                                    <p class="user__name">Fouad Mahmoud</p> Started following you.
-                                </li>
-                                <div class="thinking__line"></div>
-                                <li>
-                                    <p class="user__name">Omar Hesham</p> Started following you.
-                                </li>
-                                <div class="thinking__line"></div>
-                            </ul>
-                        </div>
-                    </a>
-
-
-                    <!-- Toggle button -->
-                    <div class="header__toggle" id="header-toggle">
-                        <i class='bx bx-grid-alt'></i>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <!--=============== HOME ===============-->
-        <section class="section section__height container" id="home">
-            <!-- here i will put post and create post  -->
-            <div class="page__container">
-                <div class="post__maker">
-                    <div class="profile__container">
-                        <div class="profile__mask">
-                            <a href="{{ asset('assets/img/perfil.png') }}" data-lightbox="image-1"
-                                data-title="Profile Picture">
-                                <img class="profile__img" src="{{asset('assets/img/perfil.png')}}" alt="">
-                            </a>
-                        </div>
-                        <div class="profile__name">
-                            <h1 class="nav__name">
-                                <p class="user__name">Abdelrahman <br> Mahmoud</p>
-                            </h1>
-
-                            <button class="follow__button">
-                                Follow
-                            </button>
-
-                            <button style="display: none;" class="following__button">
-                                Following
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                    <div class="thinking__line"></div>
-
-                    <div class="follow__section">
-                        <a class="posts__count counter" href="">
-                            <h1>5</h1>
-                            <h2>posts</h2>
-                        </a>
-                        <a class="followers__count counter" href="">
-                            <h1>500</h1>
-                            <h2>followers</h2>
-                        </a>
-                        <a class="following__count counter" href="">
-                            <h1>200</h1>
-                            <h2>following</h2>
-                        </a>
-                    </div>
-
-                    <div class="thinking__line"></div>
-
-                </div>
-
-                <div class="post__maker">
-                    <div class="post__thinking">
-                        <div class="post__img">
-                            <img src="{{ asset('assets/img/perfil.png') }}" alt="">
-                        </div>
-                        <div class="thinking">
-                            <input type="text" class="thinking__input" placeholder="What's on your mind ?">
-                        </div>
-                    </div>
-
-                    <div class="thinking__line"></div>
-
-                    <div class="thinking__share">
-                        <button id="fileButton" class="photo">
-                            <i class="ri-image-add-fill"></i>
-                            <p>Photo</p>
-                        </button>
-                        <input type="file" id="fileInput" style="display: none;">
-
-
-                        <button class="post">
-                            <i class="ri-share-forward-fill"></i>
-                            <p>Post</p>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="post__maker main-post post-maker">
-                    <div class="owner__container">
-                        <div class="owner__info">
-                            <div class="post__img">
-                                <img src="{{ asset('assets/img/favicon.png') }}" alt="">
-                            </div>
-                            <div class="owner__name">
-                                <h1 class="user__name">FitnessFuelX</h1>
-                                <p class="time">April 21 at 9:75 AM </p>
-                            </div>
-                        </div>
-                        <div class="posts__icons">
-                            <!-- <i class='bx bx-x delete-post'></i> -->
-                        </div>
-                    </div>
-                    <div class="posts__content">
-                        <p>Welcome in our agency, <br> FitnessFuelX was honored to have you join us</p>
-                    </div>
-                    <div class="posts__img">
-                        <img src="{{ asset('assets/img/gymman.jpg') }}" alt="">
-                    </div>
-                    <div class="reaction__container">
-                        <div class="likes">
-                            <i class='bx bxs-like'></i> 98
-                            <div class="likes-container" style="display: none;">
-                                <ul>
-                                    <li>
-                                        <p class="user__name">Amr Khaled</p>
-                                    </li>
-                                    <div class="thinking__line"></div>
-                                    <li>
-                                        <p class="user__name">Fouad Mahmoud</p>
-                                    </li>
-                                    <div class="thinking__line"></div>
-                                    <li>
-                                        <p class="user__name">Omar Hesham</p>
-                                    </li>
-                                    <div class="thinking__line"></div>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="comments">
-                            <p>7 comments</p>
-                            <div class="comments-container" style="display: none;">
-                                <ul>
-                                    <li>
-                                        <p class="user__name">Amr Khaled</p> gamd
-                                    </li>
-                                    <div class="thinking__line"></div>
-                                    <li>
-                                        <p class="user__name">Fouad Mahmoud</p> you doing well
-                                    </li>
-                                    <div class="thinking__line"></div>
-                                    <li>
-                                        <p class="user__name">Omar Hesham</p> nice
-                                    </li>
-                                    <div class="thinking__line"></div>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="thinking__line"></div>
-                    <div class="posts__reaction">
-                        <div class="like" id="like-reaction">
-                            <i class="ri-thumb-up-fill"></i>
-                            <p>Like</p>
-                        </div>
-                        <div style="display: none;" class="liked">
-                            <i class="ri-thumb-up-fill"></i>
-                            <p>Like</p>
-                        </div>
-                        <div class="post comment-box">
-                            <i class="ri-chat-3-line"></i>
-                            <p>Comment</p>
-                        </div>
-                    </div>
-
-                    <div class="thinking__line"></div>
-
-                    <div class="comment__section">
-                        <div class="post__thinking">
-                            <div class="post__img">
-                                <img src="{{ asset('assets/img/perfil.png') }}" alt="">
-                            </div>
-                            <div class="thinking">
-                                <input type="text" class="thinking__input comment__input"
-                                    placeholder="Write a public comment...">
-                                <div class="comment__sender">
-                                    <i class="ri-send-plane-2-fill"></i>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="post__maker post-maker">
-                    <div class="owner__container">
-                        <div class="owner__info">
-                            <div class="post__img">
-                                <img src="{{ asset('assets/img/perfil.png') }}" alt="">
-                            </div>
-                            <div class="owner__name">
-                                <h1 class="user__name">Abdelrahman Mahmoud</h1>
-                                <p class="time">April 20 at 7:25 PM </p>
-                            </div>
-                        </div>
-                        <div class="posts__icons">
-                            <!-- <i class='bx bx-x delete-post'></i> -->
-                        </div>
-                    </div>
-                    <div class="posts__content">
-                        <p>اهلا ، انا عندي 23 سنه وكنت حابب انزل الجيم وكدا ، وانا حابب الموضوع الصراحه بس محتاج نصايح
-                            ياريت</p>
-                    </div>
-                    <div class="reaction__container">
-                        <div class="likes">
-                            <i class='bx bxs-like'></i> 98
-                            <div class="likes-container" style="display: none;">
-                                <ul>
-                                    <li>
-                                        <p class="user__name">Amr Khaled</p>
-                                    </li>
-                                    <div class="thinking__line"></div>
-                                    <li>
-                                        <p class="user__name">Fouad Mahmoud</p>
-                                    </li>
-                                    <div class="thinking__line"></div>
-                                    <li>
-                                        <p class="user__name">Omar Hesham</p>
-                                    </li>
-                                    <div class="thinking__line"></div>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="comments">
-                            <p>7 comments</p>
-                            <div class="comments-container" style="display: none;">
-                                <ul>
-                                    <li>
-                                        <p class="user__name">Amr Khaled</p> gamd
-                                    </li>
-                                    <div class="thinking__line"></div>
-                                    <li>
-                                        <p class="user__name">Fouad Mahmoud</p> you doing well
-                                    </li>
-                                    <div class="thinking__line"></div>
-                                    <li>
-                                        <p class="user__name">Omar Hesham</p> nice
-                                    </li>
-                                    <div class="thinking__line"></div>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="thinking__line"></div>
-                    <div class="posts__reaction">
-                        <div class="like" id="like-reaction">
-                            <i class="ri-thumb-up-fill"></i>
-                            <p>Like</p>
-                        </div>
-                        <div style="display: none;" class="liked">
-                            <i class="ri-thumb-up-fill"></i>
-                            <p>Like</p>
-                        </div>
-                        <div class="post comment-box">
-                            <i class="ri-chat-3-line"></i>
-                            <p>Comment</p>
-                        </div>
-                    </div>
-
-                    <div class="thinking__line"></div>
-
-                    <div class="comment__section">
-                        <div class="post__thinking">
-                            <div class="post__img">
-                                <img src="{{ asset('assets/img/perfil.png') }}" alt="">
-                            </div>
-                            <div class="thinking">
-                                <input type="text" class="thinking__input comment__input"
-                                    placeholder="Write a public comment...">
-                                <div class="comment__sender">
-                                    <i class="ri-send-plane-2-fill"></i>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="post__maker post-maker">
-                    <div class="owner__container">
-                        <div class="owner__info">
-                            <div class="post__img">
-                                <img src="{{ asset('assets/img/perfil.png') }}" alt="">
-                            </div>
-                            <div class="owner__name">
-                                <h1 class="user__name">Abdelrahman Mahmoud</h1>
-                                <p class="time">April 21 at 9:75 AM </p>
-                            </div>
-                        </div>
-                        <div class="posts__icons">
-                            <!-- <i class='bx bx-x delete-post'></i> -->
-                        </div>
-                    </div>
-                    <div class="posts__content">
-                        <p>مرحبا , هل التمرين دا كويس للجسم وهل ليه اضرار</p>
-                    </div>
-                    <div class="posts__img">
-                        <img src="{{ asset('assets/img/gymman.jpg') }}" alt="">
-                    </div>
-                    <div class="reaction__container">
-                        <div class="likes">
-                            <i class='bx bxs-like'></i> 98
-                            <div class="likes-container" style="display: none;">
-                                <ul>
-                                    <li>
-                                        <p class="user__name">Amr Khaled</p>
-                                    </li>
-                                    <div class="thinking__line"></div>
-                                    <li>
-                                        <p class="user__name">Fouad Mahmoud</p>
-                                    </li>
-                                    <div class="thinking__line"></div>
-                                    <li>
-                                        <p class="user__name">Omar Hesham</p>
-                                    </li>
-                                    <div class="thinking__line"></div>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="comments">
-                            <p>7 comments</p>
-                            <div class="comments-container" style="display: none;">
-                                <ul>
-                                    <li>
-                                        <p class="user__name">Amr Khaled</p> gamd
-                                    </li>
-                                    <div class="thinking__line"></div>
-                                    <li>
-                                        <p class="user__name">Fouad Mahmoud</p> you doing well
-                                    </li>
-                                    <div class="thinking__line"></div>
-                                    <li>
-                                        <p class="user__name">Omar Hesham</p> nice
-                                    </li>
-                                    <div class="thinking__line"></div>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="thinking__line"></div>
-                    <div class="posts__reaction">
-                        <div class="like" id="like-reaction">
-                            <i class="ri-thumb-up-fill"></i>
-                            <p>Like</p>
-                        </div>
-                        <div style="display: none;" class="liked">
-                            <i class="ri-thumb-up-fill"></i>
-                            <p>Like</p>
-                        </div>
-                        <div class="post comment-box">
-                            <i class="ri-chat-3-line"></i>
-                            <p>Comment</p>
-                        </div>
-                    </div>
-
-                    <div class="thinking__line"></div>
-
-                    <div class="comment__section">
-                        <div class="post__thinking">
-                            <div class="post__img">
-                                <img src="{{ asset('assets/img/perfil.png') }}" alt="">
-                            </div>
-                            <div class="thinking">
-                                <input type="text" class="thinking__input comment__input"
-                                    placeholder="Write a public comment...">
-                                <div class="comment__sender">
-                                    <i class="ri-send-plane-2-fill"></i>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="post__maker post-maker">
-                    <div class="owner__container">
-                        <div class="owner__info">
-                            <div class="post__img">
-                                <img src="{{ asset('assets/img/perfil.png') }}" alt="">
-                            </div>
-                            <div class="owner__name">
-                                <h1 class="user__name">Abdelrahman Mahmoud</h1>
-                                <p class="time">April 21 at 9:75 AM </p>
-                            </div>
-                        </div>
-                        <div class="posts__icons">
-                            <!-- <i class='bx bx-x delete-post'></i> -->
-                        </div>
-                    </div>
-                    <div class="posts__content">
-                        <p>مرحبا , هل التمرين دا كويس للجسم وهل ليه اضرار</p>
-                    </div>
-                    <div class="posts__img">
-                        <video controls src="{{ asset('assets/img/videocrossfit.mp4') }}" alt="">
-                    </div>
-                    <div class="reaction__container">
-                        <div class="likes">
-                            <i class='bx bxs-like'></i> 98
-                            <div class="likes-container" style="display: none;">
-                                <ul>
-                                    <li>
-                                        <p class="user__name">Amr Khaled</p>
-                                    </li>
-                                    <div class="thinking__line"></div>
-                                    <li>
-                                        <p class="user__name">Fouad Mahmoud</p>
-                                    </li>
-                                    <div class="thinking__line"></div>
-                                    <li>
-                                        <p class="user__name">Omar Hesham</p>
-                                    </li>
-                                    <div class="thinking__line"></div>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="comments">
-                            <p>7 comments</p>
-                            <div class="comments-container" style="display: none;">
-                                <ul>
-                                    <li>
-                                        <p class="user__name">Amr Khaled</p> gamd
-                                    </li>
-                                    <div class="thinking__line"></div>
-                                    <li>
-                                        <p class="user__name">Fouad Mahmoud</p> you doing well
-                                    </li>
-                                    <div class="thinking__line"></div>
-                                    <li>
-                                        <p class="user__name">Omar Hesham</p> nice
-                                    </li>
-                                    <div class="thinking__line"></div>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="thinking__line"></div>
-                    <div class="posts__reaction">
-                        <div class="like" id="like-reaction">
-                            <i class="ri-thumb-up-fill"></i>
-                            <p>Like</p>
-                        </div>
-                        <div style="display: none;" class="liked">
-                            <i class="ri-thumb-up-fill"></i>
-                            <p>Like</p>
-                        </div>
-                        <div class="post comment-box">
-                            <i class="ri-chat-3-line"></i>
-                            <p>Comment</p>
-                        </div>
-                    </div>
-
-                    <div class="thinking__line"></div>
-
-                    <div class="comment__section">
-                        <div class="post__thinking">
-                            <div class="post__img">
-                                <img src="{{ asset('assets/img/perfil.png') }}" alt="">
-                            </div>
-                            <div class="thinking">
-                                <input type="text" class="thinking__input comment__input"
-                                    placeholder="Write a public comment...">
-                                <div class="comment__sender">
-                                    <i class="ri-send-plane-2-fill"></i>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <a class="followers__count counter" href="">
+                    @if (!isset($data['num_followers']))
+                    <h1>0</h1>
+                    @else
+                    <h1>{{ $data['num_followers'] }}</h1>
+                    @endif
+                    <h2>followers</h2>
+                </a>
+                <a class="following__count counter" href="">
+                    @if (!isset($data['num_following']))
+                    <h1>0</h1>
+                    @else
+                    <h1>{{ $data['num_following'] }}</h1>
+                    @endif
+                    <h2>following</h2>
+                </a>
             </div>
-        </section>
 
-    </main>
-    <!--=============== MAIN JS ===============-->
-    <script src="{{ asset('assets/js/timeline.js')}}"></script>
-    <script src="{{ asset('assets/lightbox2-2.11.4/dist/js/lightbox-plus-jquery.min.js') }}"></script>
-</body>
+            <div class="thinking__line"></div>
 
-</html>
+        </div>
+
+        @include('admin.Dashboard.Timeline.assets-timeline.create-post')
+        @include('admin.Dashboard.Timeline.assets-timeline.posts-timeline')
+    </div>
+</section>
+@endsection
+
+@section('script-user_profile')
+<script src="{{ asset('assets/js/timeline.js')}}"></script>
+<script src="{{ asset('assets/lightbox2-2.11.4/dist/js/lightbox-plus-jquery.min.js') }}"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="https://js.pusher.com/7.2/pusher.min.js"></script>
+<script>
+    Pusher.logToConsole = true;
+
+  var pusher = new Pusher('3a50f7c38a677530c253', {
+    cluster: 'mt1'
+  });
+  var channel = pusher.subscribe("notification");
+  channel.bind("PushNotification", function (data) {
+    Livewire.emit('notify')
+  });
+
+ 
+</script>
+
+
+@livewireScripts
+@endsection
