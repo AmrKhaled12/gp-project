@@ -53,4 +53,8 @@ class PostController extends Controller
         ]);
      return ('dashboard');
     }
+
+    public function showSearch(){
+        return view('admin.Dashboard.Timeline.assets-timeline.search-result');
+    }
 }

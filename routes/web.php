@@ -21,8 +21,9 @@ use App\Http\Controllers\Nitrition\NitritionController;
 */
 
 
- Route::get('dashboard/main2',[PostController::class,'storeComment'])->name('storeComment');
+Route::get('dashboard/main2',[PostController::class,'storeComment'])->name('storeComment');
 Route::get('get/comments/{id}',[PostController::class,'getComments'])->name('getComments');
+Route::get('get/search',[PostController::class,'showsearch'])->name('search');
 
 Route::get('/', [HomePageController::class, 'get_login'])->name('get_login')->middleware('Are_You_in_HomePage?');
 Route::post('/', [HomePageController::class, 'post_login'])->name('post_login');
