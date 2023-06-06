@@ -154,6 +154,35 @@ img {
   row-gap: 1.5rem;
 }
 
+.logout{
+  margin-top: 2rem;
+}
+
+.logout__button{
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  margin: 1rem;
+  border-radius: 4rem;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  -o-border-radius: 4rem;
+  padding: 1rem;
+  background-color:hsl(0, 67%, 52%) ;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.logout__button:hover{
+  background-color:hsl(0, 100%, 62%) ;
+}
+
 .nav__link {
   color: var(--text-color-dark);
   display: inline-flex;
@@ -368,6 +397,15 @@ position: relative;
   color: var(--first-color);
 }
 
+.notification__ring{
+  font-size: 1.2rem;
+  color: var(--first-color);
+}
+
+.notification__ring:hover{
+  color: var(--first-color-shape);
+}
+
 .notifications-container {
   position: absolute;
   width:250px;
@@ -521,6 +559,26 @@ position: relative;
 
 .thinking__share i{
   font-size: 20px;
+}
+
+.thinking__share button{
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 0;
+  margin: 0;
+}
+
+.thinking__share input[type="file"] {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+
 }
 
 .thinking__share .photo,
@@ -815,6 +873,112 @@ position: relative;
   gap: 1rem;
 }
 
+.edit__button{
+  margin: 1rem;
+  border-radius: 4rem;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  -o-border-radius: 4rem;
+  padding: 0.5rem;
+  background-color:hsl(0, 67%, 52%) ;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+.edit__button:hover{
+  background-color:hsl(0, 100%, 62%) ;
+}
+
+.follow__button{
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  margin: 1rem;
+  border-radius: 4rem;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  -o-border-radius: 4rem;
+  padding: 1rem;
+  background-color:hsl(0, 67%, 52%) ;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.follow__button:hover{
+  background-color:hsl(0, 100%, 62%) ;
+}
+
+.following__button{
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  margin: 1rem;
+  border-radius: 4rem;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  -o-border-radius: 4rem;
+  padding: 1rem;
+  background-color:hsl(225, 4%, 21%) ;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+.follow__section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+
+.follow__section .counter{
+  display: grid;
+  place-items: center;
+}
+
+.follow__section h1{
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.follow__section h2{
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.personal__info{
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.personal__info i{
+  background-color: #e92f2f;
+  color: #fff;
+  border-radius: 4rem;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  -o-border-radius: 4rem;
+  padding: 0.5rem;
+  font-size: 18px;
+  margin-right: 0.5rem;
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
@@ -846,6 +1010,18 @@ position: relative;
 
   p{
     font-size: 14px;
+  }
+
+  .edit__button{
+    font-size: 8px;
+  }
+
+  .follow__section h1{
+    font-size: 14px;
+  }
+
+  .follow__section h2{
+    font-size: 10px;
   }
 
 

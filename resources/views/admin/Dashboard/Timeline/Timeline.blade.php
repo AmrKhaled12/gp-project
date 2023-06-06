@@ -33,6 +33,7 @@
             </div>
 
             <div class="nav__data">
+
                 <div class="nav__mask">
 
                     <img src="{{asset('assets/img/perfil.png')}}" alt="" class="nav__img">
@@ -65,6 +66,9 @@
                         <i class='bx bx-bowl-hot'></i> Nutrition
                     </a>
                 </li>
+                <div class="logout">
+                    <button class="logout__button">Logout</button>
+                </div>
             </ul>
         </div>
     </nav>
@@ -81,10 +85,10 @@
                     {{-- <li class="nav-item d-none d-sm-inline-block">--}}
                         {{-- <a href="index3.html" class="nav-link">Home</a>--}}
                         {{-- </li>--}}
-                    <li class="nav-item d-none d-sm-inline-block">
+                    {{-- <li class="nav-item d-none d-sm-inline-block">
                         <a href="{{route('logout')}}" class="nav-link">Logout</a>
                     </li>
-                </ul>
+                </ul> --}}
                 <a href="#" class="header__logo">
                     <img src="{{asset('assets/img/favicon.png')}}" alt="logo">
                     <p>FitnessFuelX</p>
@@ -119,7 +123,7 @@
     </main>
 
     <!--=============== MAIN JS ===============-->
-
+    <script src="{{asset('assets/js/timeline.js')}}"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://js.pusher.com/7.2/pusher.min.js"></script>
@@ -131,12 +135,12 @@
       });
       var channel = pusher.subscribe("notification");
       channel.bind("PushNotification", function (data) {
-        Livewire.emit('notify',['icon'=>1])
+        Livewire.emit('notify')
       });
   
      
     </script>
-    <script src="{{asset('assets/js/timeline.js')}}"></script>
+
 
     @livewireScripts
 </body>
