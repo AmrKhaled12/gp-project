@@ -18,11 +18,16 @@ class Notification extends Model
         'comment_id',
         'follow_id',
         'post_id',
-        'replay_id'
+        'replay_id',
+        'user_sender'
     ];
     public function user()
     {
         return $this->belongsTo(User::class, 'user_id');
+    }
+    public function sender()
+    {
+        return $this->belongsTo(User::class, 'user_sender');
     }
     public function post()
     {

@@ -10,7 +10,7 @@ use App\Trait\GetData_UserProfileFollow;
 
 class DashboardController extends Controller
 {
-  use GetData_UserProfileFollow;
+
   public function show_dashboard()
   {
 

@@ -20,6 +20,12 @@ return new class extends Migration
             $table->string('data');
             $table->time('read_at');
             $table->string('type');
+            $table->foreignId('post_id')->constrained('posts', 'id')->cascadeOnDelete()->nullable();
+            $table->foreignId('comment_id')->constrained('comments', 'id')->cascadeOnDelete()->nullable();
+            $table->foreignId('follow_id')->constrained('follows', 'id')->cascadeOnDelete()->nullable();
+            $table->foreignId('replay_id')->constrained('replays', 'id')->cascadeOnDelete()->nullable();
+            $table->integer('user_sender')->unsigned();
+            $table->foreign('user_sender')->references('id')->on('users')->cascadeOnDelete();
             $table->timestamps();
         });
     }
@@ -31,6 +37,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('notification');
+        Schema::dropIfExists('notifications');
     }
 };

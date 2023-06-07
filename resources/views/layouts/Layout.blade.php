@@ -20,8 +20,7 @@
 </head>
 
 <body>
-    @method('post')
-    @csrf
+
 
     <!--=============== NAVBAR ===============-->
     <nav class="nav" id="nav">
@@ -67,14 +66,15 @@
                     </a>
                 </li>
                 <div class="logout">
-                    <button class="logout__button">Logout</button>
+                    <button class="logout__button"
+                        onclick="window.location.href = '{{ route('logout') }}' ;">Logout</button>
                 </div>
             </ul>
         </div>
     </nav>
 
     <!--=============== MAIN ===============-->
-    <main class="main" id="main">
+    <main class=" main" id="main">
         <!--=============== HEADER ===============-->
         <header class="header" id="header">
             <nav class="header__nav container">

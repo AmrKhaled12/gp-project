@@ -7,12 +7,19 @@
     @endif
     <div class="notifications-container" style="display: none;">
         <ul>
-            <li class="dropdown-notifications">
-                @if (isset($notifications))
 
-                @foreach ($notifications as $notification)
+            @if (isset($notifications))
 
-                <h1 class="user__name">{{ $notification->user->name }}</h1>
+            @foreach ($notifications as $notification)
+            @if ($notification->type=='follow')
+            <li class="dropdown-notifications"
+                onclick="window.location.href = '{{ route('Profile-follow',$notification->sender->id) }}' ;">
+                @else
+            <li class="dropdown-notifications"
+                onclick="window.location.href = '{{ route('getComments',$notification->post_id) }}' ;">
+                @endif
+
+                <h1 class="user__name">{{ $notification->sender->name }}</h1>
                 <p class="user__name">{{ $notification->data }}</p>
 
                 @if (isset($notification->comment_id))
@@ -24,13 +31,14 @@
                 @endif
 
                 <small class="user__name">{{ $notification->created_at }}</small>
-                @endforeach
-                @endif
-                @if (!isset($notification))
-                <h1 class="user__name">Not Found Notification</h1>
-                @endif
 
             </li>
+            @endforeach
+            @endif
+            @if (!isset($notification))
+            <h1 class="user__name">Not Found Notification</h1>
+            @endif
+
         </ul>
     </div>
 </a>
