@@ -38,7 +38,8 @@ class client extends Status
         $this->workout_tools = $data->WorkoutData->workout_tools;
         $this->number_of_days = $data->WorkoutData->number_of_days;
         $this->email = $data->email;
-        $this->photo = $data->phone;
+        $this->photo = $data->photo;
+        $this->phone=$data->phone;
         $this->height = $data->WorkoutData->height;
         $this->weight = $data->WorkoutData->weight;
         $this->exercise_level = $data->WorkoutData->exercise_level;

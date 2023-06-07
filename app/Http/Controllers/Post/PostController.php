@@ -17,7 +17,7 @@ class PostController extends Controller
         return view('admin.dashboard.Timeline.assets-timeline.showCreatePost');
     }
     public function storePost(Request $request){
-
+            session_start();
         $client = $_SESSION['client'];
         $request->validate([
             'text' => 'max:255',

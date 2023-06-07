@@ -45,9 +45,9 @@ body {
     align-items: center;
 }
 .post__img {
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(224deg, #e92f2f -2%, #feaaaa 97%);
+    width: 80px;
+    height: 80px;
+    background-color: aliceblue;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
@@ -56,7 +56,7 @@ body {
     -webkit-border-radius: 50%;
 }
 .post__img img {
-    width: 36px;
+    width: 65px;
 }
 img {
     max-width: 100%;

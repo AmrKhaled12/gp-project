@@ -7,6 +7,7 @@
     <!--=============== CSS ===============-->
     @yield('style-timeline')
     @yield('style-user_profile')
+    @yield('style-profile')
     <!--=============== FAVICON ===============-->
     <link rel="shortcut icon" href="{{asset('assets/img/favicon.png')}}" type="image/x-icon">
 
@@ -34,7 +35,7 @@
 
             <div class="nav__data">
 
-                <div class="nav__mask">
+                <div class="nav__mask" onclick="window.location.href = '{{ route('myprofile')}}' ;">
 
                     <img src="{{asset('assets/img/perfil.png')}}" alt="" class="nav__img">
                 </div>
@@ -100,6 +101,7 @@
         <!--=============== HOME ===============-->
         @yield('timeline')
         @yield('user_profile')
+        @yield('content-profile')
 
 
     </main>
@@ -107,6 +109,7 @@
     <!--=============== MAIN JS ===============-->
     @yield('script-timeline')
     @yield('script-user_profile')
+    @yield('script-profile')
 </body>
 
 </html>
