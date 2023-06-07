@@ -18,7 +18,4 @@
         @endforeach
         @endif
     </main>
-    <footer>
-        <p>&copy; 2023 User Search Results</p>
-    </footer>
 </div>

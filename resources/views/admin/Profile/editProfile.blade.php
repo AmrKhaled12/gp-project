@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="{{asset('assets/img/favicon.png')}}" type="image/x-icon">
         <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/stylesEditProfile.css">
+        <link rel="stylesheet" href="{{asset('assets/css/stylesEditProfile.css')}}">
 
         <!--=============== BOX Icons ===============-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -16,20 +16,21 @@
     </head>
     <body>
         <div class="container">
-            <div class="login__content"> 
+            <div class="login__content">
                 <!-- <img  class="login__img"> -->
-                <img src="assets/img/gym-login.jpg" alt="login" class="login__img">
+                <img src="{{asset('assets/img/gym-login.jpg')}}" alt="login" class="login__img">
 
-                <form action="" class="login__form">
+                <form action="{{route('Edit')}}" method="post" enctype="multipart/form-data" class="login__form">
+                    @csrf
                     <div class="background__edit">
                     <div class="nav__mask">
-                        <img src="assets/img/perfil.png" alt="" class="nav__img">
+                        <img src="{{asset('assets/img/perfil.png')}}" alt="" class="nav__img">
                     </div>
 
                     <button id="fileButton" class="follow__button">
                         Change Photo
                     </button>
-                    <input type="file" id="fileInput" style="display: none;">
+                    <input type="file" name="media" id="fileInput" style="display: none;">
                 </div>
 
                     <div>
@@ -38,50 +39,50 @@
                                 <label for="" class="login__label">User Name</label>
                                 <div class="input">
                                     <i class="bx bx-user-plus input__lock"></i>
-                                    <input type="text" placeholder="Enter your User Name" required class="input__password input__email" id="username">
+                                    <input type="text" name="name" placeholder="{{$client->name}}" required class="input__password input__email" id="username">
                                 </div>
                             </div>
-                        
+
                             <div>
                                 <label for="" class="login__label">Email</label>
                                 <div class="input">
                                     <i class="bx bx-envelope input__lock"></i>
-                                    <input type="email" placeholder="Enter your email address" required class="input__password input__email" id="email">
+                                    <input type="email" name="email" placeholder="{{$client->email}}" required class="input__password input__email" id="email">
                                 </div>
                             </div>
-                        
+
                             <div>
                                 <label for="" class="login__label">Phone Number</label>
                                 <div class="input">
                                     <i class="bx bx-phone input__lock"></i>
-                                    <input type="number" placeholder="Enter your Phone number" required class="input__password input__email" id="phone">
+                                    <input type="number" name="phone" placeholder="{{$client->phone}}" required class="input__password input__email" id="phone">
                                 </div>
                             </div>
-                        
+
                             <div>
                                 <label for="" class="login__label">Age</label>
                                 <div class="input">
                                     <i class="bx bx-message-square-edit input__lock"></i>
-                                    <input type="number" placeholder="Enter your Age" required class="input__password input__email" id="age">
+                                    <input type="number" name="age" placeholder="{{$client->age}}" required class="input__password input__email" id="age">
                                 </div>
                             </div>
-                        
+
                             <div>
                                 <label for="" class="login__label">Password</label>
                                 <div class="input">
                                     <div class="input__overlay" id="input-overlay"></div>
                                     <i class="bx bx-lock-alt input__lock"></i>
-                                    <input type="password" placeholder="Enter your password" required class="input__password" id="input-pass">
+                                    <input type="password" name="password" placeholder="Enter your password" required class="input__password" id="input-pass">
                                     <i class="bx bx-hide input__icon" id="input-icon"></i>
                                 </div>
                             </div>
-                        
+
                             <div>
                                 <label for="" class="login__label">Confirm Password</label>
                                 <div class="input">
                                     <div class="input__overlay" id="input-overlays"></div>
                                     <i class="bx bx-lock-alt input__lock"></i>
-                                    <input type="password" placeholder="Re-Enter your password" required class="input__password" id="input-passs">
+                                    <input type="password" name="password_confirmation" placeholder="Re-Enter your password" required class="input__password" id="input-passs">
                                     <i class="bx bx-hide input__icon" id="input-icons"></i>
                                 </div>
                             </div>
@@ -102,21 +103,32 @@
                                 </div>
                             </div>
                         </div> -->
-                        
+
                         <div>
                             <div class="login__buttons">
-                                <button type="button" class="login__button">Submit</button>
+                                <button type="submit"  class="login__button">Submit</button>
                             </div>
                         </div>
-                        
 
+                        </div>
+                        </div>
                 </form>
+            </div>
             </div>
         </div>
 
         <!--=============== MAIN JS ===============-->
-        <script src="assets/js/signs.js"></script>
-
+{{--        <script src="{{asset('assets/js/signs.js')}}"></script>--}}
+        @if($errors->any())
+            @foreach($errors->all() as $error)
+                <div class="alert alert-danger" role="alert" style="
+                        background-color: #ccc;
+                        width: fit-content;
+                        margin: auto;
+                        color: black;
+                    ">The password confirmation does not match.</div>
+            @endforeach
+        @endif
     </body>
 </html>
 

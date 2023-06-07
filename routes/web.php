@@ -23,8 +23,11 @@ use App\Http\Controllers\Profile\UserProfileController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::post('edit',[ProfileController::class,'Edit'])->name('Edit');
+Route::get('edit',[ProfileController::class,'showEdit'])->name('showEdit');
 Route::get('profile',[ProfileController::class,'showProfile'])->name('myprofile');
+Route::get('followers',[ProfileController::class,'follower'])->name('followers');
+Route::get('following',[ProfileController::class,'following'])->name('following');
 Route::get('dashboard/main2', [PostController::class, 'storeComment'])->name('storeComment');
 Route::get('get/comments/{id}', [PostController::class, 'getComments'])->name('getComments');
 Route::get('get/search', [PostController::class, 'showsearch'])->name('search');
