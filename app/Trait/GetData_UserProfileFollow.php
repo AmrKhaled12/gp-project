@@ -14,7 +14,7 @@ trait GetData_UserProfileFollow
         $main_following_user = Follow::select('follower')->where('following', '=', $main_id)->get();
         $number_following = Follow::select('follower')->where('following', '=', $main_id)->get()->count();
         $main_followers_user = Follow::select('following')->where('follower', '=', $main_id)->get();
-        $number_followers = Follow::select('follower')->where('following', '=', $main_id)->get()->count();
+        $number_followers = Follow::select('following')->where('follower', '=', $main_id)->get()->count();
         return
             [
                 'user' => $main_user,

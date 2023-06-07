@@ -20,6 +20,7 @@ class PushNotification implements ShouldBroadcast
     public $user_id;
     public $table_id;
     public $type;
+    public $user_sender;
     // protected $data;
     // protected $type;
     // protected $time;
@@ -30,6 +31,7 @@ class PushNotification implements ShouldBroadcast
         $this->user_id = $data['user_id'];
         $this->table_id = $data['table_id'];
         $this->type = $data['type'];
+        $this->user_sender = $data['user_sender'];
         $this->Create_Notification($this->type, $data);
     }
 

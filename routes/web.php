@@ -1,14 +1,17 @@
 <?php
 
+
 use App\Http\Controllers\Post\PostController;
 use App\Http\Controllers\Profile\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Post\PostController;
 use App\Http\Controllers\User\UserController;
 use App\Http\Controllers\Status\StatusController;
 use App\Http\Controllers\Workout\WorkoutController;
 use App\Http\Controllers\HomePage\HomePageController;
 use App\Http\Controllers\Dashboard\DashboardController;
 use App\Http\Controllers\Nitrition\NitritionController;
+use App\Http\Controllers\Profile\UserProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -61,7 +64,7 @@ Route::group(['prefix' => 'nutrition'], function () {
 Route::group(['prefix' => 'dashboard'], function () {
 
     Route::get('/main', [DashboardController::class, 'show_dashboard'])->name('dashboard');
-    Route::get('/profile/{id}', [DashboardController::class, 'show_profile'])->name('Profile-follow');
+    Route::get('/profile/{id}', [UserProfileController::class, 'show_profile'])->name('Profile-follow');
 });
 
 Route::group(['prefix' => 'status'], function () {

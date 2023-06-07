@@ -393,36 +393,18 @@ position: relative;
   color: var(--title-color-dark);
 }
 
-
 .notification:hover{
   color: var(--first-color);
 }
 
-/* .notification {
-
+.notification__ring{
   font-size: 1.2rem;
-  color: white;
-  text-decoration: none;
-  padding: 15px 26px;
-  position: relative;
-  display: inline-block;
-  border-radius: 2px;
-} */
+  color: var(--first-color);
+}
 
-/* .notification:hover {
-
-} */
-
-/* .notification .badge {
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: medium ;
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  padding: 20px 25px;
-  border-radius: 50%;
-  color: white;
-} */
+.notification__ring:hover{
+  color: var(--first-color-shape);
+}
 
 .notifications-container {
   position: absolute;
@@ -459,6 +441,7 @@ position: relative;
   padding: 5px;
   border-bottom: 1px solid #3a3b3d;
 }
+
 
 .icons{
   display: flex;

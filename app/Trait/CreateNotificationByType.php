@@ -17,6 +17,7 @@ trait CreateNotificationByType
                     'comment_id' => $notification_data['table_id'],
                     'read_at' => now(),
                     'type' => $type,
+                    'user_sender' => $notification_data['user_sender']
                 ]);
                 break;
             case 'like':
@@ -26,6 +27,7 @@ trait CreateNotificationByType
                     'post_id' => $notification_data['table_id'],
                     'read_at' => now(),
                     'type' => $type,
+                    'user_sender' => $notification_data['user_sender']
                 ]);
                 break;
             case 'replay':
@@ -35,6 +37,7 @@ trait CreateNotificationByType
                     'replay_id' => $notification_data['table_id'],
                     'read_at' => now(),
                     'type' => $type,
+                    'user_sender' => $notification_data['user_sender']
                 ]);
                 break;
             case 'post':
@@ -44,6 +47,7 @@ trait CreateNotificationByType
                     'post_id' => $notification_data['table_id'],
                     'read_at' => now(),
                     'type' => $type,
+                    'user_sender' => $notification_data['user_sender']
                 ]);
                 break;
             default:
@@ -53,6 +57,7 @@ trait CreateNotificationByType
                     'follow_id' => $notification_data['table_id'],
                     'read_at' => now(),
                     'type' => $type,
+                    'user_sender' => $notification_data['user_sender']
                 ]);
                 break;
         }

@@ -5,67 +5,9 @@
 @endsection
 
 @section('user_profile')
-<section class="section section__height container" id="home">
-    <!-- here i will put post and create post  -->
-    <div class="page__container">
-        <div class="post__maker">
-            <div class="profile__container">
-                <div class="profile__mask">
-                    <a href="{{ asset('assets/img/perfil.png') }}" data-lightbox="image-1" data-title="Profile Picture">
-                        <img class="profile__img" src="{{asset('assets/img/perfil.png')}}" alt="">
-                    </a>
-                </div>
-                {{-- ############################################## --}}
-                <div class="profile__name">
-                    <h1 class="nav__name">
-                        <p class="user__name">Abdelrahman <br> Mahmoud</p>
-                    </h1>
 
-                    <button class="follow__button" onclick="window.location.href = '{{ route('add-follow') }}';">
-                        Follow
-                    </button>
+@livewire('change-follow-button',['main_id'=>$main_id])
 
-                    <button style="display: none;" class="following__button">
-                        Following
-                    </button>
-
-                </div>
-                {{-- #################################################### --}}
-            </div>
-
-            <div class="thinking__line"></div>
-
-            <div class="follow__section">
-                <a class="posts__count counter" href="">
-                    <h1>{{ $posts->count() }}</h1>
-                    <h2>posts</h2>
-                </a>
-                <a class="followers__count counter" href="">
-                    @if (!isset($data['num_followers']))
-                    <h1>0</h1>
-                    @else
-                    <h1>{{ $data['num_followers'] }}</h1>
-                    @endif
-                    <h2>followers</h2>
-                </a>
-                <a class="following__count counter" href="">
-                    @if (!isset($data['num_following']))
-                    <h1>0</h1>
-                    @else
-                    <h1>{{ $data['num_following'] }}</h1>
-                    @endif
-                    <h2>following</h2>
-                </a>
-            </div>
-
-            <div class="thinking__line"></div>
-
-        </div>
-
-        @include('admin.Dashboard.Timeline.assets-timeline.create-post')
-        @include('admin.Dashboard.Timeline.assets-timeline.posts-timeline')
-    </div>
-</section>
 @endsection
 
 @section('script-user_profile')
