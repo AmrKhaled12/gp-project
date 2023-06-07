@@ -1,5 +1,8 @@
 <?php
 
+
+use App\Http\Controllers\Post\PostController;
+use App\Http\Controllers\Profile\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Post\PostController;
 use App\Http\Controllers\User\UserController;
@@ -21,7 +24,7 @@ use App\Http\Controllers\Profile\UserProfileController;
 |
 */
 
-
+Route::get('profile',[ProfileController::class,'showProfile'])->name('myprofile');
 Route::get('dashboard/main2', [PostController::class, 'storeComment'])->name('storeComment');
 Route::get('get/comments/{id}', [PostController::class, 'getComments'])->name('getComments');
 Route::get('get/search', [PostController::class, 'showsearch'])->name('search');

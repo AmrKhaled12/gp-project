@@ -4,22 +4,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/stylesProfile.css">
+        <link rel="stylesheet" href="{{asset('assets/css/stylesProfile.css')}}">
 
         <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="{{asset('assets/img/favicon.png')}}" type="image/x-icon">
 
         <!--=============== BOXICON ===============-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <!--=============== REMIXICONS ===============-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
         <!--=============== lightbox ===============-->
-        <link href="assets/lightbox2-2.11.4/dist/css/lightbox.min.css" rel="stylesheet" />
+        <link href="{{asset('assets/lightbox2-2.11.4/dist/css/lightbox.min.css')}}" rel="stylesheet" />
 
         <title>FitnessFuelX</title>
     </head>
     <body>
-    
+
 
     <!--=============== SIDEBAR ===============-->
         <nav class="nav" id="nav">
@@ -29,11 +29,11 @@
                 <div class="nav__close" id="nav-close">
                     <i class='bx bx-x'></i>
                 </div>
-                
+
                 <div class="nav__data">
                     <div class="nav__mask">
 
-                        <img src="assets/img/perfil.png" alt="" class="nav__img">
+                        <img src="{{asset('assets/img/perfil.png')}}" alt="" class="nav__img">
                     </div>
 
                     <span class="nav__greeting">Hi,</span>
@@ -43,7 +43,7 @@
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a href="#" class="nav__link active-link">
-                            <i class="ri-home-4-line"></i> Home 
+                            <i class="ri-home-4-line"></i> Home
                         </a>
                     </li>
                     <li class="nav__item">
@@ -53,7 +53,7 @@
                     </li>
                     <li class="nav__item">
                         <a href="workout.html" class="nav__link">
-                            <i class='bx bx-dumbbell'></i> Workout 
+                            <i class='bx bx-dumbbell'></i> Workout
                         </a>
                     </li>
                     <li class="nav__item">
@@ -74,14 +74,14 @@
             <header class="header" id="header">
                 <nav class="header__nav container">
                     <a href="#" class="header__logo">
-                        <img src="assets/img/favicon.png" alt="logo"> 
+                        <img src="{{asset('assets/img/favicon.png')}}" alt="logo">
                         <p>FitnessFuelX</p>
                     </a>
-                    
+
                     <div class="containner">
                         <form action="" class="search" id="search-bar">
                             <input type="search" class="search__input" placeholder="Search...">
-    
+
                             <div class="search__button" id="search-button">
                                 <i class="ri-search-2-line search__icon"></i>
                                 <i class="ri-close-line search__close"></i>
@@ -90,7 +90,7 @@
                     </div>
 
                     <div class="icons">
-                        
+
                     <a href="#">
                         <i class='bx bxs-bell-ring notification'></i>
                         <i style="display: none;" class='bx bxs-bell-ring notification__ring'></i>
@@ -105,8 +105,8 @@
                               </ul>
                         </div>
                     </a>
-                    
-    
+
+
                     <!-- Toggle button -->
                     <div class="header__toggle" id="header-toggle">
                         <i class='bx bx-grid-alt'></i>
@@ -121,8 +121,8 @@
                     <div class="post__maker">
                         <div class="profile__container">
                             <div class="profile__mask">
-                                <a href="assets/img/perfil.png" data-lightbox="image-1" data-title="Profile Picture">
-                                    <img class="profile__img" src="assets/img/perfil.png" alt="">
+                                <a href="{{asset('assets/img/perfil.png')}}" data-lightbox="image-1" data-title="Profile Picture">
+                                    <img class="profile__img" src="{{asset('assets/img/perfil.png')}}" alt="">
                                 </a>
                             </div>
                             <div class="profile__name">
@@ -131,9 +131,9 @@
                                 <a href="" class="edit__button">
                                     Edit profile
                                 </a>
-                                
+
                             </div>
-                            
+
                     </div>
 
                     <div class="thinking__line"></div>
@@ -176,7 +176,7 @@
                     <div class="post__maker">
                         <div class="post__thinking">
                             <div class="post__img">
-                                <img src="assets/img/perfil.png" alt="">
+                                <img src="{{asset('assets/img/perfil.png')}}" alt="">
                             </div>
                             <div class="thinking">
                                 <input type="text" class="thinking__input" placeholder="What's on your mind ?">
@@ -190,7 +190,7 @@
                                 <i class="ri-image-add-fill"></i>  <p>Photo</p>
                             </button>
                             <input type="file" id="fileInput" style="display: none;">
-                            
+
 
                             <button class="post">
                                 <i class="ri-share-forward-fill"></i> <p>Post</p>
@@ -202,7 +202,7 @@
                         <div class="owner__container">
                             <div class="owner__info">
                                 <div class="post__img">
-                                    <img src="assets/img/favicon.png" alt="">
+                                    <img src="{{asset('assets/img/favicon.png')}}" alt="">
                                 </div>
                                 <div class="owner__name">
                                     <h1 class="user__name">FitnessFuelX</h1>
@@ -217,7 +217,7 @@
                             <p>Welcome in our agency, <br> FitnessFuelX was honored to have you join us</p>
                         </div>
                         <div class="posts__img">
-                            <img src="assets/img/gymman.jpg" alt="">
+                            <img src="{{asset('assets/img/gymman.jpg')}}" alt="">
                         </div>
                         <div class="reaction__container">
                             <div class="likes">
@@ -265,7 +265,7 @@
                         <div class="comment__section">
                             <div class="post__thinking">
                                 <div class="post__img">
-                                    <img src="assets/img/perfil.png" alt="">
+                                    <img src="{{asset('assets/img/perfil.png')}}" alt="">
                                 </div>
                                 <div class="thinking">
                                     <input type="text" class="thinking__input comment__input" placeholder="Write a public comment...">
@@ -277,13 +277,13 @@
                             </div>
                         </div>
                     </div>
-                    
+
 
                     <div class="post__maker post-maker">
                         <div class="owner__container">
                             <div class="owner__info">
                                 <div class="post__img">
-                                    <img src="assets/img/perfil.png" alt="">
+                                    <img src="{{asset('assets/img/perfil.png')}}" alt="">
                                 </div>
                                 <div class="owner__name">
                                     <h1 class="user__name">Abdelrahman Mahmoud</h1>
@@ -343,7 +343,7 @@
                         <div class="comment__section">
                             <div class="post__thinking">
                                 <div class="post__img">
-                                    <img src="assets/img/perfil.png" alt="">
+                                    <img src="{{asset('assets/img/perfil.png')}}" alt="">
                                 </div>
                                 <div class="thinking">
                                     <input type="text" class="thinking__input comment__input" placeholder="Write a public comment...">
@@ -360,7 +360,7 @@
                         <div class="owner__container">
                             <div class="owner__info">
                                 <div class="post__img">
-                                    <img src="assets/img/perfil.png" alt="">
+                                    <img src="{{asset('assets/img/perfil.png')}}" alt="">
                                 </div>
                                 <div class="owner__name">
                                     <h1 class="user__name">Abdelrahman Mahmoud</h1>
@@ -375,7 +375,7 @@
                             <p>مرحبا , هل التمرين دا كويس للجسم وهل ليه اضرار</p>
                         </div>
                         <div class="posts__img">
-                            <img src="assets/img/gymman.jpg" alt="">
+                            <img src="{{asset('assets/img/gymman.jpg')}}" alt="">
                         </div>
                         <div class="reaction__container">
                             <div class="likes">
@@ -423,7 +423,7 @@
                         <div class="comment__section">
                             <div class="post__thinking">
                                 <div class="post__img">
-                                    <img src="assets/img/perfil.png" alt="">
+                                    <img src="{{asset('assets/img/perfil.png')}}" alt="">
                                 </div>
                                 <div class="thinking">
                                     <input type="text" class="thinking__input comment__input" placeholder="Write a public comment...">
@@ -440,7 +440,7 @@
                         <div class="owner__container">
                             <div class="owner__info">
                                 <div class="post__img">
-                                    <img src="assets/img/perfil.png" alt="">
+                                    <img src="{{asset('assets/img/perfil.png')}}" alt="">
                                 </div>
                                 <div class="owner__name">
                                     <h1 class="user__name">Abdelrahman Mahmoud</h1>
@@ -455,7 +455,8 @@
                             <p>مرحبا , هل التمرين دا كويس للجسم وهل ليه اضرار</p>
                         </div>
                         <div class="posts__img">
-                            <video controls src="assets/img/videocrossfit.mp4" alt="">
+                            <video controls src="{{asset('assets/img/videocrossfit.mp4')}}" alt="">
+                            </video>
                         </div>
                         <div class="reaction__container">
                             <div class="likes">
@@ -503,7 +504,7 @@
                         <div class="comment__section">
                             <div class="post__thinking">
                                 <div class="post__img">
-                                    <img src="assets/img/perfil.png" alt="">
+                                    <img src="{{asset('assets/img/perfil.png')}}" alt="">
                                 </div>
                                 <div class="thinking">
                                     <input type="text" class="thinking__input comment__input" placeholder="Write a public comment...">
@@ -518,11 +519,11 @@
                 </div>
             </section>
 
-            
+
         </main>
 
     <!--=============== MAIN JS ===============-->
-    <script src="assets/js/timeline.js"></script>
-    <script src="assets/lightbox2-2.11.4/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="{{asset('assets/js/timeline.js')}}"></script>
+    <script src="{{asset('assets/lightbox2-2.11.4/dist/js/lightbox-plus-jquery.min.js')}}"></script>
     </body>
 </html>
