@@ -11,7 +11,7 @@
                 {{-- ############################################## --}}
                 <div class="profile__name">
                     <h1 class="nav__name">
-                        <p class="user__name">Abdelrahman <br> Mahmoud</p>
+                        <p class="user__name">{{$data['user']->name}}</p>
                     </h1>
 
 
@@ -57,7 +57,6 @@
             <div class="thinking__line"></div>
 
         </div>
-
         @include('admin.Dashboard.Timeline.assets-timeline.create-post')
         @include('admin.Dashboard.Timeline.assets-timeline.posts-timeline')
     </div>

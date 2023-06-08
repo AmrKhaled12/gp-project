@@ -16,7 +16,7 @@
                                 </a>
                             </div>
                             <div class="profile__name">
-                                <h1 class="nav__name"><p class="user__name">Abdelrahman <br> Mahmoud</p></h1>
+                                <h1 class="nav__name"><p class="user__name">{{$client->name}}</p></h1>
 
                                 <a href="{{route('showEdit')}}" class="edit__button">
                                     Edit profile

@@ -32,7 +32,7 @@ class PostController extends Controller
             'media' => $file_name,
             'user_id' => $client->id
         ]);
-        return response('post created');
+        return redirect()->route('myprofile');
     }
     public function getComments($id)
     {

@@ -23,17 +23,20 @@ use App\Http\Controllers\Profile\UserProfileController;
 |
 */
 
+
+
 Route::post('edit', [ProfileController::class, 'Edit'])->name('Edit');
 Route::get('edit', [ProfileController::class, 'showEdit'])->name('showEdit');
 Route::get('profile', [ProfileController::class, 'showProfile'])->name('myprofile');
 Route::get('followers', [ProfileController::class, 'follower'])->name('followers');
 Route::get('following', [ProfileController::class, 'following'])->name('following');
+
 Route::get('dashboard/main2', [PostController::class, 'storeComment'])->name('storeComment');
 Route::get('get/comments/{id}', [PostController::class, 'getComments'])->name('getComments');
 Route::get('get/search', [PostController::class, 'showsearch'])->name('search');
 
-Route::get('/', [HomePageController::class, 'get_login'])->name('get_login')->middleware('Are_You_in_HomePage?');
-Route::post('/', [HomePageController::class, 'post_login'])->name('post_login');
+Route::get('/login', [HomePageController::class, 'get_login'])->name('get_login')->middleware('Are_You_in_HomePage?');
+Route::post('/login', [HomePageController::class, 'post_login'])->name('post_login');
 Route::get('/logout', [HomePageController::class, 'logout'])->name('logout');
 
 Route::group(['prefix' => 'user',], function () {
@@ -66,13 +69,16 @@ Route::group(['middleware' => 'Are_You_Login?'], function () {
     });
 
 
+Route::get('/',function (){
+   return view('home');
+
     Route::group(['prefix' => 'dashboard'], function () {
 
         Route::get('/main', [DashboardController::class, 'show_dashboard'])->name('dashboard');
         Route::get('/profile/{id}', [UserProfileController::class, 'show_profile'])->name('Profile-follow');
     });
-
     Route::group(['prefix' => 'status'], function () {
         Route::get('/data', [StatusController::class, 'get_status'])->name('status');
     });
+
 });

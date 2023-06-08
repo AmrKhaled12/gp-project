@@ -15,6 +15,9 @@ class Search extends Component
     {
 
             $users = User::where('name', 'LIKE',  $this->result . '%')->get();
+            if (collect($users)->isEmpty()){
+                $this->isfound=false;
+            }
             if ($this->isfound==false){
                 return view('livewire.search');
             }
@@ -29,7 +32,7 @@ class Search extends Component
                     $this->isfound=false;
                     $this->emit('search');
                 }else {
-                    $this->result = $arrayOfName[0];
+                    $this->result = str_split($arrayOfName[0],3)[0];
                     $this->isfound = true;
                     $this->emit('search');
                 }
