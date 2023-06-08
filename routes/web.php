@@ -4,7 +4,6 @@
 use App\Http\Controllers\Post\PostController;
 use App\Http\Controllers\Profile\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Post\PostController;
 use App\Http\Controllers\User\UserController;
 use App\Http\Controllers\Status\StatusController;
 use App\Http\Controllers\Workout\WorkoutController;
@@ -23,17 +22,20 @@ use App\Http\Controllers\Profile\UserProfileController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::post('edit',[ProfileController::class,'Edit'])->name('Edit');
-Route::get('edit',[ProfileController::class,'showEdit'])->name('showEdit');
-Route::get('profile',[ProfileController::class,'showProfile'])->name('myprofile');
-Route::get('followers',[ProfileController::class,'follower'])->name('followers');
-Route::get('following',[ProfileController::class,'following'])->name('following');
+Route::group(['prefix' => 'profile'], function () {
+    Route::post('edit',[ProfileController::class,'Edit'])->name('Edit');
+    Route::get('edit',[ProfileController::class,'showEdit'])->name('showEdit');
+    Route::get('profile',[ProfileController::class,'showProfile'])->name('myprofile');
+    Route::get('followers',[ProfileController::class,'follower'])->name('followers');
+    Route::get('following',[ProfileController::class,'following'])->name('following');
+});
+
 Route::get('dashboard/main2', [PostController::class, 'storeComment'])->name('storeComment');
 Route::get('get/comments/{id}', [PostController::class, 'getComments'])->name('getComments');
 Route::get('get/search', [PostController::class, 'showsearch'])->name('search');
 
-Route::get('/', [HomePageController::class, 'get_login'])->name('get_login')->middleware('Are_You_in_HomePage?');
-Route::post('/', [HomePageController::class, 'post_login'])->name('post_login');
+Route::get('/login', [HomePageController::class, 'get_login'])->name('get_login')->middleware('Are_You_in_HomePage?');
+Route::post('/login', [HomePageController::class, 'post_login'])->name('post_login');
 Route::get('/logout', [HomePageController::class, 'logout'])->name('logout');
 
 
@@ -73,9 +75,6 @@ Route::group(['prefix' => 'dashboard'], function () {
 Route::group(['prefix' => 'status'], function () {
     Route::get('/data', [StatusController::class, 'get_status'])->name('status');
 });
-
-Route::get('comment', function () {
-    // $hello = 'omar';
-    // return view('admin.Dashboard.Timeline.Timeline', compact('hello'));
-    return view('admin.Dashboard.Timeline.Comment-Page');
+Route::get('/',function (){
+   return view('home');
 });

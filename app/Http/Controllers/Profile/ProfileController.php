@@ -19,14 +19,19 @@ class ProfileController extends Controller
        session_start();
        $client=$_SESSION['client'];
        $follow_data=$this->get_information_user($client->id);
-       $posts=Post::where('id','=',$client->id)->get();
+       $posts=Post::where('user_id','=',$client->id)->get();
        $numOfPosts=Post::where('id','=',$client->id)->get()->count();
+       $isFound=true;
+       if(collect($posts)->isEmpty()){
+           $isFound=false;
+       }
        return view('admin.Profile.profile ',with([
            'client'=>$client,
            'posts'=>$posts,
            'num_followers'=>$follow_data['num_followers'],
            'num_following'=>$follow_data['num_following'],
-           'num_posts'=>$numOfPosts
+           'num_posts'=>$numOfPosts,
+           'found'=>$isFound
 
        ]));
    }

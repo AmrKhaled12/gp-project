@@ -15,7 +15,7 @@
             <i class="ri-image-add-fill"></i>
             <p>Photo</p>
         </button>
-        <input type="file" id="fileInput" style="display: none;">
+        <input type="file" name="media" id="fileInput" style="display: none;">
 
 
         <button class="post">

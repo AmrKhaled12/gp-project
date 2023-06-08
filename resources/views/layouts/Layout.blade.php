@@ -41,7 +41,7 @@
 
                 <span class="nav__greeting">Hi,</span>
                 <h1 class="nav__name">
-                    <p class="user__name">Abdelrahman <br> Mahmoud</p>
+                    <p class="user__name">{{$client->name}}</p>
                 </h1>
             </div>
 

@@ -39,7 +39,7 @@
                                 <label for="" class="login__label">User Name</label>
                                 <div class="input">
                                     <i class="bx bx-user-plus input__lock"></i>
-                                    <input type="text" name="name" placeholder="{{$client->name}}" required class="input__password input__email" id="username">
+                                    <input type="text" name="name" value="{{$client->name}}"  class="input__password input__email" id="username">
                                 </div>
                             </div>
 
@@ -47,7 +47,7 @@
                                 <label for="" class="login__label">Email</label>
                                 <div class="input">
                                     <i class="bx bx-envelope input__lock"></i>
-                                    <input type="email" name="email" placeholder="{{$client->email}}" required class="input__password input__email" id="email">
+                                    <input type="email" name="email" value="{{$client->email}}"  class="input__password input__email" id="email">
                                 </div>
                             </div>
 
@@ -55,7 +55,7 @@
                                 <label for="" class="login__label">Phone Number</label>
                                 <div class="input">
                                     <i class="bx bx-phone input__lock"></i>
-                                    <input type="number" name="phone" placeholder="{{$client->phone}}" required class="input__password input__email" id="phone">
+                                    <input type="number" name="phone" value="{{$client->phone}}"  class="input__password input__email" id="phone">
                                 </div>
                             </div>
 
@@ -63,7 +63,7 @@
                                 <label for="" class="login__label">Age</label>
                                 <div class="input">
                                     <i class="bx bx-message-square-edit input__lock"></i>
-                                    <input type="number" name="age" placeholder="{{$client->age}}" required class="input__password input__email" id="age">
+                                    <input type="number" name="age" value="{{$client->age}}" class="input__password input__email" id="age">
                                 </div>
                             </div>
 

@@ -36,6 +36,7 @@ class NitritionController extends Controller
 
     public function show_breakfast()
     {
+        session_start();
         $client = $_SESSION['client'];
         $nutrition_system = new NutritionSystem(new ClassesNutrition(), $client);
         return $nutrition_system->Build();
