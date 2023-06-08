@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers\User;
 
-use App\Http\Controllers\Controller;
-use App\Http\Requests\EmailRequest;
 use App\Models\User;
+use App\Http\Requests\EmailRequest;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Session;
 
 class UserController extends Controller
 {
@@ -15,17 +16,14 @@ class UserController extends Controller
 
     public function insert_email_data(EmailRequest $req)
     {
-        //        $password=bcrypt($req->password);
-        User::create([
-            'name' => $req->input('name'),
-            'email' => $req->input('email'),
+
+        Session::put('data_user', [
+            'name' => $req->name,
+            'email' => $req->email,
             'password' => $req->password,
-            'phone' => $req->input('phone'),
-            'age' => $req->input('age')
+            'phone' => $req->phone,
+            'age' => $req->age
         ]);
-
-        $id = User::where('email', '=', $req->email)->first()->id;
-
-        return view('admin.Registration.Workout-Register', compact('id'));
+        return view('admin.Registration.Workout-Register');
     }
 }
