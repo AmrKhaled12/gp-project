@@ -32,8 +32,9 @@ class WorkoutController extends Controller
     }
     public function Plan_Workout()
     {
-        session_start();
+        $client = $_SESSION['client'];
         $workout_system = new WorkoutSystem($_SESSION['client']);
-        return $workout_system->Build();
+        $workout_system->Build();
+        return view('admin.Workout.workout', compact('client'));
     }
 }

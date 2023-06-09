@@ -8,6 +8,9 @@
     @yield('style-timeline')
     @yield('style-user_profile')
     @yield('style-profile')
+    @yield('style-workout')
+    @yield('style-nutrition')
+
     <!--=============== FAVICON ===============-->
     <link rel="shortcut icon" href="{{asset('assets/img/favicon.png')}}" type="image/x-icon">
 
@@ -102,14 +105,17 @@
         @yield('timeline')
         @yield('user_profile')
         @yield('content-profile')
-
-
+        @yield('workout')
+        @yield('nutrition')
     </main>
 
     <!--=============== MAIN JS ===============-->
     @yield('script-timeline')
     @yield('script-user_profile')
     @yield('script-profile')
+    @yield('script-workout')
+    @yield('script-nutrition')
+
 </body>
 
 </html>

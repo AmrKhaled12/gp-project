@@ -88,9 +88,10 @@ class NitritionController extends Controller
     }
     public function Plan_Nutrition()
     {
-//        session_start();
+
         $client = $_SESSION['client'];
         $nutrition_system = new NutritionSystem(new ClassesNutrition(), $client);
-        return $nutrition_system->Build();
+        $nutrition_system->Build();
+        return view('admin.Nutrition.nutrition', compact('client'));
     }
 }
