@@ -18,7 +18,7 @@ class CheckUser
     {
         session_start();
         if (!isset($_SESSION['login'])) {
-            return redirect()->route('get_login');
+            return redirect()->route('master_page');
         }
         return $next($request);
     }

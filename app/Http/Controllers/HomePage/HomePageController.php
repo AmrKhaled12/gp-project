@@ -22,8 +22,10 @@ class HomePageController extends Controller
 
     public function post_login(LoginRequest $request)
     {
-//        $password=decrypt($request->password);
-        $user = User::where(['email' => $request->email, 'password' => $request->password])->first();
+
+        $password = decrypt($request->password);
+        $user = User::where(['email' => $request->email, 'password' => $password])->first();
+
 
         if (collect($user)->isEmpty())
 
@@ -31,7 +33,6 @@ class HomePageController extends Controller
 
         else {
 
-            session_start();
             $_SESSION['login'] = 'on';
             $client = new Generate_Client_Information(new client(), $user->id);
             $_SESSION['client'] = $client->Generate();
@@ -41,7 +42,6 @@ class HomePageController extends Controller
     }
     public function logout()
     {
-        session_start();
         session_unset();
         session_destroy();
         return view('admin.Login.login');
