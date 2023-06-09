@@ -1,7 +1,7 @@
 <div class="comment__section">
     <div class="post__thinking">
         <div class="post__img">
-            <img src="{{asset('assets/img/perfil.png')}}" alt="">
+            <img src="{{asset('assets/img/favicon.png')}}" alt="">
         </div>
         <form wire:submit.prevent="insert_comment" class="thinking">
             <input wire:model.defer="comment" type="text" class="thinking__input comment__input"

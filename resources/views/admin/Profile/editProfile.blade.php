@@ -24,12 +24,12 @@
                     @csrf
                     <div class="background__edit">
                     <div class="nav__mask">
-                        <img src="{{asset('assets/img/perfil.png')}}" alt="" class="nav__img">
+                        <img src="{{ asset('images/user-profile/'.$client->photo) }}" alt="" class="nav__img">
                     </div>
 
-                    <button id="fileButton" class="follow__button">
+                    <a id="fileButton" class="follow__button">
                         Change Photo
-                    </button>
+                    </a>
                     <input type="file" name="media" id="fileInput" style="display: none;">
                 </div>
 

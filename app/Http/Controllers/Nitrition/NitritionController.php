@@ -49,14 +49,15 @@ class NitritionController extends Controller
     public function insert_user_data()
     {
         $data_user = Session::get('data_user');
-
-        $password = bcrypt($data_user['password']);
+        $defultImage='21372076.jpg';
+       $password = encrypt($data_user['password']);
         $new_user = User::create([
             'name' => $data_user['name'],
             'email' => $data_user['email'],
             'password' => $password,
             'phone' => $data_user['phone'],
-            'age' => $data_user['age']
+            'age' => $data_user['age'],
+            'photo' => $defultImage
         ]);
         return $new_user->id;
     }
@@ -87,6 +88,7 @@ class NitritionController extends Controller
     }
     public function Plan_Nutrition()
     {
+
         $client = $_SESSION['client'];
         $nutrition_system = new NutritionSystem(new ClassesNutrition(), $client);
         $nutrition_system->Build();

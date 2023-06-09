@@ -22,7 +22,7 @@ class UserController extends Controller
             'email' => $req->email,
             'password' => $req->password,
             'phone' => $req->phone,
-            'age' => $req->age
+            'age' => $req->age,
         ]);
         return view('admin.Registration.Workout-Register');
     }

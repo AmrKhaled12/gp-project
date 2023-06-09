@@ -24,7 +24,6 @@ use App\Http\Controllers\Profile\UserProfileController;
 */
 ###########################################################################################################################################
 // routes of main page
-
 Route::group(['middleware' => 'Are_You_in_HomePage?'], function () {
     Route::get('/', function () {
         return view('home');
@@ -41,6 +40,7 @@ Route::group(['middleware' => 'Are_You_in_HomePage?'], function () {
     });
 });
 
+
 ###########################################################################################################################################################
 // routes of pages
 
@@ -52,6 +52,9 @@ Route::group(['middleware' => 'Are_You_Login?'], function () {
     Route::group(['prefix' => 'post'], function () {
         Route::get('create/post', [PostController::class, 'showCreatePost'])->name('showCreatePost');
         Route::post('create/post', [PostController::class, 'storePost'])->name('storePost');
+        Route::get('dashboard/main2', [PostController::class, 'storeComment'])->name('storeComment');
+        Route::get('get/comments/{id}', [PostController::class, 'getComments'])->name('getComments');
+        Route::get('get/search', [PostController::class, 'showsearch'])->name('search');
     });
 
 
@@ -68,25 +71,25 @@ Route::group(['middleware' => 'Are_You_Login?'], function () {
         Route::get('/show', [NitritionController::class, 'Plan_Nutrition'])->name('nut_show');
     });
 
+
     Route::group(['prefix' => 'dashboard'], function () {
 
         Route::get('/main', [DashboardController::class, 'show_dashboard'])->name('dashboard');
         Route::get('/profile/{id}', [UserProfileController::class, 'show_profile'])->name('Profile-follow');
     });
+
     Route::group(['prefix' => 'status'], function () {
         Route::get('/data', [StatusController::class, 'get_status'])->name('status');
     });
 
+    Route::group(['prefix' => 'profile'], function () {
+        Route::post('edit', [ProfileController::class, 'Edit'])->name('Edit');
+        Route::get('edit', [ProfileController::class, 'showEdit'])->name('showEdit');
+        Route::get('profile', [ProfileController::class, 'showProfile'])->name('myprofile');
+        Route::get('followers', [ProfileController::class, 'follower'])->name('followers');
+        Route::get('following', [ProfileController::class, 'following'])->name('following');
+    });
+        });
 
 
-    Route::post('edit', [ProfileController::class, 'Edit'])->name('Edit');
-    Route::get('edit', [ProfileController::class, 'showEdit'])->name('showEdit');
-    Route::get('profile', [ProfileController::class, 'showProfile'])->name('myprofile');
-    Route::get('followers', [ProfileController::class, 'follower'])->name('followers');
-    Route::get('following', [ProfileController::class, 'following'])->name('following');
 
-    Route::get('dashboard/main2', [PostController::class, 'storeComment'])->name('storeComment');
-    Route::get('get/comments/{id}', [PostController::class, 'getComments'])->name('getComments');
-    Route::get('get/search', [PostController::class, 'showsearch'])->name('search');
-});
-######################################################################################################################################33

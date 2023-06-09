@@ -39,7 +39,7 @@
 
                 <div class="nav__mask" onclick="window.location.href = '{{ route('myprofile')}}' ;">
 
-                    <img src="{{asset('assets/img/perfil.png')}}" alt="" class="nav__img">
+                    <img src="{{asset('images/user-profile/'.$client->photo)}}" alt="" class="nav__img">
                 </div>
 
                 <span class="nav__greeting">Hi,</span>
