@@ -22,31 +22,31 @@ use App\Http\Controllers\Profile\UserProfileController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+###########################################################################################################################################
+// routes of main page
+
+Route::group(['middleware' => 'Are_You_in_HomePage?'], function () {
+    Route::get('/', function () {
+        return view('home');
+    })->name('master_page');
+    Route::get('/login', [HomePageController::class, 'get_login'])->name('get_login');
+    Route::post('/login', [HomePageController::class, 'post_login'])->name('post_login');
 
 
-
-Route::post('edit', [ProfileController::class, 'Edit'])->name('Edit');
-Route::get('edit', [ProfileController::class, 'showEdit'])->name('showEdit');
-Route::get('profile', [ProfileController::class, 'showProfile'])->name('myprofile');
-Route::get('followers', [ProfileController::class, 'follower'])->name('followers');
-Route::get('following', [ProfileController::class, 'following'])->name('following');
-
-Route::get('dashboard/main2', [PostController::class, 'storeComment'])->name('storeComment');
-Route::get('get/comments/{id}', [PostController::class, 'getComments'])->name('getComments');
-Route::get('get/search', [PostController::class, 'showsearch'])->name('search');
-
-Route::get('/login', [HomePageController::class, 'get_login'])->name('get_login')->middleware('Are_You_in_HomePage?');
-Route::post('/login', [HomePageController::class, 'post_login'])->name('post_login');
-Route::get('/logout', [HomePageController::class, 'logout'])->name('logout');
-
-Route::group(['prefix' => 'user',], function () {
-    Route::get('/register', [UserController::class, 'email_register_show'])->name('email_register');
-    Route::post('/register', [UserController::class, 'insert_email_data'])->name('register');
-    Route::post('workout/register/data', [WorkoutController::class, 'insert_workout_data'])->name('workout');
-    Route::post('nutrition/register/data', [NitritionController::class, 'full_registration'])->name('nutrition');
+    Route::group(['prefix' => 'user',], function () {
+        Route::get('/register', [UserController::class, 'email_register_show'])->name('email_register');
+        Route::post('/register', [UserController::class, 'insert_email_data'])->name('register');
+        Route::post('workout/register/data', [WorkoutController::class, 'insert_workout_data'])->name('workout');
+        Route::post('nutrition/register/data', [NitritionController::class, 'full_registration'])->name('nutrition');
+    });
 });
 
+###########################################################################################################################################################
+// routes of pages
+
 Route::group(['middleware' => 'Are_You_Login?'], function () {
+
+    Route::get('/logout', [HomePageController::class, 'logout'])->name('logout');
 
 
     Route::group(['prefix' => 'post'], function () {
@@ -68,10 +68,6 @@ Route::group(['middleware' => 'Are_You_Login?'], function () {
         Route::get('/show', [NitritionController::class, 'Plan_Nutrition'])->name('nut_show');
     });
 
-
-Route::get('/',function (){
-   return view('home');
-
     Route::group(['prefix' => 'dashboard'], function () {
 
         Route::get('/main', [DashboardController::class, 'show_dashboard'])->name('dashboard');
@@ -81,4 +77,16 @@ Route::get('/',function (){
         Route::get('/data', [StatusController::class, 'get_status'])->name('status');
     });
 
+
+
+    Route::post('edit', [ProfileController::class, 'Edit'])->name('Edit');
+    Route::get('edit', [ProfileController::class, 'showEdit'])->name('showEdit');
+    Route::get('profile', [ProfileController::class, 'showProfile'])->name('myprofile');
+    Route::get('followers', [ProfileController::class, 'follower'])->name('followers');
+    Route::get('following', [ProfileController::class, 'following'])->name('following');
+
+    Route::get('dashboard/main2', [PostController::class, 'storeComment'])->name('storeComment');
+    Route::get('get/comments/{id}', [PostController::class, 'getComments'])->name('getComments');
+    Route::get('get/search', [PostController::class, 'showsearch'])->name('search');
 });
+######################################################################################################################################33

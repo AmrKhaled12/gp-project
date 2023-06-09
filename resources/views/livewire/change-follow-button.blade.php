@@ -32,11 +32,12 @@
             <div class="thinking__line"></div>
 
             <div class="follow__section">
-                <a class="posts__count counter" href="">
+                <a class="posts__count counter">
                     <h1>{{ $posts->count() }}</h1>
                     <h2>posts</h2>
+
                 </a>
-                <a class="followers__count counter" href="">
+                <a class="followers__count counter" href="{{route('followers')}}">
                     @if (!isset($data['num_followers']))
                     <h1>0</h1>
                     @else
@@ -44,7 +45,7 @@
                     @endif
                     <h2>followers</h2>
                 </a>
-                <a class="following__count counter" href="">
+                <a class="following__count counter" href="{{route('following')}}">
                     @if (!isset($data['num_following']))
                     <h1>0</h1>
                     @else
