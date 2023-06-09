@@ -16,7 +16,7 @@ class Nutrition
         $units_meal = $meal->compontent_meals;
         $this->culc_protein($meal, $units_meal, $meals[$type]['protein']);
         $this->culc_carb($meal, $units_meal, $meals[$type]['carb']);
-       $this->culc_fat($meal, $units_meal, $meals[$type]['fat']);
+//       $this->culc_fat($meal, $units_meal, $meals[$type]['fat']);
         return
             [
                 'meal' => $meal->setHidden(['compontent_meals', 'created_at', 'updated_at']),
