@@ -18,4 +18,13 @@ trait Media
         $media->move($path, $file_name);
         return $file_name;
     }
+
+    public function editImageProfile($media)
+    {
+        $file_extention = (string)$media->getClientOriginalExtension();
+        $file_name = time() . "." . $file_extention;
+            $path = 'images/user-profile';
+        $media->move($path, $file_name);
+        return $file_name;
+    }
 }

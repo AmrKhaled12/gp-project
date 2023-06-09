@@ -17,7 +17,7 @@ class UserProfileController extends Controller
 
     public function show_profile($main_id)
     {
-        session_start();
+//        session_start();
 
         return view('admin.Profile.userProfile', with([
             'main_id'=>$main_id,

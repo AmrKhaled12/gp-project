@@ -121,7 +121,7 @@ img {
 .nav__mask {
   width: 80px;
   height: 80px;
-  background: linear-gradient(224deg, #e92f2f -2%, #feaaaa 97%);
+  /*background: linear-gradient(224deg, #e92f2f -2%, #feaaaa 97%);*/
   border-radius: 1.5rem;
   overflow: hidden;
   display: flex;
@@ -488,7 +488,7 @@ position: relative;
 .post__img{
   width: 40px;
   height: 40px;
-  background: linear-gradient(224deg, #e92f2f -2%, #feaaaa 97%);
+  /*background: linear-gradient(224deg, #e92f2f -2%, #feaaaa 97%);*/
   border-radius: 50%;
   overflow: hidden;
   display: flex;
@@ -555,7 +555,7 @@ position: relative;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 7px;
-  
+
 }
 
 .thinking__share i{
@@ -734,7 +734,7 @@ position: relative;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  
+
 }
 
 .like i {
@@ -1045,7 +1045,7 @@ position: relative;
   }
 
 
-} 
+}
 
 
 /* For large devices */
@@ -1091,7 +1091,7 @@ position: relative;
     -moz-transform: translate(25%);
     -ms-transform: translate(25%);
     -o-transform: translate(25%);
-    
+
 }
 }
 

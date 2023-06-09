@@ -28,6 +28,7 @@ class User extends Authenticatable implements JWTSubject
         'phone',
         'age',
         'is_active',
+        'photo'
     ];
     public function WorkoutData(){
         return $this->hasOne(WorkoutData::class,'user_id');

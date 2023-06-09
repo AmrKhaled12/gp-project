@@ -105,14 +105,14 @@ input[type=number]::-webkit-inner-spin-button{
 .login__description{
     color: var(--title-color);
     font-size: var(--h2-font-size);
-  
+
   }
 
 .login__inputs{
     row-gap: .75rem;
     margin-bottom: .5rem ;
   }
-  
+
 .login__label{
     display: block;
     color: var(--title-color);
@@ -137,22 +137,22 @@ input[type=number]::-webkit-inner-spin-button{
     column-gap: .75rem;
     margin-right: 1rem;
   }
-  
+
   .input__lock, .input__icon{
     font-size: 0.8rem;
     z-index: 1;
   }
-  
+
   .input__lock, .input__password{
     color:white;
   }
-  
+
   .input__icon{
     right: 0;
     color: var(--first-color);
     cursor: pointer;
   }
-  
+
   .input__password{
     background: transparent;
     border: none;
@@ -160,15 +160,15 @@ input[type=number]::-webkit-inner-spin-button{
     font-size: 14px;
     z-index: 1;
   }
-  
+
   .input__email{
     width: 100%;
   }
-  
+
   .input__password::placeholder{
     color: var(--white-color);
   }
-  
+
   .input__overlay {
     width: 16px;
     height: 16px;
@@ -187,7 +187,7 @@ input[type=number]::-webkit-inner-spin-button{
     -ms-transition: .4s ease-in-out;
     -o-transition: .4s ease-in-out;
   }
-  
+
   /* transition effect */
   .overlay-content {
     width: 100%;
@@ -199,18 +199,18 @@ input[type=number]::-webkit-inner-spin-button{
     -o-border-radius: .5rem;
     right: 0;
   }
-  
+
   .overlay-content ~ .input__lock{
     color: var(--container-color);
   }
-  
+
   .overlay-content ~ .input__password,
   .overlay-content ~ .input__password::placeholder{
     color: var(--text-color);
   }
 
   .login__button{
-    
+
     width: 50%;
     padding: 7px 1rem;
     border-radius: 15px;
@@ -230,11 +230,11 @@ input[type=number]::-webkit-inner-spin-button{
 .nav__img {
     width: 70px;
   }
-  
+
   .nav__mask {
     width: 80px;
     height: 80px;
-    background: linear-gradient(224deg, #e92f2f -2%, #feaaaa 97%);
+    /*background: linear-gradient(224deg, #e92f2f -2%, #feaaaa 97%);*/
     border-radius: 1.5rem;
     overflow: hidden;
     display: flex;
@@ -268,9 +268,9 @@ input[type=number]::-webkit-inner-spin-button{
     font-weight: 300;
     cursor: pointer;
     height: 2rem;
-    
+
   }
-  
+
   .follow__button:hover{
     background-color:hsl(0, 100%, 62%) ;
   }
@@ -354,7 +354,7 @@ input[type=number]::-webkit-inner-spin-button{
     column-gap: .75rem;
     margin-right: 2rem;
   }
-  
+
   .input__password{
     font-size: 10px;
 

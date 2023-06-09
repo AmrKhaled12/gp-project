@@ -87,10 +87,16 @@ trait Functions_Of_Meals
     private function culc_protein($meal, $units_meal, $needed_protein)
     {
         if ($needed_protein < $meal->protien) {
-            $range = 0;
+            $range = ($needed_protein - $meal->protein) * (-1);
+            $protein = $units_meal->max('protein');
+            $row_of_big_protein = $units_meal->where('protein', '=', $protein)->first();
+            $row_of_big_protein->protein -= $range;
+            $row_of_big_protein->carb = $row_of_big_protein->carb - (($range / $protein) * $row_of_big_protein->carb);
+            $row_of_big_protein->fat = $row_of_big_protein->fat - (($range / $protein) * $row_of_big_protein->fat);
+            $row_of_big_protein->weight = $row_of_big_protein->weight - (($range / $protein) * $row_of_big_protein->weight);
         } else {
             $range = $needed_protein - $meal->protein;
-        }
+
             $protein = $units_meal->max('protein');
 
             $row_of_big_protein = $units_meal->where('protein', '=', $protein)->first();
@@ -99,6 +105,7 @@ trait Functions_Of_Meals
             $row_of_big_protein->carb = (($protein + $range) / $protein) * $row_of_big_protein->carb;
             $row_of_big_protein->fat = (($protein + $range) / $protein) * $row_of_big_protein->fat;
             $row_of_big_protein->weight = (($protein + $range) / $protein) * $row_of_big_protein->weight;
+        }
             $row_of_big_protein->calories = ($row_of_big_protein->carb * 4) + ($row_of_big_protein->protein * 4) + ($row_of_big_protein->fat * 9);
 
             $meal->protein = $units_meal->sum('protein');
@@ -106,29 +113,37 @@ trait Functions_Of_Meals
             $meal->fat = $units_meal->sum('fat');
             $meal->calories_meal = ($units_meal->sum('protein') * 4) + ($units_meal->sum('carb') * 4) + ($units_meal->sum('fat') * 9);
 
+
     }
 
     private function culc_carb($meal, $units_meal, $needed_carb)
     {
         if ($needed_carb < $meal->carb) {
-            $range = 0;
+            $range = ($needed_carb - $meal->carb) * (-1);
+            $carb = $units_meal->max('carb');
+            $row_of_big_carb = $units_meal->where('carb', '=', $carb)->first();
+            $row_of_big_carb->carb -= $range;
+            $row_of_big_carb->protein = $row_of_big_carb->protein - (($range / $carb) * $row_of_big_carb->protein);
+            $row_of_big_carb->fat = $row_of_big_carb->fat - (($range / $carb) * $row_of_big_carb->fat);
+            $row_of_big_carb->weight = $row_of_big_carb->weight - (($range / $carb) * $row_of_big_carb->weight);
         } else {
             $range = $needed_carb - $meal->carb;
+
+            $carb = $units_meal->max('carb');
+
+            $row_of_big_carb = $units_meal->where('carb', '=', $carb)->first();
+            $row_of_big_carb->carb += $range;
+
+            $row_of_big_carb->protein = (($carb + $range) / $carb) * $row_of_big_carb->protein;
+            $row_of_big_carb->fat = (($carb + $range) / $carb) * $row_of_big_carb->fat;
+            $row_of_big_carb->weight = (($carb + $range) / $carb) * $row_of_big_carb->weight;
         }
-        $carb = $units_meal->max('carb');
+            $row_of_big_carb->calories = ($row_of_big_carb->carb * 4) + ($row_of_big_carb->protein * 4) + ($row_of_big_carb->fat * 9);
+            $meal->protein = $units_meal->sum('protein');
+            $meal->carb = $units_meal->sum('carb');
+            $meal->fat = $units_meal->sum('fat');
+            $meal->calories_meal = ($units_meal->sum('protein') * 4) + ($units_meal->sum('carb') * 4) + ($units_meal->sum('fat') * 9);
 
-        $row_of_big_carb = $units_meal->where('carb', '=', $carb)->first();
-        $row_of_big_carb->carb += $range;
-
-        $row_of_big_carb->protein = (($carb + $range) / $carb) * $row_of_big_carb->protein;
-        $row_of_big_carb->fat = (($carb + $range) / $carb) * $row_of_big_carb->fat;
-        $row_of_big_carb->weight = (($carb + $range) / $carb) * $row_of_big_carb->weight;
-        $row_of_big_carb->calories = ($row_of_big_carb->carb * 4) + ($row_of_big_carb->protein * 4) + ($row_of_big_carb->fat * 9);
-
-        $meal->protein = $units_meal->sum('protein');
-        $meal->carb = $units_meal->sum('carb');
-        $meal->fat = $units_meal->sum('fat');
-        $meal->calories_meal = ($units_meal->sum('protein') * 4) + ($units_meal->sum('carb') * 4) + ($units_meal->sum('fat') * 9);
     }
 
     private function culc_fat($meal, $units_meal, $needed_fat)
@@ -171,10 +186,32 @@ trait Functions_Of_Meals
         $protein_of_snak = $macros['protein'] - $full_protein;
         $carb_of_snak = $macros['carbs'] - $full_carb;
         $fat_of_snak = $macros['fats'] - $full_fat;
+       $calories=$macros['protein']*4+$macros['carbs']*4+$macros['fats']*9;
+       $check_cals=$calories-$full_cals;
+       if($check_cals<$meal->calories_meal){
+           if ($carb_of_snak<$meal->carb){
+               $this->culc_carb($meal, $units_meal, $carb_of_snak);
+           }
+           elseif($protein_of_snak<$meal->protein){
+               $this->culc_protein($meal, $units_meal, $protein_of_snak);
+           }
+           else{
+               return
+                   [
+                       'meal' => $meal->setHidden(['compontent_meals', 'created_at', 'updated_at']),
+                       'compontent_meal' => $units_meal,
 
-        $this->culc_protein($meal, $units_meal, $protein_of_snak);
-        $this->culc_carb($meal, $units_meal, $carb_of_snak);
-        $this->culc_fat($meal, $units_meal,  $fat_of_snak);
+                   ];
+           }
+       }
+       else{
+           $this->culc_carb($meal, $units_meal, $carb_of_snak);
+           $this->culc_protein($meal, $units_meal, $protein_of_snak);
+           $this->culc_fat($meal, $units_meal,  $fat_of_snak);
+       }
+        //$this->culc_protein($meal, $units_meal, $protein_of_snak);
+
+        //$this->culc_fat($meal, $units_meal,  $fat_of_snak);
         // $rang_p = $protein_of_snak - $meal->protein;
         // $add = $rang_p / count($units_meal);
         // foreach ($units_meal as $unit) {

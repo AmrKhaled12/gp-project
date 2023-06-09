@@ -46,9 +46,7 @@ Route::group(['prefix' => 'user',], function () {
     Route::post('nutrition/register/data', [NitritionController::class, 'full_registration'])->name('nutrition');
 });
 
-Route::group(['middleware' => 'Are_You_Login?'], function () {
-
-
+    Route::group(['middleware' => 'Are_You_Login?'], function () {
     Route::group(['prefix' => 'post'], function () {
         Route::get('create/post', [PostController::class, 'showCreatePost'])->name('showCreatePost');
         Route::post('create/post', [PostController::class, 'storePost'])->name('storePost');
@@ -69,16 +67,17 @@ Route::group(['middleware' => 'Are_You_Login?'], function () {
     });
 
 
-Route::get('/',function (){
-   return view('home');
-
+        Route::get('/',function () {
+            return view('home');
+        });
     Route::group(['prefix' => 'dashboard'], function () {
 
         Route::get('/main', [DashboardController::class, 'show_dashboard'])->name('dashboard');
         Route::get('/profile/{id}', [UserProfileController::class, 'show_profile'])->name('Profile-follow');
     });
+
     Route::group(['prefix' => 'status'], function () {
         Route::get('/data', [StatusController::class, 'get_status'])->name('status');
     });
+        });
 
-});

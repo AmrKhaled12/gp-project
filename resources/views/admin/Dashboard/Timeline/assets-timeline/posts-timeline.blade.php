@@ -29,7 +29,7 @@
     <div class="owner__container">
         <div class="owner__info">
             <div class="post__img" onclick="window.location.href = '{{ route('Profile-follow',$post->user->id) }}' ;">
-                <img src="{{asset('images/img/favicon.png')}}" alt="">
+                <img src="{{ asset('images/user-profile/'.$post->user->photo) }}" alt="">
             </div>
             <div class="owner__name">
                 <h1 class="user__name"
