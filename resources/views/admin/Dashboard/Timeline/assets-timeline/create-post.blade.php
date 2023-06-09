@@ -1,7 +1,7 @@
 <div class="post__maker">
     <div class="post__thinking">
         <div class="post__img">
-            <img src="{{asset('assets/img/perfil.png')}}" alt="">
+            <img src="{{asset('images/user-profile/'.$client->photo)}}" alt="">
         </div>
         <div class="thinking">
             <input type="text" class="thinking__input" placeholder="What's on your mind ?"

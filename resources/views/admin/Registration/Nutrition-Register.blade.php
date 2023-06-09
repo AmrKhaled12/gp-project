@@ -60,6 +60,7 @@
                                 <i class="bx bx-cookie input__lock"></i>
                                 <select class="input__password input__email" name="allergy[]" multiple="multiple"
                                     id="Allergy">
+                                    <option>None</option>
                                     <option>Milk</option>
                                     <option>Eggs</option>
                                     <option>Peanuts</option>

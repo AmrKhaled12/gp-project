@@ -22,8 +22,10 @@ class HomePageController extends Controller
 
     public function post_login(LoginRequest $request)
     {
+
         $password = decrypt($request->password);
         $user = User::where(['email' => $request->email, 'password' => $password])->first();
+
 
         if (collect($user)->isEmpty())
 

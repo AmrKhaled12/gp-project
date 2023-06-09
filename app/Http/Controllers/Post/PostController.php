@@ -15,11 +15,11 @@ class PostController extends Controller
     use Media;
     public function showCreatePost()
     {
-        return view('admin.dashboard.Timeline.assets-timeline.showCreatePost');
+        $client=$_SESSION['client'];
+        return view('admin.dashboard.Timeline.assets-timeline.showCreatePost',compact('client'));
     }
     public function storePost(Request $request)
     {
-        session_start();
         $client = $_SESSION['client'];
         $request->validate([
             'text' => 'max:255',
@@ -49,7 +49,6 @@ class PostController extends Controller
 
     public function storeComment(Request $request)
     {
-        session_start();
         Comment::create([
             'text' => $request->text,
             'user_id' => $_SESSION['client']->id,

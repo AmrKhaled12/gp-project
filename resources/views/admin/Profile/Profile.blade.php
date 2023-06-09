@@ -11,8 +11,8 @@
                     <div class="post__maker">
                         <div class="profile__container">
                             <div class="profile__mask">
-                                <a href="{{asset('assets/img/perfil.png')}}" data-lightbox="image-1" data-title="Profile Picture">
-                                    <img class="profile__img" src="{{asset('assets/img/perfil.png')}}" alt="">
+                                <a href="{{asset('images/user-profile/'.$client->photo)}}" data-lightbox="image-1" data-title="Profile Picture">
+                                    <img class="profile__img" src="{{asset('images/user-profile/'.$client->photo)}}" alt="">
                                 </a>
                             </div>
                             <div class="profile__name">

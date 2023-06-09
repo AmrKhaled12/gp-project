@@ -4,8 +4,8 @@
         <div class="post__maker">
             <div class="profile__container">
                 <div class="profile__mask">
-                    <a href="{{ asset('assets/img/perfil.png') }}" data-lightbox="image-1" data-title="Profile Picture">
-                        <img class="profile__img" src="{{asset('assets/img/perfil.png')}}" alt="">
+                    <a href="{{ asset('images/user-profile/'.$data['user']->photo) }}" data-lightbox="image-1" data-title="Profile Picture">
+                        <img class="profile__img" src="{{ asset('images/user-profile/'.$data['user']->photo) }}" alt="">
                     </a>
                 </div>
                 {{-- ############################################## --}}
@@ -58,7 +58,7 @@
             <div class="thinking__line"></div>
 
         </div>
-        @include('admin.Dashboard.Timeline.assets-timeline.create-post')
+{{--        @include('admin.Dashboard.Timeline.assets-timeline.create-post')--}}
         @include('admin.Dashboard.Timeline.assets-timeline.posts-timeline')
     </div>
 </section>
