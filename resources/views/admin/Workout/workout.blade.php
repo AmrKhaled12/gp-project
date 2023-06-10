@@ -20,7 +20,7 @@
     <nav class="nav-days">
       <ul>
         <li>
-          <a href="#tranding-saturday" class="nav__link active">Saturday</a>
+          <a href="#tranding-saturday" class="nav__link">Saturday</a>
         </li>
         <li>
           <a href="#tranding-sunday" class="nav__link">Sunday</a>
