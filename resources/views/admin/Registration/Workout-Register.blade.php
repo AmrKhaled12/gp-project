@@ -18,7 +18,7 @@
 <body>
     <div class="container">
         <div class="login__content">
-            <img src="{{asset('assets/img/gym-login2.jpg')}}" alt="login" class="login__img">
+            <img src="{{asset('assets/img/gym-login3.jpg')}}" alt="login" class="login__img">
 
             <form action="{{route('workout')}}" method="post" enctype="multipart/form-data" class="login__form">
                 @csrf

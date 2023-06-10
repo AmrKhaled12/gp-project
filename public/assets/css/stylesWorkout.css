@@ -698,7 +698,7 @@ position: relative;
 
 .tranding-slide .tranding-slide-content {
   position: absolute;
-  top: 0;
+  top: 15%;
   left: 40%;
   background-color: rgba(0, 0, 0, 0.9);
   padding: 1rem;
