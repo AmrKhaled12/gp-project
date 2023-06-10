@@ -48,1040 +48,942 @@
 
   <!-- swipper  -->
   <section id="tranding-saturday" class="tranding-section">
-    <section id="tranding">
-      <div class="containnner">
-        <div class="swiper tranding-slider">
-          <div class="swiper-wrapper">
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-7.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-          </div>
+                    <section id="tranding">
+                        <div class="containnner">
+                          <div class="swiper tranding-slider">
+                            <div class="swiper-wrapper">
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <video controls src="assets/img/videocrossfit.mp4" alt="">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Resistance rope exercise
+                                    </h2>
+                                    <p class="food-content">Some more details about that exercise to improve 
+                                      the way the trainer do that exercise .</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <video controls src="assets/img/videocrossfit.mp4" alt="">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Resistance rope exercise
+                                    </h2>
+                                    <p class="food-content">Some more details about that exercise to improve 
+                                      the way the trainer do that exercise .</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <video controls src="assets/img/videocrossfit.mp4" alt="">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Resistance rope exercise
+                                    </h2>
+                                    <p class="food-content">Some more details about that exercise to improve 
+                                      the way the trainer do that exercise .</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <video controls src="assets/img/videocrossfit.mp4" alt="">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Resistance rope exercise
+                                    </h2>
+                                    <p class="food-content">Some more details about that exercise to improve 
+                                      the way the trainer do that exercise .</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <video controls src="assets/img/videocrossfit.mp4" alt="">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Resistance rope exercise
+                                    </h2>
+                                    <p class="food-content">Some more details about that exercise to improve 
+                                      the way the trainer do that exercise .</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <video controls src="assets/img/videocrossfit.mp4" alt="">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Resistance rope exercise
+                                    </h2>
+                                    <p class="food-content">Some more details about that exercise to improve 
+                                      the way the trainer do that exercise .</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                              <!-- Slide-start -->
+                              <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                  <video controls src="assets/img/videocrossfit.mp4" alt="">
+                                </div>
+                                <div class="tranding-slide-content">
+                                  <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                      Resistance rope exercise
+                                    </h2>
+                                    <p class="food-content">Some more details about that exercise to improve 
+                                      the way the trainer do that exercise .</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Slide-end -->
+                            </div>
+                  
+                            <div class="tranding-slider-control">
+                              <div class="swiper-button-prev slider-arrow">
+                                <ion-icon name="arrow-back-outline"></ion-icon>
+                              </div>
+                              <div class="swiper-button-next slider-arrow">
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                              </div>
+                              <div class="swiper-pagination"></div>
+                            </div>
+                  
+                          </div>
+                        </div>
+                      </section>
+                  </section>
+                  
+                  <section id="tranding-sunday" class="tranding-section">
+                    <section id="tranding">
+                      <div class="containnner">
+                        <div class="swiper tranding-slider">
+                          <div class="swiper-wrapper">
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                          </div>
+                
+                          <div class="tranding-slider-control">
+                            <div class="swiper-button-prev slider-arrow">
+                              <ion-icon name="arrow-back-outline"></ion-icon>
+                            </div>
+                            <div class="swiper-button-next slider-arrow">
+                              <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                
+                        </div>
+                      </div>
+                    </section>
+                  </section>
+                  
+                  <section id="tranding-monday" class="tranding-section">
+                    <section id="tranding">
+                      <div class="containnner">
+                        <div class="swiper tranding-slider">
+                          <div class="swiper-wrapper">
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                          </div>
+                
+                          <div class="tranding-slider-control">
+                            <div class="swiper-button-prev slider-arrow">
+                              <ion-icon name="arrow-back-outline"></ion-icon>
+                            </div>
+                            <div class="swiper-button-next slider-arrow">
+                              <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                
+                        </div>
+                      </div>
+                    </section>
+                  </section>
+                  
+                  <section id="tranding-tuesday" class="tranding-section">
+                    <section id="tranding">
+                      <div class="containnner">
+                        <div class="swiper tranding-slider">
+                          <div class="swiper-wrapper">
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                          </div>
+                
+                          <div class="tranding-slider-control">
+                            <div class="swiper-button-prev slider-arrow">
+                              <ion-icon name="arrow-back-outline"></ion-icon>
+                            </div>
+                            <div class="swiper-button-next slider-arrow">
+                              <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                
+                        </div>
+                      </div>
+                    </section>
+                  </section>
 
-          <div class="tranding-slider-control">
-            <div class="swiper-button-prev slider-arrow">
-              <ion-icon name="arrow-back-outline"></ion-icon>
-            </div>
-            <div class="swiper-button-next slider-arrow">
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
+                  <section id="tranding-wednesday" class="tranding-section">
+                    <section id="tranding">
+                      <div class="containnner">
+                        <div class="swiper tranding-slider">
+                          <div class="swiper-wrapper">
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                          </div>
+                
+                          <div class="tranding-slider-control">
+                            <div class="swiper-button-prev slider-arrow">
+                              <ion-icon name="arrow-back-outline"></ion-icon>
+                            </div>
+                            <div class="swiper-button-next slider-arrow">
+                              <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                
+                        </div>
+                      </div>
+                    </section>
+                  </section>
 
-        </div>
-      </div>
-    </section>
-  </section>
+                  <section id="tranding-thursday" class="tranding-section">
+                    <section id="tranding">
+                      <div class="containnner">
+                        <div class="swiper tranding-slider">
+                          <div class="swiper-wrapper">
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                          </div>
+                
+                          <div class="tranding-slider-control">
+                            <div class="swiper-button-prev slider-arrow">
+                              <ion-icon name="arrow-back-outline"></ion-icon>
+                            </div>
+                            <div class="swiper-button-next slider-arrow">
+                              <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                
+                        </div>
+                      </div>
+                    </section>
+                  </section>
 
-  <section id="tranding-sunday" class="tranding-section">
-    <section id="tranding">
-      <div class="containnner">
-        <div class="swiper tranding-slider">
-          <div class="swiper-wrapper">
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-7.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-          </div>
-
-          <div class="tranding-slider-control">
-            <div class="swiper-button-prev slider-arrow">
-              <ion-icon name="arrow-back-outline"></ion-icon>
-            </div>
-            <div class="swiper-button-next slider-arrow">
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-  </section>
-
-  <section id="tranding-monday" class="tranding-section">
-    <section id="tranding">
-      <div class="containnner">
-        <div class="swiper tranding-slider">
-          <div class="swiper-wrapper">
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-7.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-          </div>
-
-          <div class="tranding-slider-control">
-            <div class="swiper-button-prev slider-arrow">
-              <ion-icon name="arrow-back-outline"></ion-icon>
-            </div>
-            <div class="swiper-button-next slider-arrow">
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-  </section>
-
-  <section id="tranding-tuesday" class="tranding-section">
-    <section id="tranding">
-      <div class="containnner">
-        <div class="swiper tranding-slider">
-          <div class="swiper-wrapper">
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-7.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-          </div>
-
-          <div class="tranding-slider-control">
-            <div class="swiper-button-prev slider-arrow">
-              <ion-icon name="arrow-back-outline"></ion-icon>
-            </div>
-            <div class="swiper-button-next slider-arrow">
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-  </section>
-
-  <section id="tranding-wednesday" class="tranding-section">
-    <section id="tranding">
-      <div class="containnner">
-        <div class="swiper tranding-slider">
-          <div class="swiper-wrapper">
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-7.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-          </div>
-
-          <div class="tranding-slider-control">
-            <div class="swiper-button-prev slider-arrow">
-              <ion-icon name="arrow-back-outline"></ion-icon>
-            </div>
-            <div class="swiper-button-next slider-arrow">
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-  </section>
-
-  <section id="tranding-thursday" class="tranding-section">
-    <section id="tranding">
-      <div class="containnner">
-        <div class="swiper tranding-slider">
-          <div class="swiper-wrapper">
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-7.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-          </div>
-
-          <div class="tranding-slider-control">
-            <div class="swiper-button-prev slider-arrow">
-              <ion-icon name="arrow-back-outline"></ion-icon>
-            </div>
-            <div class="swiper-button-next slider-arrow">
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-  </section>
-
-  <section id="tranding-friday" class="tranding-section">
-    <section id="tranding">
-      <div class="containnner">
-        <div class="swiper tranding-slider">
-          <div class="swiper-wrapper">
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-7.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-          </div>
-
-          <div class="tranding-slider-control">
-            <div class="swiper-button-prev slider-arrow">
-              <ion-icon name="arrow-back-outline"></ion-icon>
-            </div>
-            <div class="swiper-button-next slider-arrow">
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-  </section>
+                  <section id="tranding-friday" class="tranding-section">
+                    <section id="tranding">
+                      <div class="containnner">
+                        <div class="swiper tranding-slider">
+                          <div class="swiper-wrapper">
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                              <div class="tranding-slide-img">
+                                <video controls src="assets/img/videocrossfit.mp4" alt="">
+                              </div>
+                              <div class="tranding-slide-content">
+                                <div class="tranding-slide-content-bottom">
+                                  <h2 class="food-name">
+                                    Resistance rope exercise
+                                  </h2>
+                                  <p class="food-content">Some more details about that exercise to improve 
+                                    the way the trainer do that exercise .</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Slide-end -->
+                          </div>
+                
+                          <div class="tranding-slider-control">
+                            <div class="swiper-button-prev slider-arrow">
+                              <ion-icon name="arrow-back-outline"></ion-icon>
+                            </div>
+                            <div class="swiper-button-next slider-arrow">
+                              <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                
+                        </div>
+                      </div>
+                    </section>
+                  </section>
 
 
 </section>
