@@ -11,11 +11,12 @@ use Illuminate\Http\Request;
 use App\Trait\GetNotification;
 use App\Http\Controllers\Controller;
 use App\Classes\System\WorkoutSystem;
+use App\Trait\GetDays;
 use Illuminate\Support\Facades\Session;
 
 class WorkoutController extends Controller
 {
-    use GetNotification, CheckSession;
+    use GetNotification, CheckSession, GetDays;
     public function workout_register_show()
     {
         return view('admin.Registration.Workout-Register');
@@ -40,12 +41,31 @@ class WorkoutController extends Controller
 
         $days = $this->get_session()->workout_days;
         $days = explode('-', $days);
-        // return $days;
+
+        $sunday = $this->get_sunday($days);
+        $saturday = $this->get_saturday($days);
+        $monday = $this->get_monday($days);
+        $tuesday = $this->get_tuesday($days);
+        $wednesday = $this->get_wednesday($days);
+        $thursday = $this->get_thursday($days);
+        $friday = $this->get_friday($days);
+
         $workout_system = new WorkoutSystem($client, $days);
         $system_arr = $workout_system->Build();
         $arr_number = $this->numbers_of_workout();
-        $counter = 0;
-        return view('admin.Workout.workout', compact('system_arr', 'arr_number', 'days', 'client', 'counter'));
+        return view('admin.Workout.workout', compact(
+            'system_arr',
+            'arr_number',
+            'days',
+            'client',
+            'sunday',
+            'saturday',
+            'monday',
+            'tuesday',
+            'wednesday',
+            'thursday',
+            'friday'
+        ));
     }
 
     public function numbers_of_workout()
