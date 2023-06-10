@@ -53,131 +53,49 @@
         <div class="swiper tranding-slider">
           <div class="swiper-wrapper">
             <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
+            @foreach ($days as $day)
+            @if ($day=='السبت')
+            @foreach ($system_arr['السبت'] as $sys )
+            @for ($i=0;$i<$arr_number[$sys->Exercise_Name];$i++ )
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <video controls src="{{ asset('workout/'.$sys->muscle[$i]->Muscle_Video) }}" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      {{ $sys->Exercise_Name }}
+                    </h2>
+                    <p class="food-content">{{$sys->Exercise_Details}}.</p>
+                    <p class="food-content" style="color: red"> - {{$sys->muscle[$i]->Muscle_Duration}}.</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
+              @endfor
+              @endforeach
+              @break
+              @else
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <video controls src="{{ asset('workout/relax.jpg') }}" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      اجازه ي صاحبي
+                    </h2>
+                    <p class="food-content">اجازهههههههههههه</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-7.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
+              @break
+              @endif
+
+              @endforeach
+
+              <!-- Slide-end -->
+
+
           </div>
 
           <div class="tranding-slider-control">
@@ -201,131 +119,48 @@
         <div class="swiper tranding-slider">
           <div class="swiper-wrapper">
             <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
+            @foreach ($days as $day)
+            @if ($day=='الاحد')
+            @foreach ($system_arr['الاحد'] as $sys )
+            @for ($i=0;$i<$arr_number[$sys->Exercise_Name];$i++ )
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <video controls src="{{ asset('workout/'.$sys->muscle[$i]->Muscle_Video) }}" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      {{ $sys->Exercise_Name }}
+                    </h2>
+                    <p class="food-content">{{$sys->Exercise_Details}}.</p>
+                    <p class="food-content" style="color: red"> - {{$sys->muscle[$i]->Muscle_Duration}}.</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
+              @endfor
+              @endforeach
+              @break
+              @endif
+              @if ($counter==0)
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="{{ asset('workout/relax.jpg') }}" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      اجازه ي صاحبي
+                    </h2>
+                    <p class="food-content">اجازهههههههههههه</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-7.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
+              @break
+              @endif
+
+              @endforeach
+              <!-- Slide-end -->
+
           </div>
 
           <div class="tranding-slider-control">
@@ -349,131 +184,50 @@
         <div class="swiper tranding-slider">
           <div class="swiper-wrapper">
             <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
+            @foreach ($days as $day)
+            @if ($day=='الاثنين')
+
+            @foreach ($system_arr['الاثنين'] as $sys )
+            @for ($i=0;$i<$arr_number[$sys->Exercise_Name];$i++ )
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="{{ asset('workout/'.$sys->muscle[$i]->Muscle_Video) }}" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      {{ $sys->Exercise_Name }}
+                    </h2>
+                    <p class="food-content">{{$sys->Exercise_Details}}.</p>
+                    <p class="food-content" style="color: red"> - {{$sys->muscle[$i]->Muscle_Duration}}.</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
+              @endfor
+              @endforeach
+              @break
+              @endif
+              @if($counter==0)
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <video controls src="{{ asset('workout/relax.jpg') }}" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      اجازه ي صاحبي
+                    </h2>
+                    <p class="food-content">اجازهههههههههههه</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-7.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
+              @break
+              @endif
+
+              @endforeach
+
+              <!-- Slide-end -->
+
           </div>
 
           <div class="tranding-slider-control">
@@ -490,6 +244,7 @@
       </div>
     </section>
   </section>
+
 
   <section id="tranding-tuesday" class="tranding-section">
     <section id="tranding">
@@ -497,131 +252,51 @@
         <div class="swiper tranding-slider">
           <div class="swiper-wrapper">
             <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
+            @foreach ($days as $day)
+            @if ($day=='الثلاثاء')
+
+            @foreach ($system_arr['الثلاثاء'] as $sys )
+            @for ($i=0;$i<$arr_number[$sys->Exercise_Name];$i++ )
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <video controls src="{{ asset('workout/'.$sys->muscle[$i]->Muscle_Video) }}" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      {{ $sys->Exercise_Name }}
+                    </h2>
+                    <p class="food-content">{{$sys->Exercise_Details}}.</p>
+                    <p class="food-content" style="color: red"> - {{$sys->muscle[$i]->Muscle_Duration}}.</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
+              @endfor
+              @endforeach
+
+              @break
+              @endif
+
+              @if($counter==0)
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <video controls src="{{ asset('workout/relax.jpg') }}" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      اجازه ي صاحبي
+                    </h2>
+                    <p class="food-content">اجازهههههههههههه</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-7.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
+              @break
+              @endif
+
+              @endforeach
+              <!-- Slide-end -->
+
           </div>
 
           <div class="tranding-slider-control">
@@ -639,137 +314,55 @@
     </section>
   </section>
 
+
   <section id="tranding-wednesday" class="tranding-section">
     <section id="tranding">
       <div class="containnner">
         <div class="swiper tranding-slider">
           <div class="swiper-wrapper">
             <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
+            @foreach ($days as $day)
+            @if ($day=='الاربعاء')
+            @foreach ($system_arr['الاربعاء'] as $sys )
+            @for ($i=0;$i<$arr_number[$sys->Exercise_Name];$i++ )
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <video controls src="{{ asset('workout/'.$sys->muscle[$i]->Muscle_Video) }}" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      {{ $sys->Exercise_Name }}
+                    </h2>
+                    <p class="food-content">{{$sys->Exercise_Details}}.</p>
+                    <p class="food-content" style="color: red"> - {{$sys->muscle[$i]->Muscle_Duration}}.</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
+              @endfor
+              @endforeach
+              @break
+              @else
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <video controls src="{{ asset('workout/relax.jpg') }}" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      اجازه ي صاحبي
+                    </h2>
+                    <p class="food-content">اجازهههههههههههه</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-7.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
+              @break
+              @endif
+
+              @endforeach
+
+
+              <!-- Slide-end -->
           </div>
 
           <div class="tranding-slider-control">
@@ -793,131 +386,48 @@
         <div class="swiper tranding-slider">
           <div class="swiper-wrapper">
             <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
+            @foreach ($days as $day)
+            @if ($day=='الخميس')
+            @foreach ($system_arr['الخميس'] as $sys )
+            @for ($i=0;$i<$arr_number[$sys->Exercise_Name];$i++ )
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <video controls src="{{ asset('workout/'.$sys->muscle[$i]->Muscle_Video) }}" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      {{ $sys->Exercise_Name }}
+                    </h2>
+                    <p class="food-content">{{$sys->Exercise_Details}}.</p>
+                    <p class="food-content" style="color: red"> - {{$sys->muscle[$i]->Muscle_Duration}}.</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
+              @endfor
+              @endforeach
+              @break
+              @else
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <video controls src="{{ asset('workout/relax.jpg') }}" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      اجازه ي صاحبي
+                    </h2>
+                    <p class="food-content">اجازهههههههههههه</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-7.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
+              @break
+              @endif
+
+              @endforeach
+
+              <!-- Slide-end -->
+
           </div>
 
           <div class="tranding-slider-control">
@@ -941,131 +451,47 @@
         <div class="swiper tranding-slider">
           <div class="swiper-wrapper">
             <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
+            @foreach ($days as $day)
+            @if ($day=='الجمعه')
+            @foreach ($system_arr['الجمعه'] as $sys )
+            @for ($i=0;$i<$arr_number[$sys->Exercise_Name];$i++ )
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <video controls src="{{ asset('workout/'.$sys->muscle[$i]->Muscle_Video) }}" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      {{ $sys->Exercise_Name }}
+                    </h2>
+                    <p class="food-content">{{$sys->Exercise_Details}}.</p>
+                    <p class="food-content" style="color: red"> - {{$sys->muscle[$i]->Muscle_Duration}}.</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
+              @endfor
+              @endforeach
+              @break
+              @else
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <video controls src="{{ asset('workout/relax.jpg') }}" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      اجازه ي صاحبي
+                    </h2>
+                    <p class="food-content">اجازهههههههههههه</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-1.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="assets/img/tranding-food-7.png" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <p class="food-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates,
-                    debitis magni maiores ex doloremque quibusdam.
-                    Placeat voluptatibus doloremque obcaecati perferendis? Iusto dicta nihil nobis dolorum cum numquam
-                    at. Id.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
+              @break
+              @endif
+
+              @endforeach
+
+              <!-- Slide-end -->
           </div>
 
           <div class="tranding-slider-control">

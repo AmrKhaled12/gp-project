@@ -15,11 +15,34 @@ class Exercise extends Model
     protected $fillable = [
         'Exercise_Name',
         'Exercise_Details',
-        'Exercise_Place'
     ];
 
     public function muscle()
     {
         return $this->hasMany(Muscle::class, 'Exercise_id');
+    }
+    public function scopeHome($query)
+    {
+        return $query->with(['muscle' => function ($q) {
+            $q->where('Exercise_Place', '=', 'Home');
+        }]);
+    }
+    public function scopeGym($query)
+    {
+        return $query->with(['muscle' => function ($q) {
+            $q->where('Exercise_Place', '=', 'Gym');
+        }]);
+    }
+    public function scopeBar($query)
+    {
+        return $query->with(['muscle' => function ($q) {
+            $q->where('Exercise_Place', '=', 'Bar');
+        }]);
+    }
+    public function scopeDummble($query)
+    {
+        return $query->with(['muscle' => function ($q) {
+            $q->where('Exercise_Place', '=', 'Dummble');
+        }]);
     }
 }

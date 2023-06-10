@@ -18,6 +18,7 @@ class client extends Status
     public $workout_place;
     public $workout_tools;
     public $number_of_days;
+    public $workout_days;
     public $body_fat;
     public $allergy;
     public $goal;
@@ -37,9 +38,10 @@ class client extends Status
         $this->workout_place = $data->WorkoutData->workout_place;
         $this->workout_tools = $data->WorkoutData->workout_tools;
         $this->number_of_days = $data->WorkoutData->number_of_days;
+        $this->workout_days = $data->WorkoutData->workout_days;
         $this->email = $data->email;
         $this->photo = $data->photo;
-        $this->phone=$data->phone;
+        $this->phone = $data->phone;
         $this->height = $data->WorkoutData->height;
         $this->weight = $data->WorkoutData->weight;
         $this->exercise_level = $data->WorkoutData->exercise_level;
