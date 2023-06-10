@@ -54,8 +54,7 @@
         <div class="swiper tranding-slider">
           <div class="swiper-wrapper">
             <!-- Slide-start -->
-            @foreach ($days as $day)
-            @if ($day=='السبت')
+            @if ($saturday=='yes')
             @foreach ($system_arr['السبت'] as $sys )
             @for ($i=0;$i<$arr_number[$sys->Exercise_Name];$i++ )
               <div class="swiper-slide tranding-slide">
@@ -64,7 +63,8 @@
                 </div>
                 <div class="tranding-slide-content">
                   <div class="tranding-slide-content-bottom">
-                    <h2 class="food-name">
+                    <h2 class="food-name" style="color: rgb(179, 179, 179)">
+                      Exercise {{ $i+1 }} :
                       {{ $sys->Exercise_Name }}
                     </h2>
                     <p class="food-content">{{$sys->Exercise_Details}}.</p>
@@ -74,7 +74,6 @@
               </div>
               @endfor
               @endforeach
-              @break
               @else
               <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
@@ -89,17 +88,32 @@
                   </div>
                 </div>
               </div>
-              @break
               @endif
 
-              @endforeach
 
               <!-- Slide-end -->
 
 
           </div>
+          @if ($saturday=='yes')
 
-                  
+
+          <div class="tranding-slider-control">
+            <div class="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          @endif
+        </div>
+      </div>
+    </section>
+  </section>
+
+
 
 
   <section id="tranding-sunday" class="tranding-section">
@@ -108,8 +122,7 @@
         <div class="swiper tranding-slider">
           <div class="swiper-wrapper">
             <!-- Slide-start -->
-            @foreach ($days as $day)
-            @if ($day=='الاحد')
+            @if ($sunday=='yes')
             @foreach ($system_arr['الاحد'] as $sys )
             @for ($i=0;$i<$arr_number[$sys->Exercise_Name];$i++ )
               <div class="swiper-slide tranding-slide">
@@ -118,7 +131,8 @@
                 </div>
                 <div class="tranding-slide-content">
                   <div class="tranding-slide-content-bottom">
-                    <h2 class="food-name">
+                    <h2 class="food-name" style="color: rgb(179, 179, 179)">
+                      Exercise {{ $i+1 }} :
                       {{ $sys->Exercise_Name }}
                     </h2>
                     <p class="food-content">{{$sys->Exercise_Details}}.</p>
@@ -128,9 +142,7 @@
               </div>
               @endfor
               @endforeach
-              @break
-              @endif
-              @if ($counter==0)
+              @else
               <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
                   <img src="{{ asset('workout/relax.jpg') }}" alt="">
@@ -144,13 +156,13 @@
                   </div>
                 </div>
               </div>
-              @break
               @endif
 
-              @endforeach
               <!-- Slide-end -->
 
           </div>
+          @if ($sunday=='yes')
+
 
           <div class="tranding-slider-control">
             <div class="swiper-button-prev slider-arrow">
@@ -161,6 +173,7 @@
             </div>
             <div class="swiper-pagination"></div>
           </div>
+          @endif
 
         </div>
       </div>
@@ -173,8 +186,7 @@
         <div class="swiper tranding-slider">
           <div class="swiper-wrapper">
             <!-- Slide-start -->
-            @foreach ($days as $day)
-            @if ($day=='الاثنين')
+            @if ($monday=='yes')
 
             @foreach ($system_arr['الاثنين'] as $sys )
             @for ($i=0;$i<$arr_number[$sys->Exercise_Name];$i++ )
@@ -184,7 +196,8 @@
                 </div>
                 <div class="tranding-slide-content">
                   <div class="tranding-slide-content-bottom">
-                    <h2 class="food-name">
+                    <h2 class="food-name" style="color: rgb(179, 179, 179)">
+                      Exercise {{ $i+1 }} :
                       {{ $sys->Exercise_Name }}
                     </h2>
                     <p class="food-content">{{$sys->Exercise_Details}}.</p>
@@ -194,9 +207,7 @@
               </div>
               @endfor
               @endforeach
-              @break
-              @endif
-              @if($counter==0)
+              @else
               <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
                   <video controls src="{{ asset('workout/relax.jpg') }}" alt="">
@@ -210,14 +221,15 @@
                   </div>
                 </div>
               </div>
-              @break
               @endif
 
-              @endforeach
 
               <!-- Slide-end -->
 
           </div>
+
+          @if ($monday=='yes')
+
 
           <div class="tranding-slider-control">
             <div class="swiper-button-prev slider-arrow">
@@ -228,6 +240,7 @@
             </div>
             <div class="swiper-pagination"></div>
           </div>
+          @endif
 
         </div>
       </div>
@@ -241,8 +254,7 @@
         <div class="swiper tranding-slider">
           <div class="swiper-wrapper">
             <!-- Slide-start -->
-            @foreach ($days as $day)
-            @if ($day=='الثلاثاء')
+            @if ($tuesday=='yes')
 
             @foreach ($system_arr['الثلاثاء'] as $sys )
             @for ($i=0;$i<$arr_number[$sys->Exercise_Name];$i++ )
@@ -252,7 +264,8 @@
                 </div>
                 <div class="tranding-slide-content">
                   <div class="tranding-slide-content-bottom">
-                    <h2 class="food-name">
+                    <h2 class="food-name" style="color: rgb(179, 179, 179)">
+                      Exercise {{ $i+1 }} :
                       {{ $sys->Exercise_Name }}
                     </h2>
                     <p class="food-content">{{$sys->Exercise_Details}}.</p>
@@ -263,10 +276,8 @@
               @endfor
               @endforeach
 
-              @break
-              @endif
 
-              @if($counter==0)
+              @else
               <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
                   <video controls src="{{ asset('workout/relax.jpg') }}" alt="">
@@ -280,13 +291,14 @@
                   </div>
                 </div>
               </div>
-              @break
               @endif
 
-              @endforeach
               <!-- Slide-end -->
 
           </div>
+
+          @if ($tuesday=='yes')
+
 
           <div class="tranding-slider-control">
             <div class="swiper-button-prev slider-arrow">
@@ -297,7 +309,7 @@
             </div>
             <div class="swiper-pagination"></div>
           </div>
-
+          @endif
         </div>
       </div>
     </section>
@@ -310,8 +322,7 @@
         <div class="swiper tranding-slider">
           <div class="swiper-wrapper">
             <!-- Slide-start -->
-            @foreach ($days as $day)
-            @if ($day=='الاربعاء')
+            @if ($wednesday=='yes')
             @foreach ($system_arr['الاربعاء'] as $sys )
             @for ($i=0;$i<$arr_number[$sys->Exercise_Name];$i++ )
               <div class="swiper-slide tranding-slide">
@@ -320,7 +331,8 @@
                 </div>
                 <div class="tranding-slide-content">
                   <div class="tranding-slide-content-bottom">
-                    <h2 class="food-name">
+                    <h2 class="food-name" style="color: rgb(179, 179, 179)">
+                      Exercise {{ $i+1 }} :
                       {{ $sys->Exercise_Name }}
                     </h2>
                     <p class="food-content">{{$sys->Exercise_Details}}.</p>
@@ -330,7 +342,6 @@
               </div>
               @endfor
               @endforeach
-              @break
               @else
               <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
@@ -345,14 +356,15 @@
                   </div>
                 </div>
               </div>
-              @break
               @endif
 
-              @endforeach
 
 
               <!-- Slide-end -->
           </div>
+
+          @if ($wednesday=='yes')
+
 
           <div class="tranding-slider-control">
             <div class="swiper-button-prev slider-arrow">
@@ -363,6 +375,7 @@
             </div>
             <div class="swiper-pagination"></div>
           </div>
+          @endif
 
         </div>
       </div>
@@ -375,8 +388,7 @@
         <div class="swiper tranding-slider">
           <div class="swiper-wrapper">
             <!-- Slide-start -->
-            @foreach ($days as $day)
-            @if ($day=='الخميس')
+            @if ($thursday=='yes')
             @foreach ($system_arr['الخميس'] as $sys )
             @for ($i=0;$i<$arr_number[$sys->Exercise_Name];$i++ )
               <div class="swiper-slide tranding-slide">
@@ -385,7 +397,8 @@
                 </div>
                 <div class="tranding-slide-content">
                   <div class="tranding-slide-content-bottom">
-                    <h2 class="food-name">
+                    <h2 class="food-name" style="color: rgb(179, 179, 179)">
+                      Exercise {{ $i+1 }} :
                       {{ $sys->Exercise_Name }}
                     </h2>
                     <p class="food-content">{{$sys->Exercise_Details}}.</p>
@@ -395,7 +408,6 @@
               </div>
               @endfor
               @endforeach
-              @break
               @else
               <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
@@ -410,14 +422,15 @@
                   </div>
                 </div>
               </div>
-              @break
               @endif
 
-              @endforeach
 
               <!-- Slide-end -->
 
           </div>
+
+          @if ($thursday=='yes')
+
 
           <div class="tranding-slider-control">
             <div class="swiper-button-prev slider-arrow">
@@ -428,6 +441,7 @@
             </div>
             <div class="swiper-pagination"></div>
           </div>
+          @endif
 
         </div>
       </div>
@@ -440,8 +454,7 @@
         <div class="swiper tranding-slider">
           <div class="swiper-wrapper">
             <!-- Slide-start -->
-            @foreach ($days as $day)
-            @if ($day=='الجمعه')
+            @if ($friday=='yes')
             @foreach ($system_arr['الجمعه'] as $sys )
             @for ($i=0;$i<$arr_number[$sys->Exercise_Name];$i++ )
               <div class="swiper-slide tranding-slide">
@@ -450,7 +463,8 @@
                 </div>
                 <div class="tranding-slide-content">
                   <div class="tranding-slide-content-bottom">
-                    <h2 class="food-name">
+                    <h2 class="food-name" style="color: rgb(179, 179, 179)">
+                      Exercise {{ $i+1 }} :
                       {{ $sys->Exercise_Name }}
                     </h2>
                     <p class="food-content">{{$sys->Exercise_Details}}.</p>
@@ -460,7 +474,6 @@
               </div>
               @endfor
               @endforeach
-              @break
               @else
               <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
@@ -475,13 +488,14 @@
                   </div>
                 </div>
               </div>
-              @break
               @endif
 
-              @endforeach
 
               <!-- Slide-end -->
           </div>
+
+          @if ($friday=='yes')
+
 
           <div class="tranding-slider-control">
             <div class="swiper-button-prev slider-arrow">
@@ -492,6 +506,7 @@
             </div>
             <div class="swiper-pagination"></div>
           </div>
+          @endif
 
         </div>
       </div>
