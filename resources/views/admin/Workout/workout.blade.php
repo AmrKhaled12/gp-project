@@ -48,942 +48,455 @@
 
   <!-- swipper  -->
   <section id="tranding-saturday" class="tranding-section">
-                    <section id="tranding">
-                        <div class="containnner">
-                          <div class="swiper tranding-slider">
-                            <div class="swiper-wrapper">
-                              <!-- Slide-start -->
-                              <div class="swiper-slide tranding-slide">
-                                <div class="tranding-slide-img">
-                                  <video controls src="assets/img/videocrossfit.mp4" alt="">
-                                </div>
-                                <div class="tranding-slide-content">
-                                  <div class="tranding-slide-content-bottom">
-                                    <h2 class="food-name">
-                                      Resistance rope exercise
-                                    </h2>
-                                    <p class="food-content">Some more details about that exercise to improve 
-                                      the way the trainer do that exercise .</p>
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- Slide-end -->
-                              <!-- Slide-start -->
-                              <div class="swiper-slide tranding-slide">
-                                <div class="tranding-slide-img">
-                                  <video controls src="assets/img/videocrossfit.mp4" alt="">
-                                </div>
-                                <div class="tranding-slide-content">
-                                  <div class="tranding-slide-content-bottom">
-                                    <h2 class="food-name">
-                                      Resistance rope exercise
-                                    </h2>
-                                    <p class="food-content">Some more details about that exercise to improve 
-                                      the way the trainer do that exercise .</p>
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- Slide-end -->
-                              <!-- Slide-start -->
-                              <div class="swiper-slide tranding-slide">
-                                <div class="tranding-slide-img">
-                                  <video controls src="assets/img/videocrossfit.mp4" alt="">
-                                </div>
-                                <div class="tranding-slide-content">
-                                  <div class="tranding-slide-content-bottom">
-                                    <h2 class="food-name">
-                                      Resistance rope exercise
-                                    </h2>
-                                    <p class="food-content">Some more details about that exercise to improve 
-                                      the way the trainer do that exercise .</p>
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- Slide-end -->
-                              <!-- Slide-start -->
-                              <div class="swiper-slide tranding-slide">
-                                <div class="tranding-slide-img">
-                                  <video controls src="assets/img/videocrossfit.mp4" alt="">
-                                </div>
-                                <div class="tranding-slide-content">
-                                  <div class="tranding-slide-content-bottom">
-                                    <h2 class="food-name">
-                                      Resistance rope exercise
-                                    </h2>
-                                    <p class="food-content">Some more details about that exercise to improve 
-                                      the way the trainer do that exercise .</p>
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- Slide-end -->
-                              <!-- Slide-start -->
-                              <div class="swiper-slide tranding-slide">
-                                <div class="tranding-slide-img">
-                                  <video controls src="assets/img/videocrossfit.mp4" alt="">
-                                </div>
-                                <div class="tranding-slide-content">
-                                  <div class="tranding-slide-content-bottom">
-                                    <h2 class="food-name">
-                                      Resistance rope exercise
-                                    </h2>
-                                    <p class="food-content">Some more details about that exercise to improve 
-                                      the way the trainer do that exercise .</p>
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- Slide-end -->
-                              <!-- Slide-start -->
-                              <div class="swiper-slide tranding-slide">
-                                <div class="tranding-slide-img">
-                                  <video controls src="assets/img/videocrossfit.mp4" alt="">
-                                </div>
-                                <div class="tranding-slide-content">
-                                  <div class="tranding-slide-content-bottom">
-                                    <h2 class="food-name">
-                                      Resistance rope exercise
-                                    </h2>
-                                    <p class="food-content">Some more details about that exercise to improve 
-                                      the way the trainer do that exercise .</p>
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- Slide-end -->
-                              <!-- Slide-start -->
-                              <div class="swiper-slide tranding-slide">
-                                <div class="tranding-slide-img">
-                                  <video controls src="assets/img/videocrossfit.mp4" alt="">
-                                </div>
-                                <div class="tranding-slide-content">
-                                  <div class="tranding-slide-content-bottom">
-                                    <h2 class="food-name">
-                                      Resistance rope exercise
-                                    </h2>
-                                    <p class="food-content">Some more details about that exercise to improve 
-                                      the way the trainer do that exercise .</p>
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- Slide-end -->
-                            </div>
-                  
-                            <div class="tranding-slider-control">
-                              <div class="swiper-button-prev slider-arrow">
-                                <ion-icon name="arrow-back-outline"></ion-icon>
-                              </div>
-                              <div class="swiper-button-next slider-arrow">
-                                <ion-icon name="arrow-forward-outline"></ion-icon>
-                              </div>
-                              <div class="swiper-pagination"></div>
-                            </div>
-                  
-                          </div>
-                        </div>
-                      </section>
-                  </section>
-                  
-                  <section id="tranding-sunday" class="tranding-section">
-                    <section id="tranding">
-                      <div class="containnner">
-                        <div class="swiper tranding-slider">
-                          <div class="swiper-wrapper">
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                          </div>
-                
-                          <div class="tranding-slider-control">
-                            <div class="swiper-button-prev slider-arrow">
-                              <ion-icon name="arrow-back-outline"></ion-icon>
-                            </div>
-                            <div class="swiper-button-next slider-arrow">
-                              <ion-icon name="arrow-forward-outline"></ion-icon>
-                            </div>
-                            <div class="swiper-pagination"></div>
-                          </div>
-                
-                        </div>
-                      </div>
-                    </section>
-                  </section>
-                  
-                  <section id="tranding-monday" class="tranding-section">
-                    <section id="tranding">
-                      <div class="containnner">
-                        <div class="swiper tranding-slider">
-                          <div class="swiper-wrapper">
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                          </div>
-                
-                          <div class="tranding-slider-control">
-                            <div class="swiper-button-prev slider-arrow">
-                              <ion-icon name="arrow-back-outline"></ion-icon>
-                            </div>
-                            <div class="swiper-button-next slider-arrow">
-                              <ion-icon name="arrow-forward-outline"></ion-icon>
-                            </div>
-                            <div class="swiper-pagination"></div>
-                          </div>
-                
-                        </div>
-                      </div>
-                    </section>
-                  </section>
-                  
-                  <section id="tranding-tuesday" class="tranding-section">
-                    <section id="tranding">
-                      <div class="containnner">
-                        <div class="swiper tranding-slider">
-                          <div class="swiper-wrapper">
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                          </div>
-                
-                          <div class="tranding-slider-control">
-                            <div class="swiper-button-prev slider-arrow">
-                              <ion-icon name="arrow-back-outline"></ion-icon>
-                            </div>
-                            <div class="swiper-button-next slider-arrow">
-                              <ion-icon name="arrow-forward-outline"></ion-icon>
-                            </div>
-                            <div class="swiper-pagination"></div>
-                          </div>
-                
-                        </div>
-                      </div>
-                    </section>
-                  </section>
 
-                  <section id="tranding-wednesday" class="tranding-section">
-                    <section id="tranding">
-                      <div class="containnner">
-                        <div class="swiper tranding-slider">
-                          <div class="swiper-wrapper">
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                          </div>
-                
-                          <div class="tranding-slider-control">
-                            <div class="swiper-button-prev slider-arrow">
-                              <ion-icon name="arrow-back-outline"></ion-icon>
-                            </div>
-                            <div class="swiper-button-next slider-arrow">
-                              <ion-icon name="arrow-forward-outline"></ion-icon>
-                            </div>
-                            <div class="swiper-pagination"></div>
-                          </div>
-                
-                        </div>
-                      </div>
-                    </section>
-                  </section>
+    <section id="tranding">
+      <div class="containnner">
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper">
+            <!-- Slide-start -->
+            @foreach ($days as $day)
+            @if ($day=='السبت')
+            @foreach ($system_arr['السبت'] as $sys )
+            @for ($i=0;$i<$arr_number[$sys->Exercise_Name];$i++ )
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <video controls src="{{ asset('workout/'.$sys->muscle[$i]->Muscle_Video) }}" alt="">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      {{ $sys->Exercise_Name }}
+                    </h2>
+                    <p class="food-content">{{$sys->Exercise_Details}}.</p>
+                    <p class="food-content" style="color: red"> - {{$sys->muscle[$i]->Muscle_Duration}}.</p>
+                  </div>
+                </div>
+              </div>
+              @endfor
+              @endforeach
+              @break
+              @else
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <video controls src="{{ asset('workout/relax.jpg') }}" alt="">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      اجازه ي صاحبي
+                    </h2>
+                    <p class="food-content">اجازهههههههههههه</p>
+                  </div>
+                </div>
+              </div>
+              @break
+              @endif
 
-                  <section id="tranding-thursday" class="tranding-section">
-                    <section id="tranding">
-                      <div class="containnner">
-                        <div class="swiper tranding-slider">
-                          <div class="swiper-wrapper">
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                          </div>
-                
-                          <div class="tranding-slider-control">
-                            <div class="swiper-button-prev slider-arrow">
-                              <ion-icon name="arrow-back-outline"></ion-icon>
-                            </div>
-                            <div class="swiper-button-next slider-arrow">
-                              <ion-icon name="arrow-forward-outline"></ion-icon>
-                            </div>
-                            <div class="swiper-pagination"></div>
-                          </div>
-                
-                        </div>
-                      </div>
-                    </section>
-                  </section>
+              @endforeach
 
-                  <section id="tranding-friday" class="tranding-section">
-                    <section id="tranding">
-                      <div class="containnner">
-                        <div class="swiper tranding-slider">
-                          <div class="swiper-wrapper">
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                            <!-- Slide-start -->
-                            <div class="swiper-slide tranding-slide">
-                              <div class="tranding-slide-img">
-                                <video controls src="assets/img/videocrossfit.mp4" alt="">
-                              </div>
-                              <div class="tranding-slide-content">
-                                <div class="tranding-slide-content-bottom">
-                                  <h2 class="food-name">
-                                    Resistance rope exercise
-                                  </h2>
-                                  <p class="food-content">Some more details about that exercise to improve 
-                                    the way the trainer do that exercise .</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Slide-end -->
-                          </div>
-                
-                          <div class="tranding-slider-control">
-                            <div class="swiper-button-prev slider-arrow">
-                              <ion-icon name="arrow-back-outline"></ion-icon>
-                            </div>
-                            <div class="swiper-button-next slider-arrow">
-                              <ion-icon name="arrow-forward-outline"></ion-icon>
-                            </div>
-                            <div class="swiper-pagination"></div>
-                          </div>
-                
-                        </div>
-                      </div>
-                    </section>
-                  </section>
+              <!-- Slide-end -->
+
+
+          </div>
+
+                  
+
+
+  <section id="tranding-sunday" class="tranding-section">
+    <section id="tranding">
+      <div class="containnner">
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper">
+            <!-- Slide-start -->
+            @foreach ($days as $day)
+            @if ($day=='الاحد')
+            @foreach ($system_arr['الاحد'] as $sys )
+            @for ($i=0;$i<$arr_number[$sys->Exercise_Name];$i++ )
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <video controls src="{{ asset('workout/'.$sys->muscle[$i]->Muscle_Video) }}" alt="">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      {{ $sys->Exercise_Name }}
+                    </h2>
+                    <p class="food-content">{{$sys->Exercise_Details}}.</p>
+                    <p class="food-content" style="color: red"> - {{$sys->muscle[$i]->Muscle_Duration}}.</p>
+                  </div>
+                </div>
+              </div>
+              @endfor
+              @endforeach
+              @break
+              @endif
+              @if ($counter==0)
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="{{ asset('workout/relax.jpg') }}" alt="">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      اجازه ي صاحبي
+                    </h2>
+                    <p class="food-content">اجازهههههههههههه</p>
+                  </div>
+                </div>
+              </div>
+              @break
+              @endif
+
+              @endforeach
+              <!-- Slide-end -->
+
+          </div>
+
+          <div class="tranding-slider-control">
+            <div class="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section id="tranding-monday" class="tranding-section">
+    <section id="tranding">
+      <div class="containnner">
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper">
+            <!-- Slide-start -->
+            @foreach ($days as $day)
+            @if ($day=='الاثنين')
+
+            @foreach ($system_arr['الاثنين'] as $sys )
+            @for ($i=0;$i<$arr_number[$sys->Exercise_Name];$i++ )
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="{{ asset('workout/'.$sys->muscle[$i]->Muscle_Video) }}" alt="">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      {{ $sys->Exercise_Name }}
+                    </h2>
+                    <p class="food-content">{{$sys->Exercise_Details}}.</p>
+                    <p class="food-content" style="color: red"> - {{$sys->muscle[$i]->Muscle_Duration}}.</p>
+                  </div>
+                </div>
+              </div>
+              @endfor
+              @endforeach
+              @break
+              @endif
+              @if($counter==0)
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <video controls src="{{ asset('workout/relax.jpg') }}" alt="">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      اجازه ي صاحبي
+                    </h2>
+                    <p class="food-content">اجازهههههههههههه</p>
+                  </div>
+                </div>
+              </div>
+              @break
+              @endif
+
+              @endforeach
+
+              <!-- Slide-end -->
+
+          </div>
+
+          <div class="tranding-slider-control">
+            <div class="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </section>
+
+
+  <section id="tranding-tuesday" class="tranding-section">
+    <section id="tranding">
+      <div class="containnner">
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper">
+            <!-- Slide-start -->
+            @foreach ($days as $day)
+            @if ($day=='الثلاثاء')
+
+            @foreach ($system_arr['الثلاثاء'] as $sys )
+            @for ($i=0;$i<$arr_number[$sys->Exercise_Name];$i++ )
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <video controls src="{{ asset('workout/'.$sys->muscle[$i]->Muscle_Video) }}" alt="">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      {{ $sys->Exercise_Name }}
+                    </h2>
+                    <p class="food-content">{{$sys->Exercise_Details}}.</p>
+                    <p class="food-content" style="color: red"> - {{$sys->muscle[$i]->Muscle_Duration}}.</p>
+                  </div>
+                </div>
+              </div>
+              @endfor
+              @endforeach
+
+              @break
+              @endif
+
+              @if($counter==0)
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <video controls src="{{ asset('workout/relax.jpg') }}" alt="">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      اجازه ي صاحبي
+                    </h2>
+                    <p class="food-content">اجازهههههههههههه</p>
+                  </div>
+                </div>
+              </div>
+              @break
+              @endif
+
+              @endforeach
+              <!-- Slide-end -->
+
+          </div>
+
+          <div class="tranding-slider-control">
+            <div class="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </section>
+
+
+  <section id="tranding-wednesday" class="tranding-section">
+    <section id="tranding">
+      <div class="containnner">
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper">
+            <!-- Slide-start -->
+            @foreach ($days as $day)
+            @if ($day=='الاربعاء')
+            @foreach ($system_arr['الاربعاء'] as $sys )
+            @for ($i=0;$i<$arr_number[$sys->Exercise_Name];$i++ )
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <video controls src="{{ asset('workout/'.$sys->muscle[$i]->Muscle_Video) }}" alt="">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      {{ $sys->Exercise_Name }}
+                    </h2>
+                    <p class="food-content">{{$sys->Exercise_Details}}.</p>
+                    <p class="food-content" style="color: red"> - {{$sys->muscle[$i]->Muscle_Duration}}.</p>
+                  </div>
+                </div>
+              </div>
+              @endfor
+              @endforeach
+              @break
+              @else
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <video controls src="{{ asset('workout/relax.jpg') }}" alt="">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      اجازه ي صاحبي
+                    </h2>
+                    <p class="food-content">اجازهههههههههههه</p>
+                  </div>
+                </div>
+              </div>
+              @break
+              @endif
+
+              @endforeach
+
+
+              <!-- Slide-end -->
+          </div>
+
+          <div class="tranding-slider-control">
+            <div class="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section id="tranding-thursday" class="tranding-section">
+    <section id="tranding">
+      <div class="containnner">
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper">
+            <!-- Slide-start -->
+            @foreach ($days as $day)
+            @if ($day=='الخميس')
+            @foreach ($system_arr['الخميس'] as $sys )
+            @for ($i=0;$i<$arr_number[$sys->Exercise_Name];$i++ )
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <video controls src="{{ asset('workout/'.$sys->muscle[$i]->Muscle_Video) }}" alt="">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      {{ $sys->Exercise_Name }}
+                    </h2>
+                    <p class="food-content">{{$sys->Exercise_Details}}.</p>
+                    <p class="food-content" style="color: red"> - {{$sys->muscle[$i]->Muscle_Duration}}.</p>
+                  </div>
+                </div>
+              </div>
+              @endfor
+              @endforeach
+              @break
+              @else
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <video controls src="{{ asset('workout/relax.jpg') }}" alt="">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      اجازه ي صاحبي
+                    </h2>
+                    <p class="food-content">اجازهههههههههههه</p>
+                  </div>
+                </div>
+              </div>
+              @break
+              @endif
+
+              @endforeach
+
+              <!-- Slide-end -->
+
+          </div>
+
+          <div class="tranding-slider-control">
+            <div class="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section id="tranding-friday" class="tranding-section">
+    <section id="tranding">
+      <div class="containnner">
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper">
+            <!-- Slide-start -->
+            @foreach ($days as $day)
+            @if ($day=='الجمعه')
+            @foreach ($system_arr['الجمعه'] as $sys )
+            @for ($i=0;$i<$arr_number[$sys->Exercise_Name];$i++ )
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <video controls src="{{ asset('workout/'.$sys->muscle[$i]->Muscle_Video) }}" alt="">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      {{ $sys->Exercise_Name }}
+                    </h2>
+                    <p class="food-content">{{$sys->Exercise_Details}}.</p>
+                    <p class="food-content" style="color: red"> - {{$sys->muscle[$i]->Muscle_Duration}}.</p>
+                  </div>
+                </div>
+              </div>
+              @endfor
+              @endforeach
+              @break
+              @else
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <video controls src="{{ asset('workout/relax.jpg') }}" alt="">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      اجازه ي صاحبي
+                    </h2>
+                    <p class="food-content">اجازهههههههههههه</p>
+                  </div>
+                </div>
+              </div>
+              @break
+              @endif
+
+              @endforeach
+
+              <!-- Slide-end -->
+          </div>
+
+          <div class="tranding-slider-control">
+            <div class="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </section>
 
 
 </section>

@@ -6,32 +6,27 @@ use App\Models\Exercise;
 
 trait GetExerciseType
 {
+    use GetExercisePlace_Split;
 
-    public function Split_Exercies($data)
+    public function GetExerciseType($number_days, $data, $days)
     {
-        return
-            [
-                'chest' => $data->where('Exercise_Name', '=', 'Chest')->first(),
-                'shoulder' => $data->where('Exercise_Name', '=', 'Shoulder')->first(),
-                'back' => $data->where('Exercise_Name', '=', 'Back')->first(),
-                'leg' => $data->where('Exercise_Name', '=', 'Leg')->first(),
-                'biceps' => $data->where('Exercise_Name', '=', 'Biceps')->first(),
-                'triceps' => $data->where('Exercise_Name', '=', 'Triceps')->first(),
-                'stomach' => $data->where('Exercise_Name', '=', 'Stomach')->first(),
-            ];
-    }
+        $exercises = $data;
+        switch ($number_days) {
+                // case '2':
+                //     return
+                //         [
+                //             'first_day' => [$exercises['shoulder'], $exercises['chest'], $exercises['triceps']],
+                //             'second_day' => [$exercises['back'], $exercises['biceps']],
+                //             'third_day' => [$exercises['leg'], $exercises['abs']]
 
-    public function GetExerciseType($days,$data)
-    {
-        $muscles = $this->Split_Exercies($data);
-        switch ($days) {
-
+                //         ];
+                //     break;
             case '3':
                 return
                     [
-                        'first_day' => [$muscles['chest'], $muscles['shoulder']],
-                        'second_day' => [$muscles['back'], $muscles['biceps']],
-                        'third_day' => [$muscles['leg'], $muscles['triceps'], $muscles['stomach']]
+                        $days[0] => [$exercises['shoulder'], $exercises['chest'], $exercises['triceps']],
+                        $days[1] => [$exercises['back'], $exercises['biceps'], $exercises['forearm']],
+                        $days[2] => [$exercises['leg'], $exercises['abs']]
 
                     ];
                 break;
@@ -39,10 +34,10 @@ trait GetExerciseType
             case '4':
                 return
                     [
-                        'first_day' => [$muscles['chest'], $muscles['shoulder']],
-                        'second_day' => [$muscles['back'], $muscles['biceps']],
-                        'third_day' => [$muscles['leg'], $muscles['triceps']],
-                        'fourth_day' => [$muscles['stomach']],
+                        $days[0] => [$exercises['chest'], $exercises['shoulder']],
+                        $days[1] => [$exercises['back'], $exercises['biceps']],
+                        $days[2] => [$exercises['forearm'], $exercises['triceps']],
+                        $days[3] => [$exercises['abs'], $exercises['leg']]
 
 
                     ];
@@ -50,11 +45,11 @@ trait GetExerciseType
             case '5':
                 return
                     [
-                        'first_day' => [$muscles['shoulder']],
-                        'second_day' => [$muscles['back'], $muscles['biceps']],
-                        'third_day' => [$muscles['leg'], $muscles['triceps']],
-                        'fourth_day' => [$muscles['stomach']],
-                        'fifth_day' => [$muscles['chest']]
+                        $days[0] => [$exercises['chest']],
+                        $days[1] => [$exercises['back'], $exercises['forearm']],
+                        $days[2] => [$exercises['shoulder']],
+                        $days[3] => [$exercises['triceps'], $exercises['biceps']],
+                        $days[4] => [$exercises['abs'], $exercises['leg']]
 
                     ];
                 break;
@@ -63,12 +58,12 @@ trait GetExerciseType
             default:
                 return
                     [
-                        'first_day' => [$muscles['shoulder']],
-                        'second_day' => [$muscles['biceps']],
-                        'third_day' => [$muscles['leg'], $muscles['triceps']],
-                        'fourth_day' => [$muscles['stomach']],
-                        'fifth_day' => [$muscles['chest']],
-                        'sixth_day' => [$muscles['back']]
+                        $days[0] => [$exercises['chest']],
+                        $days[1] => [$exercises['back']],
+                        $days[2] => [$exercises['shoulder']],
+                        $days[3] => [$exercises['biceps'], $exercises['forearm']],
+                        $days[4] => [$exercises['triceps']],
+                        $days[5] => [$exercises['abs'], $exercises['leg']]
 
                     ];
                 break;
