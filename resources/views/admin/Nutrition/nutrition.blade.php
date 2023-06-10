@@ -18,27 +18,20 @@
       <div class="line"></div>
     </div>
     <nav class="nav-days">
-      <ul>
-        <li>
-          <a href="#tranding-saturday" class="nav__link active">Saturday</a>
-        </li>
-        <li>
-          <a href="#tranding-sunday" class="nav__link">Sunday</a>
-        </li>
-        <li>
-          <a href="#tranding-monday" class="nav__link">Monday</a>
-        </li>
-        <li>
-          <a href="#tranding-tuesday" class="nav__link">Tuesday</a>
-        </li>
-        <li>
-          <a href="#tranding-wednesday" class="nav__link">Wednesday</a>
-        </li>
-        <li>
-          <a href="#tranding-thursday" class="nav__link">Thursday</a>
-        </li>
-        
-      </ul>
+    <ul>
+                          <li>
+                            <a href="#tranding-saturday" class="nav__link active">breakfast</a>
+                          </li>
+                          <li>
+                            <a href="#tranding-sunday" class="nav__link">snacks</a>
+                          </li>
+                          <li>
+                            <a href="#tranding-monday"class="nav__link">launch</a>
+                          </li>
+                          <li>
+                            <a href="#tranding-tuesday" class="nav__link">dinner</a>
+                          </li>
+                        </ul>
     </nav>
 
     </nav>
