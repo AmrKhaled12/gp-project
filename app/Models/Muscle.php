@@ -13,10 +13,11 @@ class Muscle extends Model
     public $timestamps = false;
 
     protected $fillable = [
-        'Muscle_Name',
-        'Muscle_Details',
         'Muscle_Duration',
         'Muscle_Video',
+        'Exercise_Place',
+        'Exercise_id'
+
     ];
 
     public function exercise()
