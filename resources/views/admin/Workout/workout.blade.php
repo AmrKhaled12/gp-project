@@ -20,7 +20,7 @@
     <nav class="nav-days">
       <ul>
         <li>
-          <a href="#tranding-saturday" class="nav__link active">Saturday</a>
+          <a href="#tranding-saturday" class="nav__link">Saturday</a>
         </li>
         <li>
           <a href="#tranding-sunday" class="nav__link">Sunday</a>
@@ -48,6 +48,7 @@
 
   <!-- swipper  -->
   <section id="tranding-saturday" class="tranding-section">
+
     <section id="tranding">
       <div class="containnner">
         <div class="swiper tranding-slider">
@@ -59,7 +60,7 @@
             @for ($i=0;$i<$arr_number[$sys->Exercise_Name];$i++ )
               <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                  <video controls src="{{ asset('workout/'.$sys->muscle[$i]->Muscle_Video) }}" alt="Tranding">
+                  <video controls src="{{ asset('workout/'.$sys->muscle[$i]->Muscle_Video) }}" alt="">
                 </div>
                 <div class="tranding-slide-content">
                   <div class="tranding-slide-content-bottom">
@@ -77,7 +78,7 @@
               @else
               <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                  <video controls src="{{ asset('workout/relax.jpg') }}" alt="Tranding">
+                  <video controls src="{{ asset('workout/relax.jpg') }}" alt="">
                 </div>
                 <div class="tranding-slide-content">
                   <div class="tranding-slide-content-bottom">
@@ -98,20 +99,8 @@
 
           </div>
 
-          <div class="tranding-slider-control">
-            <div class="swiper-button-prev slider-arrow">
-              <ion-icon name="arrow-back-outline"></ion-icon>
-            </div>
-            <div class="swiper-button-next slider-arrow">
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
+                  
 
-        </div>
-      </div>
-    </section>
-  </section>
 
   <section id="tranding-sunday" class="tranding-section">
     <section id="tranding">
@@ -125,7 +114,7 @@
             @for ($i=0;$i<$arr_number[$sys->Exercise_Name];$i++ )
               <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                  <video controls src="{{ asset('workout/'.$sys->muscle[$i]->Muscle_Video) }}" alt="Tranding">
+                  <video controls src="{{ asset('workout/'.$sys->muscle[$i]->Muscle_Video) }}" alt="">
                 </div>
                 <div class="tranding-slide-content">
                   <div class="tranding-slide-content-bottom">
@@ -144,7 +133,7 @@
               @if ($counter==0)
               <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                  <img src="{{ asset('workout/relax.jpg') }}" alt="Tranding">
+                  <img src="{{ asset('workout/relax.jpg') }}" alt="">
                 </div>
                 <div class="tranding-slide-content">
                   <div class="tranding-slide-content-bottom">
@@ -191,7 +180,7 @@
             @for ($i=0;$i<$arr_number[$sys->Exercise_Name];$i++ )
               <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                  <img src="{{ asset('workout/'.$sys->muscle[$i]->Muscle_Video) }}" alt="Tranding">
+                  <img src="{{ asset('workout/'.$sys->muscle[$i]->Muscle_Video) }}" alt="">
                 </div>
                 <div class="tranding-slide-content">
                   <div class="tranding-slide-content-bottom">
@@ -210,7 +199,7 @@
               @if($counter==0)
               <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                  <video controls src="{{ asset('workout/relax.jpg') }}" alt="Tranding">
+                  <video controls src="{{ asset('workout/relax.jpg') }}" alt="">
                 </div>
                 <div class="tranding-slide-content">
                   <div class="tranding-slide-content-bottom">
@@ -259,7 +248,7 @@
             @for ($i=0;$i<$arr_number[$sys->Exercise_Name];$i++ )
               <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                  <video controls src="{{ asset('workout/'.$sys->muscle[$i]->Muscle_Video) }}" alt="Tranding">
+                  <video controls src="{{ asset('workout/'.$sys->muscle[$i]->Muscle_Video) }}" alt="">
                 </div>
                 <div class="tranding-slide-content">
                   <div class="tranding-slide-content-bottom">
@@ -280,7 +269,7 @@
               @if($counter==0)
               <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                  <video controls src="{{ asset('workout/relax.jpg') }}" alt="Tranding">
+                  <video controls src="{{ asset('workout/relax.jpg') }}" alt="">
                 </div>
                 <div class="tranding-slide-content">
                   <div class="tranding-slide-content-bottom">
@@ -327,7 +316,7 @@
             @for ($i=0;$i<$arr_number[$sys->Exercise_Name];$i++ )
               <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                  <video controls src="{{ asset('workout/'.$sys->muscle[$i]->Muscle_Video) }}" alt="Tranding">
+                  <video controls src="{{ asset('workout/'.$sys->muscle[$i]->Muscle_Video) }}" alt="">
                 </div>
                 <div class="tranding-slide-content">
                   <div class="tranding-slide-content-bottom">
@@ -345,7 +334,7 @@
               @else
               <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                  <video controls src="{{ asset('workout/relax.jpg') }}" alt="Tranding">
+                  <video controls src="{{ asset('workout/relax.jpg') }}" alt="">
                 </div>
                 <div class="tranding-slide-content">
                   <div class="tranding-slide-content-bottom">
@@ -392,7 +381,7 @@
             @for ($i=0;$i<$arr_number[$sys->Exercise_Name];$i++ )
               <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                  <video controls src="{{ asset('workout/'.$sys->muscle[$i]->Muscle_Video) }}" alt="Tranding">
+                  <video controls src="{{ asset('workout/'.$sys->muscle[$i]->Muscle_Video) }}" alt="">
                 </div>
                 <div class="tranding-slide-content">
                   <div class="tranding-slide-content-bottom">
@@ -410,7 +399,7 @@
               @else
               <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                  <video controls src="{{ asset('workout/relax.jpg') }}" alt="Tranding">
+                  <video controls src="{{ asset('workout/relax.jpg') }}" alt="">
                 </div>
                 <div class="tranding-slide-content">
                   <div class="tranding-slide-content-bottom">
@@ -457,7 +446,7 @@
             @for ($i=0;$i<$arr_number[$sys->Exercise_Name];$i++ )
               <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                  <video controls src="{{ asset('workout/'.$sys->muscle[$i]->Muscle_Video) }}" alt="Tranding">
+                  <video controls src="{{ asset('workout/'.$sys->muscle[$i]->Muscle_Video) }}" alt="">
                 </div>
                 <div class="tranding-slide-content">
                   <div class="tranding-slide-content-bottom">
@@ -475,7 +464,7 @@
               @else
               <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                  <video controls src="{{ asset('workout/relax.jpg') }}" alt="Tranding">
+                  <video controls src="{{ asset('workout/relax.jpg') }}" alt="">
                 </div>
                 <div class="tranding-slide-content">
                   <div class="tranding-slide-content-bottom">

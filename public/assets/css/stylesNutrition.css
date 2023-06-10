@@ -127,7 +127,7 @@ img {
 .nav__mask {
   width: 80px;
   height: 80px;
-  /*background: linear-gradient(224deg, #e92f2f -2%, #feaaaa 97%);*/
+  background: linear-gradient(224deg, #e92f2f -2%, #feaaaa 97%);
   border-radius: 1.5rem;
   overflow: hidden;
   display: flex;
@@ -474,6 +474,7 @@ position: relative;
 /*=============== dayBars ===============*/
 .days-header{
   position: fixed;
+  left: 30%;
   height: 50px;
   background-color: #fefefefe;
   border-radius: 4rem;
@@ -568,6 +569,7 @@ position: relative;
 @media only screen and (max-width: 900px){
   .days-header{
     width: 90%;
+    left: auto;
   }
 
   .hamburger{
@@ -619,7 +621,7 @@ position: relative;
 }
 
 .nav-days.active{
-  height: 450px;
+  height: 350px;
 }
 
     .nav-days ul{
@@ -667,21 +669,11 @@ position: relative;
   position: relative;
 }
 
-@media (max-width: 500px) {
-  .tranding-slide {
-    width: 40% !important;
-    height: 50% !important;
-  }
-  .tranding-slide .tranding-slide-img img {
-    width: 100% !important;
-    height: 100% !important;
-  }
-}
-
 .tranding-slide .tranding-slide-img {
   position: relative;
-  width: 40%;
+  width: 35%;
   height: 50%;
+  left: 12%;
 }
 
 .tranding-slide .tranding-slide-img img {
@@ -697,13 +689,45 @@ position: relative;
 
 .tranding-slide .tranding-slide-content {
   position: absolute;
-  bottom: 50%;
-  left: 50%;
-  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 58%;
+  background-color: rgba(0, 0, 0, 0.9);
   padding: 1rem;
   color: var(--white);
-  border-bottom-left-radius: 4rem;
-  border-bottom-right-radius: 4rem;
+  border-top-left-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+}
+
+.tranding-slide .tranding-slide-content p{
+  margin-bottom: 0.5rem;
+}
+
+.tranding-slide .tranding-slide-content h2{
+  margin-bottom: 1.2rem;
+}
+
+@media (max-width:450px) {
+  .tranding-slide .tranding-slide-content{
+    font-size: 12px;
+    width: 150px;
+  }
+  .tranding-slide-content-bottom{
+    width: 100%;
+    height: 100%;
+  }
+
+  .tranding-slide .tranding-slide-content p{
+    margin-bottom: 0.5rem;
+  }
+  
+  .tranding-slide .tranding-slide-content h2{
+    margin-bottom: 1.2rem;
+  }
+
+  .tranding-slide .tranding-slide-img {
+    width: 40%;
+    height: 40%;
+  }
 }
 
 
@@ -843,7 +867,7 @@ position: relative;
   }
 
 
-}
+} 
 
 
 /* For large devices */
