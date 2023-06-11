@@ -1,7 +1,7 @@
 @extends('layouts.Layout')
 @section('style-workout')
 <link rel="stylesheet" href="{{ asset('assets/css/stylesWorkout.css') }}">
-<link rel="stylesheet" href="assets/Swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 @endsection
 
 
@@ -502,9 +502,9 @@
 </section>
 @endsection
 @section('script-workout')
-        <script type="module" src="assets/Swiper/ionicons.esm.js"></script>
-        <script nomodule src="assets/Swiper/ionicons.js"></script>
-        <script src="assets/Swiper/swiper-bundle.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <!--=============== MAIN JS ===============-->
 <script src="{{ asset('assets/js/workout&nutrition.js') }}"></script>
 @endsection
